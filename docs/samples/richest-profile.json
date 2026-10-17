@@ -1,0 +1,1572 @@
+{
+ "run_id": "smoke5-final",
+ "organisation_number": "989264087",
+ "state": "complete",
+ "started_at": "2026-10-17T11:26:58.867274Z",
+ "completed_at": "2026-10-17T11:27:36.643099Z",
+ "modules": {
+  "financials": {
+   "state": "complete",
+   "retry_count": 0,
+   "final_timestamp": "2026-10-17T11:27:21.804340Z"
+  },
+  "footprint": {
+   "state": "complete",
+   "retry_count": 0,
+   "final_timestamp": "2026-10-17T11:27:36.642915Z"
+  },
+  "group": {
+   "state": "not_found",
+   "retry_count": 0,
+   "final_timestamp": "2026-10-17T11:27:22.676418Z"
+  },
+  "locations": {
+   "state": "complete",
+   "retry_count": 0,
+   "final_timestamp": "2026-10-17T11:27:23.124236Z"
+  },
+  "registry": {
+   "state": "complete",
+   "retry_count": 0,
+   "final_timestamp": "2026-10-17T11:27:20.935089Z"
+  },
+  "registry_live": {
+   "state": "complete",
+   "retry_count": 0,
+   "final_timestamp": "2026-10-17T11:27:21.371140Z"
+  },
+  "roles": {
+   "state": "complete",
+   "retry_count": 0,
+   "final_timestamp": "2026-10-17T11:27:22.229807Z"
+  },
+  "website": {
+   "state": "complete",
+   "retry_count": 0,
+   "final_timestamp": "2026-10-17T11:27:34.238319Z"
+  },
+  "wikidata": {
+   "state": "not_found",
+   "retry_count": 0,
+   "final_timestamp": "2026-10-17T11:26:58.867193Z"
+  }
+ },
+ "profile": {
+  "organisation_number": "989264087",
+  "name": "SMESTAD HOLDING AS",
+  "legal_form": "AS",
+  "employees": null,
+  "municipality": "BERGEN",
+  "industry_label": "Uoppgitt",
+  "website": "https://devoldsregnskap.no",
+  "latest_submitted_accounts": "2025",
+  "evidence": {
+   "registry": {
+    "field": "registry",
+    "status": "available",
+    "source_type": "official_registry_bulk",
+    "source_class": "official_registry_bulk",
+    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+    "retrieved_at": "2026-10-17T11:27:20.935089Z",
+    "value": {
+     "organisasjonsnummer": "989264087",
+     "navn": "SMESTAD HOLDING AS",
+     "organisasjonsform.kode": "AS",
+     "organisasjonsform.beskrivelse": "Aksjeselskap",
+     "naeringskode1.kode": "00.000",
+     "naeringskode1.beskrivelse": "Uoppgitt",
+     "naeringskode2.kode": "",
+     "naeringskode2.beskrivelse": "",
+     "naeringskode3.kode": "",
+     "naeringskode3.beskrivelse": "",
+     "hjelpeenhetskode.kode": "",
+     "hjelpeenhetskode.beskrivelse": "",
+     "harRegistrertAntallAnsatte": "false",
+     "antallAnsatte": "",
+     "registreringsdatoAntallAnsatteEnhetsregisteret": "",
+     "registreringsdatoantallansatteNAVAaregisteret": "",
+     "hjemmeside": "",
+     "epostadresse": "on@devoldsregnskap.no",
+     "telefon": "",
+     "mobil": "",
+     "postadresse.adresse": "c/o VKST,Devolds Regnskapskontor AS\nRegnbueplassen 1",
+     "postadresse.poststed": "BERGEN",
+     "postadresse.postnummer": "5015",
+     "postadresse.kommune": "BERGEN",
+     "postadresse.kommunenummer": "4601",
+     "postadresse.land": "Norge",
+     "postadresse.landkode": "NO",
+     "forretningsadresse.adresse": "Kong Oscars gate 1A",
+     "forretningsadresse.poststed": "BERGEN",
+     "forretningsadresse.postnummer": "5017",
+     "forretningsadresse.kommune": "BERGEN",
+     "forretningsadresse.kommunenummer": "4601",
+     "forretningsadresse.land": "Norge",
+     "forretningsadresse.landkode": "NO",
+     "institusjonellSektorkode.kode": "2100",
+     "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
+     "sisteInnsendteAarsregnskap": "2025",
+     "registreringsdatoenhetsregisteret": "2006-03-15",
+     "stiftelsesdato": "2005-12-28",
+     "registrertIMvaRegisteret": "false",
+     "registreringsdatoMerverdiavgiftsregisteret": "",
+     "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "",
+     "frivilligMvaRegistrertBeskrivelser": "",
+     "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
+     "registrertIFrivillighetsregisteret": "false",
+     "registreringsdatoFrivillighetsregisteret": "",
+     "registrertIForetaksregisteret": "true",
+     "registreringsdatoForetaksregisteret": "2006-03-15",
+     "registrertIStiftelsesregisteret": "false",
+     "registrertIPartiregisteret": "false",
+     "registreringsdatoPartiregisteret": "",
+     "konkurs": "false",
+     "konkursdato": "",
+     "underAvvikling": "true",
+     "underAvviklingDato": "2026-10-15",
+     "underTvangsavviklingEllerTvangsopplosning": "false",
+     "tvangsopplostPgaManglendeDagligLederDato": "",
+     "tvangsopplostPgaManglendeRevisorDato": "",
+     "tvangsopplostPgaManglendeRegnskapDato": "",
+     "tvangsopplostPgaMangelfulltStyreDato": "",
+     "tvangsavvikletPgaManglendeSlettingDato": "",
+     "overordnetEnhet": "",
+     "maalform": "Bokmål",
+     "vedtektsdato": "2014-10-01",
+     "vedtektsfestetFormaal": "Eie og investere i aksjer og andre verdipapirer, samt alt hva hermed står i forbindelse.",
+     "aktivitet": "Eie og investere i aksjer og andre verdipapirer, samt alt hva hermed står i forbindelse.",
+     "paategninger": "false",
+     "underUtenlandskInsolvensbehandlingDato": "",
+     "underRekonstruksjonsforhandlingDato": "",
+     "fravalgRevisjonDato": "2016-12-29",
+     "fravalgRevisjonBeslutningsDato": "",
+     "erIKonsern": "false",
+     "kapital.belop": "500000.00",
+     "kapital.antallAksjer": "4000",
+     "kapital.type": "Aksjekapital",
+     "kapital.bundet": "",
+     "kapital.valuta": "NOK",
+     "kapital.innbetalt": "",
+     "kapital.fulltInnbetalt": "",
+     "kapital.innfortDato": "2014-10-14",
+     "registreringsnummerIHjemlandet": "",
+     "utenlandskRegisterNavn": "",
+     "utenlandskRegisterAdresse.land": "",
+     "utenlandskRegisterAdresse.poststed": "",
+     "utenlandskRegisterAdresse.adresse": "",
+     "underlagtLovgivningLand": "",
+     "underlagtLovgivningLandKode": "",
+     "foretaksformIHjemlandet.kode": "",
+     "foretaksformIHjemlandet.beskrivelse": "",
+     "foretaksformIHjemlandet.beskrivelseBokmaal": ""
+    },
+    "as_of": null,
+    "note": null,
+    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+    "source_row_key": "989264087",
+    "effective_at": null
+   },
+   "registry_live": {
+    "field": "registry_live",
+    "status": "available",
+    "source_type": "official_registry_live",
+    "source_class": "official_registry_live",
+    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989264087",
+    "retrieved_at": "2026-10-17T11:27:21.371140Z",
+    "value": {
+     "organisation_number": "989264087",
+     "name": "SMESTAD HOLDING AS",
+     "legal_form": "AS",
+     "employees": null,
+     "bankrupt": false,
+     "liquidating": true,
+     "website": null,
+     "email": "on@devoldsregnskap.no",
+     "industry": {
+      "beskrivelse": "Uoppgitt",
+      "kode": "00.000"
+     },
+     "business_address": {
+      "adresse": [
+       "Kong Oscars gate 1A"
+      ],
+      "kommune": "BERGEN",
+      "kommunenummer": "4601",
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "5017",
+      "poststed": "BERGEN"
+     },
+     "address_line": "Kong Oscars gate 1A",
+     "municipality": "BERGEN",
+     "postal_code": "5017",
+     "incorporation_date": "2005-12-28",
+     "postal_address": {
+      "adresse": [
+       "c/o VKST,Devolds Regnskapskontor AS",
+       "Regnbueplassen 1"
+      ],
+      "kommune": "BERGEN",
+      "kommunenummer": "4601",
+      "land": "Norge",
+      "landkode": "NO",
+      "postnummer": "5015",
+      "poststed": "BERGEN"
+     },
+     "latest_submitted_accounts": "2025"
+    },
+    "as_of": null,
+    "note": null,
+    "content_sha256": "1dc0558f9083f4f6ef7cd8c394c0f8d369d3a387f2763966d14050db5a9b8ea3",
+    "source_row_key": null,
+    "effective_at": null
+   },
+   "financials": {
+    "field": "financials",
+    "status": "available",
+    "source_type": "official_annual_accounts",
+    "source_class": "official_annual_accounts",
+    "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/989264087",
+    "retrieved_at": "2026-10-17T11:27:21.804340Z",
+    "value": {
+     "records": [
+      {
+       "record_id": 5344663,
+       "account_type": "SELSKAP",
+       "period": {
+        "fraDato": "2023-01-01",
+        "tilDato": "2023-12-31"
+       },
+       "currency": "NOK",
+       "revenue": 0.0,
+       "operating_result": 0.0,
+       "profit_before_tax": 0.0,
+       "annual_result": 0.0,
+       "assets": 0.0,
+       "equity": -277375.0,
+       "debt": 277375.0
+      },
+      {
+       "record_id": 6274721,
+       "account_type": "SELSKAP",
+       "period": {
+        "fraDato": "2024-01-01",
+        "tilDato": "2024-12-31"
+       },
+       "currency": "NOK",
+       "revenue": 0.0,
+       "operating_result": 0.0,
+       "profit_before_tax": 0.0,
+       "annual_result": 0.0,
+       "assets": 0.0,
+       "equity": -277375.0,
+       "debt": 277375.0
+      },
+      {
+       "record_id": 7136041,
+       "account_type": "SELSKAP",
+       "period": {
+        "fraDato": "2025-01-01",
+        "tilDato": "2025-12-31"
+       },
+       "currency": "NOK",
+       "revenue": 0.0,
+       "operating_result": 0.0,
+       "profit_before_tax": 0.0,
+       "annual_result": 0.0,
+       "assets": 0.0,
+       "equity": -277375.0,
+       "debt": 277375.0
+      }
+     ]
+    },
+    "as_of": null,
+    "note": null,
+    "content_sha256": "3bed207b6fa87ac1b3bb114e45f9bcc6dac1bd4f8e9bbb22c8fcd2f112d35e3f",
+    "source_row_key": null,
+    "effective_at": null
+   },
+   "roles": {
+    "field": "roles",
+    "status": "available",
+    "source_type": "official_roles",
+    "source_class": "official_roles",
+    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989264087/roller",
+    "retrieved_at": "2026-10-17T11:27:22.229807Z",
+    "value": {
+     "roles": [
+      {
+       "name": "Øyvind Per Norang",
+       "organisation_number": null,
+       "role_code": "LEDE",
+       "role": "Styrets leder",
+       "group_code": "STYR",
+       "group": "Styre",
+       "last_changed": "2026-10-15",
+       "inactive": false
+      },
+      {
+       "name": [
+        "DEVOLDS REGNSKAPSKONTOR AS"
+       ],
+       "organisation_number": "945893893",
+       "role_code": "REGN",
+       "role": "Regnskapsfører",
+       "group_code": "REGN",
+       "group": "Regnskapsfører",
+       "last_changed": "2015-10-28",
+       "inactive": false
+      }
+     ]
+    },
+    "as_of": null,
+    "note": null,
+    "content_sha256": "9d85b0fe6634e08470c112c00792d934b361cff56cc8586adb7ede793bf92794",
+    "source_row_key": null,
+    "effective_at": null
+   },
+   "group": {
+    "field": "group",
+    "status": "not_found",
+    "source_type": "official_group_structure",
+    "source_class": "official_group_structure",
+    "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/989264087",
+    "retrieved_at": "2026-10-17T11:27:22.676418Z",
+    "value": null,
+    "as_of": null,
+    "note": "HTTP 404",
+    "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_row_key": null,
+    "effective_at": null
+   },
+   "locations": {
+    "field": "locations",
+    "status": "available",
+    "source_type": "official_subunits",
+    "source_class": "official_subunits",
+    "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=989264087&size=1000",
+    "retrieved_at": "2026-10-17T11:27:23.124236Z",
+    "value": {
+     "locations": []
+    },
+    "as_of": null,
+    "note": null,
+    "content_sha256": "d853a9774ed8f9e175d45b1f4d8d5085172ba198f15c4a6e4b28cb76271a8c47",
+    "source_row_key": null,
+    "effective_at": null
+   },
+   "website": {
+    "field": "website",
+    "status": "available",
+    "source_type": "registry_linked_company_website",
+    "source_class": "registry_linked_company_website",
+    "source_url": "https://devoldsregnskap.no/",
+    "retrieved_at": "2026-10-17T11:27:34.238319Z",
+    "value": {
+     "requested_url": "https://devoldsregnskap.no/",
+     "final_url": "https://devoldsregnskap.no/",
+     "registered_domain": "devoldsregnskap.no",
+     "title": "Devolds – Devolds Regnskapskontor AS",
+     "description": "",
+     "main_text_excerpt": "Skip to main content",
+     "internal_links": [
+      {
+       "url": "http://devoldsregnskap.no/",
+       "anchor": ""
+      },
+      {
+       "url": "https://devoldsregnskap.no/tjenester/",
+       "anchor": "TJENESTER"
+      },
+      {
+       "url": "https://devoldsregnskap.no/om-oss/",
+       "anchor": "OM OSS"
+      },
+      {
+       "url": "https://devoldsregnskap.no/nyttige-linker/",
+       "anchor": "Nyttige linker"
+      },
+      {
+       "url": "https://devoldsregnskap.no/kontakt-oss/",
+       "anchor": "KONTAKT OSS"
+      },
+      {
+       "url": "https://devoldsregnskap.no/ledige-stillinger/",
+       "anchor": "Ledige stillinger"
+      },
+      {
+       "url": "http://devoldsregnskap.no/kontakt-oss/",
+       "anchor": "Kontakt oss"
+      }
+     ],
+     "social_links": [],
+     "structured_organisations": [],
+     "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
+     "extraction_state": "js_fallback_candidate",
+     "pages": [
+      {
+       "url": "https://devoldsregnskap.no/",
+       "title": "Devolds – Devolds Regnskapskontor AS",
+       "main_text_excerpt": "Skip to main content",
+       "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936"
+      },
+      {
+       "url": "https://devoldsregnskap.no/om-oss/",
+       "title": "OM OSS – Devolds",
+       "main_text_excerpt": "Skip to main content",
+       "content_sha256": "4e1a8f335f35a10ddba3d9d560b573a06550ebdfd146ac2bfec890c2a356defd",
+       "internal_links": [
+        {
+         "url": "https://devoldsregnskap.no/",
+         "anchor": "Devolds"
+        },
+        {
+         "url": "http://devoldsregnskap.no/",
+         "anchor": ""
+        },
+        {
+         "url": "https://devoldsregnskap.no/tjenester/",
+         "anchor": "TJENESTER"
+        },
+        {
+         "url": "https://devoldsregnskap.no/nyttige-linker/",
+         "anchor": "Nyttige linker"
+        },
+        {
+         "url": "https://devoldsregnskap.no/kontakt-oss/",
+         "anchor": "KONTAKT OSS"
+        },
+        {
+         "url": "https://devoldsregnskap.no/ledige-stillinger/",
+         "anchor": "Ledige stillinger"
+        },
+        {
+         "url": "http://devoldsregnskap.no/kontakt-oss/",
+         "anchor": "Kontakt oss"
+        }
+       ]
+      },
+      {
+       "url": "https://devoldsregnskap.no/kontakt-oss/",
+       "title": "KONTAKT OSS – Devolds",
+       "main_text_excerpt": "Skip to main content",
+       "content_sha256": "c7a3cf86fc7481e08995af5a4d9395ec00f0c7d013217ff51740716d8fb0e1d2",
+       "internal_links": [
+        {
+         "url": "https://devoldsregnskap.no/",
+         "anchor": "Devolds"
+        },
+        {
+         "url": "http://devoldsregnskap.no/",
+         "anchor": ""
+        },
+        {
+         "url": "https://devoldsregnskap.no/tjenester/",
+         "anchor": "TJENESTER"
+        },
+        {
+         "url": "https://devoldsregnskap.no/om-oss/",
+         "anchor": "OM OSS"
+        },
+        {
+         "url": "https://devoldsregnskap.no/nyttige-linker/",
+         "anchor": "Nyttige linker"
+        },
+        {
+         "url": "https://devoldsregnskap.no/ledige-stillinger/",
+         "anchor": "Ledige stillinger"
+        }
+       ]
+      },
+      {
+       "url": "https://devoldsregnskap.no/kontakt-oss/",
+       "title": "KONTAKT OSS – Devolds",
+       "main_text_excerpt": "Skip to main content",
+       "content_sha256": "c7a3cf86fc7481e08995af5a4d9395ec00f0c7d013217ff51740716d8fb0e1d2",
+       "internal_links": [
+        {
+         "url": "https://devoldsregnskap.no/",
+         "anchor": "Devolds"
+        },
+        {
+         "url": "http://devoldsregnskap.no/",
+         "anchor": ""
+        },
+        {
+         "url": "https://devoldsregnskap.no/tjenester/",
+         "anchor": "TJENESTER"
+        },
+        {
+         "url": "https://devoldsregnskap.no/om-oss/",
+         "anchor": "OM OSS"
+        },
+        {
+         "url": "https://devoldsregnskap.no/nyttige-linker/",
+         "anchor": "Nyttige linker"
+        },
+        {
+         "url": "https://devoldsregnskap.no/ledige-stillinger/",
+         "anchor": "Ledige stillinger"
+        }
+       ]
+      },
+      {
+       "url": "https://devoldsregnskap.no/ledige-stillinger/",
+       "title": "Ledige stillinger – Devolds",
+       "main_text_excerpt": "Skip to main content",
+       "content_sha256": "acc70e8256db4adaed6740173c633cd008e4f4422ebc98a55fa0118072a8ce3b",
+       "internal_links": [
+        {
+         "url": "https://devoldsregnskap.no/",
+         "anchor": "Devolds"
+        },
+        {
+         "url": "http://devoldsregnskap.no/",
+         "anchor": ""
+        },
+        {
+         "url": "https://devoldsregnskap.no/tjenester/",
+         "anchor": "TJENESTER"
+        },
+        {
+         "url": "https://devoldsregnskap.no/om-oss/",
+         "anchor": "OM OSS"
+        },
+        {
+         "url": "https://devoldsregnskap.no/nyttige-linker/",
+         "anchor": "Nyttige linker"
+        },
+        {
+         "url": "https://devoldsregnskap.no/kontakt-oss/",
+         "anchor": "KONTAKT OSS"
+        }
+       ]
+      }
+     ],
+     "crawl_errors": [],
+     "identity_assessment": {
+      "status": "related_or_uncertain",
+      "score": 0.3,
+      "publishable": false,
+      "legal_name_tokens": [
+       "smestad",
+       "holding"
+      ],
+      "matched_tokens": [],
+      "reasons": [
+       "registry-linked URL lacks strong exact-entity identity evidence"
+      ],
+      "method": "deterministic_name_org_evidence_v2"
+     },
+     "discovered_social_links": [
+      {
+       "platform": "facebook",
+       "url": "https://facebook.com/about/ads"
+      }
+     ],
+     "social_link_assessments": [
+      {
+       "platform": "facebook",
+       "url": "https://facebook.com/about/ads",
+       "identity_score": 0.3,
+       "publishable": false,
+       "matched_tokens": [],
+       "reason": "social handle lacks strong exact-entity name evidence",
+       "method": "deterministic_social_handle_identity_v1"
+      }
+     ],
+     "seed_source": "registry contact e-mail domain (same registry row as the organisation number)"
+    },
+    "as_of": null,
+    "note": "Company-controlled claim layer; not an official registry fact",
+    "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
+    "source_row_key": null,
+    "effective_at": null
+   },
+   "footprint": {
+    "field": "footprint",
+    "status": "available",
+    "source_type": "company_owned_and_wikidata_cc0",
+    "source_class": "company_owned_and_wikidata_cc0",
+    "source_url": "https://devoldsregnskap.no/",
+    "retrieved_at": "2026-10-17T11:27:36.642915Z",
+    "value": {
+     "verified_website": null,
+     "company_description": null,
+     "social_handles": [],
+     "wikipedia": {},
+     "careers": {
+      "state": "available",
+      "page_url": "https://devoldsregnskap.no/ledige-stillinger/",
+      "openings": [
+       "Totalkontroll over kundenes økonomi",
+       "Bachelor i økonomi og administrasjon",
+       "Når man ønsker å bli kontaktet om et produkt eller tjeneste",
+       "Ved kjøp av produkter eller tjenester på en nettside",
+       "Å gi brukeren tilgang til våre produkter og tjenester",
+       "Å kunne ta kontakt for å tilby produkter eller tjenester",
+       "Google Tag Manager",
+       "Vi bruker Google Tag Manager for å administrere analyse og digitale tjenester"
+      ],
+      "retrieved_at": "2026-10-17T11:27:35.463405Z",
+      "content_sha256": "acc70e8256db4adaed6740173c633cd008e4f4422ebc98a55fa0118072a8ce3b"
+     },
+     "news": {
+      "state": "not_checked",
+      "page_url": null,
+      "items": []
+     },
+     "contact": {
+      "state": "available",
+      "page_url": "https://devoldsregnskap.no/kontakt-oss/",
+      "emails": [
+       "ann.kristin@devoldsregnskap.no",
+       "emma@devoldsregnskap.no",
+       "firmapost@devoldsregnskap.no",
+       "kn@devoldsregnskap.no",
+       "kristi-annette.aadnanes@devoldsregnskap.no"
+      ],
+      "phones": [
+       "47932143",
+       "47933724",
+       "55323250",
+       "94001254",
+       "94010221"
+      ],
+      "content_sha256": "c7a3cf86fc7481e08995af5a4d9395ec00f0c7d013217ff51740716d8fb0e1d2",
+      "retrieved_at": "2026-10-17T11:27:36.642891Z"
+     },
+     "sources": [
+      {
+       "kind": "careers_page",
+       "url": "https://devoldsregnskap.no/ledige-stillinger/",
+       "content_sha256": "acc70e8256db4adaed6740173c633cd008e4f4422ebc98a55fa0118072a8ce3b"
+      },
+      {
+       "kind": "contact_page",
+       "url": "https://devoldsregnskap.no/kontakt-oss/",
+       "content_sha256": "c7a3cf86fc7481e08995af5a4d9395ec00f0c7d013217ff51740716d8fb0e1d2"
+      }
+     ]
+    },
+    "as_of": null,
+    "note": "Company-owned pages plus Wikidata entries keyed on the organisation number. No third-party platform scraping.",
+    "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
+    "source_row_key": null,
+    "effective_at": null
+   },
+   "wikidata": {
+    "field": "wikidata",
+    "status": "not_found",
+    "source_type": "wikidata_cc0_sparql",
+    "source_class": "wikidata_cc0_sparql",
+    "source_url": "https://query.wikidata.org/sparql",
+    "retrieved_at": "2026-10-17T11:26:58.867193Z",
+    "value": {
+     "keyed_on": "P2333 Norwegian organisation number",
+     "requested": 100,
+     "matched": 1,
+     "queries": 1,
+     "errors": [],
+     "records": {},
+     "matched_this_entity": false
+    },
+    "as_of": null,
+    "note": "Exact-entity lookup keyed on P2333 (Norwegian organisation number). No Wikidata item carries this organisation number.",
+    "content_sha256": "732026165b59ba6925fc689d6fdafff09ba956d1876783c08710b667b0e0d984",
+    "source_row_key": null,
+    "effective_at": null
+   }
+  },
+  "run_metrics": {
+   "requests": 19,
+   "bytes": 1537231,
+   "latencies_ms": [
+    435,
+    432,
+    425,
+    446,
+    447,
+    1956,
+    1669,
+    2102,
+    830,
+    1582,
+    820,
+    778
+   ]
+  },
+  "bankrupt": false,
+  "liquidating": true
+ },
+ "claims": [
+  {
+   "field": "legal_name",
+   "value": "SMESTAD HOLDING AS",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-0"
+   ]
+  },
+  {
+   "field": "organisation_number",
+   "value": "989264087",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-1"
+   ]
+  },
+  {
+   "field": "legal_form",
+   "value": "Aksjeselskap",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-2"
+   ]
+  },
+  {
+   "field": "legal_form_code",
+   "value": "AS",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-3"
+   ]
+  },
+  {
+   "field": "registered_address",
+   "value": "Kong Oscars gate 1A",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-4"
+   ]
+  },
+  {
+   "field": "municipality",
+   "value": "BERGEN",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-5"
+   ]
+  },
+  {
+   "field": "postal_code",
+   "value": "5017",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-6"
+   ]
+  },
+  {
+   "field": "industry_code",
+   "value": "00.000",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-7"
+   ]
+  },
+  {
+   "field": "industry",
+   "value": "Uoppgitt",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-8"
+   ]
+  },
+  {
+   "field": "latest_annual_accounts",
+   "value": "2025",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-10"
+   ]
+  },
+  {
+   "field": "contact_email",
+   "value": "on@devoldsregnskap.no",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-12"
+   ]
+  },
+  {
+   "field": "company_status",
+   "value": "liquidating",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-13"
+   ]
+  },
+  {
+   "field": "incorporation_date",
+   "value": "2005-12-28",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-14"
+   ]
+  },
+  {
+   "field": "legal_name_live",
+   "value": "SMESTAD HOLDING AS",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-live-0"
+   ]
+  },
+  {
+   "field": "revenue",
+   "value": 0.0,
+   "availability": "available",
+   "evidence_ids": [
+    "ev-financials"
+   ],
+   "note": "NOK, period 2023-01-01/2023-12-31"
+  },
+  {
+   "field": "operating_result",
+   "value": 0.0,
+   "availability": "available",
+   "evidence_ids": [
+    "ev-financials"
+   ],
+   "note": "NOK, period 2023-01-01/2023-12-31"
+  },
+  {
+   "field": "profit_before_tax",
+   "value": 0.0,
+   "availability": "available",
+   "evidence_ids": [
+    "ev-financials"
+   ],
+   "note": "NOK, period 2023-01-01/2023-12-31"
+  },
+  {
+   "field": "annual_result",
+   "value": 0.0,
+   "availability": "available",
+   "evidence_ids": [
+    "ev-financials"
+   ],
+   "note": "NOK, period 2023-01-01/2023-12-31"
+  },
+  {
+   "field": "assets",
+   "value": 0.0,
+   "availability": "available",
+   "evidence_ids": [
+    "ev-financials"
+   ],
+   "note": "NOK, period 2023-01-01/2023-12-31"
+  },
+  {
+   "field": "equity",
+   "value": -277375.0,
+   "availability": "available",
+   "evidence_ids": [
+    "ev-financials"
+   ],
+   "note": "NOK, period 2023-01-01/2023-12-31"
+  },
+  {
+   "field": "debt",
+   "value": 277375.0,
+   "availability": "available",
+   "evidence_ids": [
+    "ev-financials"
+   ],
+   "note": "NOK, period 2023-01-01/2023-12-31"
+  },
+  {
+   "field": "leadership_role",
+   "value": {
+    "name": "Øyvind Per Norang",
+    "role": "Styrets leder",
+    "group": "Styre",
+    "last_changed": "2026-10-15"
+   },
+   "availability": "available",
+   "evidence_ids": [
+    "ev-roles-0"
+   ]
+  },
+  {
+   "field": "leadership_role",
+   "value": {
+    "name": [
+     "DEVOLDS REGNSKAPSKONTOR AS"
+    ],
+    "role": "Regnskapsfører",
+    "group": "Regnskapsfører",
+    "last_changed": "2015-10-28"
+   },
+   "availability": "available",
+   "evidence_ids": [
+    "ev-roles-1"
+   ]
+  },
+  {
+   "field": "registered_workplace",
+   "value": null,
+   "availability": "not_available",
+   "evidence_ids": [],
+   "note": "the subunit endpoint answered and lists no registered workplace for this entity"
+  },
+  {
+   "field": "official_website",
+   "value": "https://devoldsregnskap.no/",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-website"
+   ],
+   "confidence": 0.3,
+   "note": "url seeded from registry contact e-mail domain (same registry row as the organisation number); deterministic_name_org_evidence_v2"
+  },
+  {
+   "field": "company_description",
+   "value": "Skip to main content",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-website-text"
+   ]
+  },
+  {
+   "field": "company_page",
+   "value": {
+    "url": "https://devoldsregnskap.no/",
+    "title": "Devolds – Devolds Regnskapskontor AS"
+   },
+   "availability": "available",
+   "evidence_ids": [
+    "ev-website-page-0"
+   ]
+  },
+  {
+   "field": "company_page",
+   "value": {
+    "url": "https://devoldsregnskap.no/om-oss/",
+    "title": "OM OSS – Devolds"
+   },
+   "availability": "available",
+   "evidence_ids": [
+    "ev-website-page-1"
+   ]
+  },
+  {
+   "field": "company_page",
+   "value": {
+    "url": "https://devoldsregnskap.no/kontakt-oss/",
+    "title": "KONTAKT OSS – Devolds"
+   },
+   "availability": "available",
+   "evidence_ids": [
+    "ev-website-page-2"
+   ]
+  },
+  {
+   "field": "company_page",
+   "value": {
+    "url": "https://devoldsregnskap.no/kontakt-oss/",
+    "title": "KONTAKT OSS – Devolds"
+   },
+   "availability": "available",
+   "evidence_ids": [
+    "ev-website-page-3"
+   ]
+  },
+  {
+   "field": "company_page",
+   "value": {
+    "url": "https://devoldsregnskap.no/ledige-stillinger/",
+    "title": "Ledige stillinger – Devolds"
+   },
+   "availability": "available",
+   "evidence_ids": [
+    "ev-website-page-4"
+   ]
+  },
+  {
+   "field": "wikidata_record",
+   "value": null,
+   "availability": "not_available",
+   "evidence_ids": [],
+   "note": "no Wikidata item carries this organisation number"
+  },
+  {
+   "field": "careers_page",
+   "value": "https://devoldsregnskap.no/ledige-stillinger/",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-careers"
+   ]
+  },
+  {
+   "field": "job_opening",
+   "value": "Totalkontroll over kundenes økonomi",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-careers-0"
+   ]
+  },
+  {
+   "field": "job_opening",
+   "value": "Bachelor i økonomi og administrasjon",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-careers-1"
+   ]
+  },
+  {
+   "field": "job_opening",
+   "value": "Når man ønsker å bli kontaktet om et produkt eller tjeneste",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-careers-2"
+   ]
+  },
+  {
+   "field": "job_opening",
+   "value": "Ved kjøp av produkter eller tjenester på en nettside",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-careers-3"
+   ]
+  },
+  {
+   "field": "job_opening",
+   "value": "Å gi brukeren tilgang til våre produkter og tjenester",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-careers-4"
+   ]
+  },
+  {
+   "field": "job_opening",
+   "value": "Å kunne ta kontakt for å tilby produkter eller tjenester",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-careers-5"
+   ]
+  },
+  {
+   "field": "job_opening",
+   "value": "Google Tag Manager",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-careers-6"
+   ]
+  },
+  {
+   "field": "job_opening",
+   "value": "Vi bruker Google Tag Manager for å administrere analyse og digitale tjenester",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-careers-7"
+   ]
+  },
+  {
+   "field": "news_page",
+   "value": null,
+   "availability": "not_available",
+   "evidence_ids": [],
+   "note": "no news link found on the verified company site"
+  },
+  {
+   "field": "contact_email",
+   "value": "ann.kristin@devoldsregnskap.no",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-contact"
+   ]
+  },
+  {
+   "field": "contact_email",
+   "value": "emma@devoldsregnskap.no",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-contact"
+   ]
+  },
+  {
+   "field": "contact_email",
+   "value": "firmapost@devoldsregnskap.no",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-contact"
+   ]
+  },
+  {
+   "field": "contact_email",
+   "value": "kn@devoldsregnskap.no",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-contact"
+   ]
+  },
+  {
+   "field": "contact_email",
+   "value": "kristi-annette.aadnanes@devoldsregnskap.no",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-contact"
+   ]
+  },
+  {
+   "field": "contact_phone",
+   "value": "47932143",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-contact"
+   ]
+  },
+  {
+   "field": "contact_phone",
+   "value": "47933724",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-contact"
+   ]
+  },
+  {
+   "field": "contact_phone",
+   "value": "55323250",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-contact"
+   ]
+  },
+  {
+   "field": "contact_phone",
+   "value": "94001254",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-contact"
+   ]
+  },
+  {
+   "field": "contact_phone",
+   "value": "94010221",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-contact"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "id": "ev-registry-0",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[989264087].legal_name",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-1",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[989264087].organisation_number",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-2",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[989264087].legal_form",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-3",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[989264087].legal_form_code",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-4",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[989264087].registered_address",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-5",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[989264087].municipality",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-6",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[989264087].postal_code",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-7",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[989264087].industry_code",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-8",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[989264087].industry",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-10",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[989264087].latest_annual_accounts",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-12",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[989264087].contact_email",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-13",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[989264087].company_status",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-14",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[989264087].incorporation_date",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-live-0",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989264087",
+   "source_class": "official_registry_live",
+   "retrieved_at": "2026-10-17T11:27:21.371140Z",
+   "content_sha256": "1dc0558f9083f4f6ef7cd8c394c0f8d369d3a387f2763966d14050db5a9b8ea3",
+   "claim_span": "body.name",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-financials",
+   "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/989264087",
+   "source_class": "official_annual_accounts",
+   "retrieved_at": "2026-10-17T11:27:21.804340Z",
+   "content_sha256": "3bed207b6fa87ac1b3bb114e45f9bcc6dac1bd4f8e9bbb22c8fcd2f112d35e3f",
+   "claim_span": "records[0]",
+   "reporting_period": "2023-01-01/2023-12-31",
+   "status": "available"
+  },
+  {
+   "id": "ev-roles-0",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989264087/roller",
+   "source_class": "official_roles",
+   "retrieved_at": "2026-10-17T11:27:22.229807Z",
+   "content_sha256": "9d85b0fe6634e08470c112c00792d934b361cff56cc8586adb7ede793bf92794",
+   "claim_span": "roles[0] (LEDE)",
+   "reporting_period": "2026-10-15",
+   "status": "available"
+  },
+  {
+   "id": "ev-roles-1",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989264087/roller",
+   "source_class": "official_roles",
+   "retrieved_at": "2026-10-17T11:27:22.229807Z",
+   "content_sha256": "9d85b0fe6634e08470c112c00792d934b361cff56cc8586adb7ede793bf92794",
+   "claim_span": "roles[1] (REGN)",
+   "reporting_period": "2015-10-28",
+   "status": "available"
+  },
+  {
+   "id": "ev-website",
+   "source_url": "https://devoldsregnskap.no/",
+   "source_class": "registry_linked_company_website",
+   "retrieved_at": "2026-10-17T11:27:34.238319Z",
+   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
+   "claim_span": "final_url",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-website-text",
+   "source_url": "https://devoldsregnskap.no/",
+   "source_class": "registry_linked_company_website",
+   "retrieved_at": "2026-10-17T11:27:34.238319Z",
+   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
+   "claim_span": "main_text_excerpt",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-website-page-0",
+   "source_url": "https://devoldsregnskap.no/",
+   "source_class": "registry_linked_company_website",
+   "retrieved_at": "2026-10-17T11:27:34.238319Z",
+   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
+   "claim_span": "pages[0] https://devoldsregnskap.no/",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-website-page-1",
+   "source_url": "https://devoldsregnskap.no/",
+   "source_class": "registry_linked_company_website",
+   "retrieved_at": "2026-10-17T11:27:34.238319Z",
+   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
+   "claim_span": "pages[1] https://devoldsregnskap.no/om-oss/",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-website-page-2",
+   "source_url": "https://devoldsregnskap.no/",
+   "source_class": "registry_linked_company_website",
+   "retrieved_at": "2026-10-17T11:27:34.238319Z",
+   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
+   "claim_span": "pages[2] https://devoldsregnskap.no/kontakt-oss/",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-website-page-3",
+   "source_url": "https://devoldsregnskap.no/",
+   "source_class": "registry_linked_company_website",
+   "retrieved_at": "2026-10-17T11:27:34.238319Z",
+   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
+   "claim_span": "pages[3] https://devoldsregnskap.no/kontakt-oss/",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-website-page-4",
+   "source_url": "https://devoldsregnskap.no/",
+   "source_class": "registry_linked_company_website",
+   "retrieved_at": "2026-10-17T11:27:34.238319Z",
+   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
+   "claim_span": "pages[4] https://devoldsregnskap.no/ledige-stillinger/",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-careers",
+   "source_url": "https://devoldsregnskap.no/",
+   "source_class": "company_owned_and_wikidata_cc0",
+   "retrieved_at": "2026-10-17T11:27:36.642915Z",
+   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
+   "claim_span": "careers.page_url https://devoldsregnskap.no/ledige-stillinger/",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-careers-0",
+   "source_url": "https://devoldsregnskap.no/",
+   "source_class": "company_owned_and_wikidata_cc0",
+   "retrieved_at": "2026-10-17T11:27:36.642915Z",
+   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
+   "claim_span": "https://devoldsregnskap.no/ledige-stillinger/",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-careers-1",
+   "source_url": "https://devoldsregnskap.no/",
+   "source_class": "company_owned_and_wikidata_cc0",
+   "retrieved_at": "2026-10-17T11:27:36.642915Z",
+   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
+   "claim_span": "https://devoldsregnskap.no/ledige-stillinger/",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-careers-2",
+   "source_url": "https://devoldsregnskap.no/",
+   "source_class": "company_owned_and_wikidata_cc0",
+   "retrieved_at": "2026-10-17T11:27:36.642915Z",
+   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
+   "claim_span": "https://devoldsregnskap.no/ledige-stillinger/",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-careers-3",
+   "source_url": "https://devoldsregnskap.no/",
+   "source_class": "company_owned_and_wikidata_cc0",
+   "retrieved_at": "2026-10-17T11:27:36.642915Z",
+   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
+   "claim_span": "https://devoldsregnskap.no/ledige-stillinger/",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-careers-4",
+   "source_url": "https://devoldsregnskap.no/",
+   "source_class": "company_owned_and_wikidata_cc0",
+   "retrieved_at": "2026-10-17T11:27:36.642915Z",
+   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
+   "claim_span": "https://devoldsregnskap.no/ledige-stillinger/",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-careers-5",
+   "source_url": "https://devoldsregnskap.no/",
+   "source_class": "company_owned_and_wikidata_cc0",
+   "retrieved_at": "2026-10-17T11:27:36.642915Z",
+   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
+   "claim_span": "https://devoldsregnskap.no/ledige-stillinger/",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-careers-6",
+   "source_url": "https://devoldsregnskap.no/",
+   "source_class": "company_owned_and_wikidata_cc0",
+   "retrieved_at": "2026-10-17T11:27:36.642915Z",
+   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
+   "claim_span": "https://devoldsregnskap.no/ledige-stillinger/",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-careers-7",
+   "source_url": "https://devoldsregnskap.no/",
+   "source_class": "company_owned_and_wikidata_cc0",
+   "retrieved_at": "2026-10-17T11:27:36.642915Z",
+   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
+   "claim_span": "https://devoldsregnskap.no/ledige-stillinger/",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-contact",
+   "source_url": "https://devoldsregnskap.no/",
+   "source_class": "company_owned_and_wikidata_cc0",
+   "retrieved_at": "2026-10-17T11:27:36.642915Z",
+   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
+   "claim_span": "https://devoldsregnskap.no/kontakt-oss/",
+   "reporting_period": null,
+   "status": "available"
+  }
+ ],
+ "summary": {
+  "headline": "SMESTAD HOLDING AS (org. 989264087, Aksjeselskap). It operates in Uoppgitt, registered in BERGEN.",
+  "sentences": [
+   {
+    "text": "SMESTAD HOLDING AS (org. 989264087, Aksjeselskap). It operates in Uoppgitt, registered in BERGEN.",
+    "evidence_ids": [
+     "ev-registry-0"
+    ]
+   },
+   {
+    "text": "The company describes its work this way: \"Skip to main content\"",
+    "evidence_ids": [
+     "ev-website-text"
+    ]
+   },
+   {
+    "text": "Filed accounts for 2025 show revenue NOK 0, annual result NOK 0.",
+    "evidence_ids": [
+     "ev-financials"
+    ]
+   },
+   {
+    "text": "Øyvind Per Norang is styrets leder. The register also lists 1 other active role holders.",
+    "evidence_ids": [
+     "ev-roles-0"
+    ]
+   },
+   {
+    "text": "Verified company site: https://devoldsregnskap.no/",
+    "evidence_ids": [
+     "ev-website"
+    ]
+   },
+   {
+    "text": "Openings published on the careers page: Totalkontroll over kundenes økonomi; Bachelor i økonomi og administrasjon; Når man ønsker å bli kontaktet om et produkt eller tjeneste; Ved kjøp av produkter eller tjenester på en nettside.",
+    "evidence_ids": [
+     "ev-careers-0"
+    ]
+   }
+  ],
+  "unknowns": [
+   {
+    "field": "registered_workplace",
+    "state": "not_available",
+    "reason": "the subunit endpoint answered and lists no registered workplace for this entity"
+   },
+   {
+    "field": "dated_news_item",
+    "state": "not_available",
+    "reason": "no claim produced for this field: the source that would carry it did not answer"
+   }
+  ],
+  "method": "deterministic_template_v1",
+  "generated_from_claims": 52
+ },
+ "changes": [],
+ "errors": [],
+ "operations": {
+  "requests": 19,
+  "runtime_ms": 15708,
+  "third_party_cost_usd": 0,
+  "bytes_received": 1537231,
+  "latencies": {
+   "p50_ms": 820,
+   "max_ms": 2102
+  }
+ },
+ "availability": {
+  "available": 49,
+  "not_available": 3
+ },
+ "run": {
+  "run_id": "smoke5-final",
+  "started_at": "2026-10-17T11:26:58.867274Z",
+  "completed_at": "2026-10-17T11:27:36.643099Z",
+  "terminal_status": "completed"
+ }
+}

@@ -1,0 +1,57 @@
+{
+  "run_id": "smoke5-final",
+  "started_at": "2026-10-17T11:26:58.867274Z",
+  "completed_at": "2026-10-17T11:27:46.475567Z",
+  "wall_seconds": 47.61,
+  "input_count": 100,
+  "emitted_envelopes": 100,
+  "validation": {
+    "passed": true,
+    "checks": {
+      "one_envelope_per_input": true,
+      "unique_organisation_numbers": true,
+      "no_missing_rows": true
+    }
+  },
+  "state_counts": {
+    "complete": 100
+  },
+  "module_state_counts": {
+    "complete": 530,
+    "not_found": 271,
+    "source_error": 9,
+    "not_applicable": 2
+  },
+  "claim_states": {
+    "available": 2652,
+    "not_available": 253,
+    "failed": 9,
+    "not_applicable": 2
+  },
+  "operations": {
+    "requests": 650,
+    "third_party_cost_usd": 0,
+    "p50_ms": 2350,
+    "p95_ms": 11323,
+    "max_ms": 26227,
+    "resumed": 0
+  },
+  "precision": {
+    "available_claims": 2652,
+    "available_claims_with_evidence_ids": 2652,
+    "available_claims_with_resolvable_evidence": 2652,
+    "share_available_claims_cited": 1.0,
+    "share_available_claims_resolvable": 1.0,
+    "evidence_rows": 2056,
+    "share_evidence_rows_with_url": 1.0,
+    "share_evidence_rows_with_content_sha256": 1.0,
+    "share_evidence_rows_with_retrieval_time": 1.0
+  },
+  "sources": [
+    "brreg_enhetsregisteret",
+    "brreg_regnskapsregisteret",
+    "company_owned_sites",
+    "wikidata_cc0"
+  ],
+  "models": "none (deterministic extraction and templating)"
+}
