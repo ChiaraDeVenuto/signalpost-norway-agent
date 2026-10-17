@@ -134,7 +134,10 @@ check a claim without leaving the page.
 ## Numbers from the 100-company smoke run
 
 100 inputs, 100 envelopes, 0 missing rows, 650 requests, 47.6 s wall clock, 29.2 claims per
-company, 2,056 evidence rows. Every published claim carries resolvable evidence; every evidence
+company, 2,056 evidence rows.
+
+At ten times the batch, on 1,000 companies with eight workers: 1,000 envelopes, 0 missing rows,
+6,353 requests, 485.2 s, same $0.00, and every envelope inside its per-company budget. Every published claim carries resolvable evidence; every evidence
 row carries a URL, a content hash and a retrieval time. Fact families and their hit rates are
 in `docs/SMOKE-TEST.md`, along with the machine-readable report and three sample envelopes.
 

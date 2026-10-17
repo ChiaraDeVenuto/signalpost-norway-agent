@@ -98,3 +98,43 @@ one batched Wikidata query.
 ---
 
 *This document was developed with the assistance of generative AI tools for research, structuring, and content generation. Final content has been reviewed and validated by the author. Full compliance with: Reg. (EU) 2024/1689 (AI Act) Art. 50 · Italian Law 132/2025 Art. 13 · EU Code of Practice on AI Transparency (2026) · U.S. AI Labeling Act (S. 4915) · U.S. H.R.8479 · U.S. Executive Order on AI (Dec 2025) · California TFAIA & AB 2013 (eff. Jan 2026).*
+
+## 1,000-company scale run
+
+Same code, same flags, ten times the batch. `batches/scale-1000.jsonl`, run 2026-10-17, eight
+workers to keep the load on Brønnøysundregistrene polite.
+
+| Measure | Value |
+|---|---|
+| Input organisation numbers | 1,000 |
+| Envelopes emitted | 1,000 |
+| Missing rows | 0 |
+| Wall clock | 485.2 s |
+| HTTP requests | 6,353 |
+| Third-party cost | $0.00 |
+| Latency p50 / p95 / max | 2,332 ms / 11,840 ms / 31,195 ms per company |
+| Claims | 29.4 per company, 29,400 in total |
+| Evidence rows | 20,808 |
+
+| Fact family | Companies with a published value |
+|---|---|
+| Legal name | 994/1,000 |
+| Annual result, total assets | 997/1,000 |
+| Equity | 995/1,000 |
+| Role holders | 994/1,000 |
+| Debt | 989/1,000 |
+| Operating result | 960/1,000 |
+| Revenue | 735/1,000 |
+| Registered workplaces | 742/1,000 |
+| Contact address from the registry row | 247/1,000 |
+| Verified company site | 163/1,000 |
+| Group subsidiaries | 69/1,000 |
+| Open roles on a careers page | 26/1,000 |
+
+Module states across the batch: 5,299 `complete`, 2,734 `not_found`, 59 `source_error`, 47
+`not_applicable`, 5 refused by `robots.txt`, 2 blocked by a host policy. The six companies
+without a legal name are numbers the register itself does not answer, and their envelopes say
+so instead of inventing a name.
+
+At this scale the run stays inside the per-company budget for every company: no envelope
+reports an exhausted budget, and the slowest single company took 31.2 s.

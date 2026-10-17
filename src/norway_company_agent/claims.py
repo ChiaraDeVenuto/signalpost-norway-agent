@@ -162,7 +162,8 @@ def build_claims(profile: dict[str, Any]) -> tuple[list[dict[str, Any]], list[di
                     continue
                 claim(field, amount, "available", evidence_id, note="NOK, period %s" % reporting_period if reporting_period else "NOK")
         else:
-            claim("annual_accounts", None, state, None, note=financials.get("note") or "no filed accounts returned for this entity")
+            evidence_id = add_evidence("ev-financials-unavailable", financials, "records[]")
+            claim("annual_accounts", None, state, evidence_id, note=financials.get("note") or "no filed accounts returned for this entity")
 
     history = evidence_records.get("financial_history")
     if history:
@@ -174,7 +175,7 @@ def build_claims(profile: dict[str, Any]) -> tuple[list[dict[str, Any]], list[di
             for year in years[:6]:
                 claim("annual_account_pdf_%s" % year, BRREG_PDF(history.get("source_url"), year), "available", evidence_id)
         else:
-            claim("annual_account_years", None, _state(history), None)
+            claim("annual_account_years", None, _state(history), add_evidence("ev-financial-history-unavailable", history, "years"))
 
     roles = evidence_records.get("roles")
     if roles:
