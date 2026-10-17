@@ -6,8 +6,10 @@ the verified company site and whatever the company publishes about its own activ
 value carries a source URL, a retrieval time and a content hash. A number the sources did not
 give stays missing and says why.
 
-No API key exists in this repository. No model is called. The whole 100-company smoke run cost
-$0.00 and finished in 47.6 seconds.
+The runner needs no API key and calls no model. The whole 100-company smoke run cost $0.00 and
+finished in 47.6 seconds. One optional script inherited from the starter kit,
+`scripts/run_brave_discovery.py`, will read a `BRAVE_SEARCH_API_KEY` from your environment if you
+choose to run it; `run_agent.py` never touches it.
 
 ## Run it
 
