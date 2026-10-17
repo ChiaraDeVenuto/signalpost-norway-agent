@@ -7,7 +7,7 @@ value carries a source URL, a retrieval time and a content hash. A number the so
 give stays missing and says why.
 
 The runner needs no API key and calls no model. The whole 100-company smoke run cost $0.00 and
-finished in 47.6 seconds. One optional script inherited from the starter kit,
+finished in 47.5 seconds. One optional script inherited from the starter kit,
 `scripts/run_brave_discovery.py`, will read a `BRAVE_SEARCH_API_KEY` from your environment if you
 choose to run it; `run_agent.py` never touches it.
 
@@ -52,6 +52,9 @@ Claim availability uses only `available`, `not_available`, `blocked`, `not_appli
 - `available` means a source answered and the value is attached to a row in `evidence`.
 - `not_available` means the source answered and returned nothing for this field. A checked
   careers page with no open roles is `not_available`, and that is a finding.
+- `ambiguous` means the agent found a candidate the identity evidence does not support, for
+  example a website reached only through the contact e-mail domain with no legal-name evidence
+  on the page. The candidate is reported with its score instead of being asserted.
 - `blocked` means the source refused us or its `robots.txt` forbids our user agent.
 - `failed` means the request itself broke: DNS, certificate, timeout, rate limit.
 
@@ -71,10 +74,13 @@ profile is keyed on the organisation number:
 4. A website candidate comes from the registry row itself: the `hjemmeside` field, the contact
    address the company filed with the same row, or the Wikidata item from step 3. Hosts are
    never guessed from a company name.
-5. Whatever the crawl returns still has to pass the identity gate before a single value is
+5. Whatever the crawl returns still has to pass the identity gate before a single page value is
    published. The gate wants a strong name match or the organisation number in the page, and it
-   checks every internal page against the registrant domain. A weak match produces `blocked`
-   with the score and the method in the note.
+   checks every internal page against the registrant domain. The URL itself is published when
+   the registry lists it as the homepage, or when an e-mail-domain candidate carries at least
+   part of the legal name on the page or in the host. A candidate with no name evidence at all
+   comes back as `ambiguous` with the score and the method in the note, and nothing from that
+   page enters the profile.
 
 Subunits, parents and subsidiaries get the same treatment through the group and subunit
 endpoints, so a franchisee never inherits a franchisor's facts.
@@ -83,7 +89,7 @@ endpoints, so a franchisee never inherits a franchisor's facts.
 
 | Family | Source | Class |
 |---|---|---|
-| Identity, addresses, industry, employees, status, incorporation | Brønnøysundregistrene bulk CSV and `enhetsregisteret` | official registry |
+| Identity, addresses, industry, employees, status, incorporation, registration and articles dates, purpose, activity, sector, language form, share capital, VAT flag, parent number, contact e-mail, phone | Brønnøysundregistrene bulk CSV and `enhetsregisteret` | official registry |
 | Filed accounts: revenue, operating result, profit before tax, annual result, assets, equity, debt, reporting period | `regnskapsregisteret` | official filing |
 | Annual report PDF copies | `regnskapsregisteret` (opt-in `--with-history`, 30 req/min) | official filing |
 | Directors, CEO, chair, role change dates | `enhetsregisteret/roller` | official registry |
@@ -135,12 +141,13 @@ check a claim without leaving the page.
 
 ## Numbers from the 100-company smoke run
 
-100 inputs, 100 envelopes, 0 missing rows, 650 requests, 47.6 s wall clock, 29.2 claims per
-company, 2,056 evidence rows.
+100 inputs, 100 envelopes, 0 missing rows, 650 requests, 47.5 s wall clock, 36.9 claims per
+company, 2,830 evidence rows.
 
-At ten times the batch, on 1,000 companies with eight workers: 1,000 envelopes, 0 missing rows,
-6,353 requests, 485.2 s, same $0.00, and every envelope inside its per-company budget. Every published claim carries resolvable evidence; every evidence
-row carries a URL, a content hash and a retrieval time. Fact families and their hit rates are
+At ten times the batch, on 1,000 companies with ten workers: 1,000 envelopes, 0 missing rows,
+6,341 requests, 393.6 s, same $0.00, and every envelope inside its per-company budget. Every
+published claim carries resolvable evidence, and every evidence row carries a source URL and a
+retrieval time. Fact families and their hit rates are
 in `docs/SMOKE-TEST.md`, along with the machine-readable report and three sample envelopes.
 
 ## Layout
@@ -156,7 +163,7 @@ src/norway_company_agent/
   claims.py                 profile to claims plus evidence rows
   synthesis.py              deterministic summary and refresh diff
   batch.py, evidence.py, http.py, sampling.py, identity.py   kit modules
-tests/                      113 tests, offline
+tests/                      122 tests, offline
 batches/smoke-100.jsonl     the smoke batch
 docs/                       sources, limits, smoke test, samples
 ```

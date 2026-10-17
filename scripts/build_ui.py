@@ -14,8 +14,8 @@ from pathlib import Path
 from typing import Any
 
 GROUPS = [
-    ("overview", "Company", ["legal_name", "organisation_number", "legal_form", "registered_address", "municipality", "postal_code", "industry", "industry_code", "registered_employees", "latest_annual_accounts", "company_status", "incorporation_date", "registry_website", "official_website"]),
-    ("financials", "Financials", ["revenue", "operating_result", "profit_before_tax", "annual_result", "assets", "equity", "debt", "annual_account_years"]),
+    ("overview", "Company", ["legal_name", "organisation_number", "legal_form", "registered_address", "postal_address", "municipality", "postal_code", "industry", "industry_code", "registered_employees", "latest_annual_accounts", "company_status", "incorporation_date", "register_registration_date", "articles_adopted_date", "registered_purpose", "registered_activity", "registered_sector", "language_form", "vat_registered", "parent_organisation_number", "registry_website", "official_website"]),
+    ("financials", "Financials", ["share_capital", "revenue", "operating_result", "profit_before_tax", "annual_result", "assets", "equity", "debt", "annual_account_years"]),
     ("leadership", "Leadership", ["leadership_role"]),
     ("locations", "Locations", ["registered_workplace"]),
     ("footprint", "Public activity", ["careers_page", "job_opening", "news_page", "dated_news_item", "contact_email", "contact_phone", "social_handle_facebook", "social_handle_instagram", "social_handle_x", "social_handle_youtube", "social_handle_linkedin", "wikipedia_article_nb", "wikipedia_article_en", "company_page", "company_description", "company_description_from_site"]),

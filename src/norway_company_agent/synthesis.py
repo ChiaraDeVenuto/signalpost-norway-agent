@@ -131,6 +131,11 @@ def build_summary(profile: dict[str, Any], claims: list[dict[str, Any]]) -> dict
         )
 
     description = _value(claims, "company_description") or _value(claims, "company_description_from_site")
+
+    purpose = _value(claims, "registered_purpose")
+    if purpose:
+        sentences.append({"text": "The registered purpose reads: \"%s\"" % str(purpose)[:300], "evidence_ids": _ids(claims, "registered_purpose")})
+
     if description:
         sentences.append({"text": "The company describes its work this way: \"%s\"" % str(description)[:300], "evidence_ids": _ids(claims, "company_description") or _ids(claims, "company_description_from_site")})
 
@@ -152,6 +157,13 @@ def build_summary(profile: dict[str, Any], claims: list[dict[str, Any]]) -> dict
         )
     elif latest_year:
         sentences.append({"text": "Annual accounts are on file for %s; no figures were returned by the account endpoint." % latest_year, "evidence_ids": _ids(claims, "latest_annual_accounts")})
+
+    capital = _value(claims, "share_capital")
+    if isinstance(capital, dict):
+        amount = _money(capital.get("amount"))
+        if amount:
+            kind = {"Aksjekapital": "share capital", "Ansvarskapital": "contributed capital", "Organisasjonskapital": "organisational capital"}.get(str(capital.get("type") or ""), "capital")
+            sentences.append({"text": "Registered %s: %s." % (kind, amount), "evidence_ids": _ids(claims, "share_capital")})
 
     leaders = [c.get("value") for c in claims if c.get("field") == "leadership_role" and c.get("availability") == "available"]
     if leaders:
@@ -179,9 +191,11 @@ def build_summary(profile: dict[str, Any], claims: list[dict[str, Any]]) -> dict
             }
         )
 
-    website = _value(claims, "official_website")
-    if website:
-        sentences.append({"text": "Verified company site: %s" % website, "evidence_ids": _ids(claims, "official_website")})
+    website_claims = [c for c in claims if c.get("field") == "official_website" and c.get("availability") == "available" and c.get("value")]
+    if website_claims:
+        lead = website_claims[0]
+        label = "Verified company site" if float(lead.get("confidence") or 0) >= 0.9 else "Homepage listed by the registry"
+        sentences.append({"text": "%s: %s" % (label, lead.get("value")), "evidence_ids": _ids(claims, "official_website")})
 
     jobs = [c for c in claims if c.get("field") == "job_opening" and c.get("availability") == "available"]
     if jobs:

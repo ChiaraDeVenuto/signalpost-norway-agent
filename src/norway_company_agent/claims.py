@@ -7,6 +7,7 @@ explicit availability state.
 """
 from __future__ import annotations
 
+import urllib.parse
 from typing import Any
 
 STATE_MAP = {
@@ -74,6 +75,54 @@ def _period(record: dict[str, Any] | None) -> str | None:
     return record.get("effective_at") or record.get("as_of")
 
 
+def _text(value: Any, limit: int = 400) -> str | None:
+    """Free-text registry fields arrive with newlines and double spaces; publish them as one line."""
+    if value is None:
+        return None
+    joined = " ".join(str(value).split())
+    return joined[:limit] if joined else None
+
+
+def _flag(value: Any) -> bool | None:
+    if value is None:
+        return None
+    text = str(value).strip().casefold()
+    if text in {"true", "1", "yes", "ja"}:
+        return True
+    if text in {"false", "0", "no", "nei"}:
+        return False
+    return None
+
+
+def _share_capital(raw: dict[str, Any]) -> dict[str, Any] | None:
+    amount = raw.get("kapital.belop")
+    if amount in (None, ""):
+        return None
+    try:
+        payload: dict[str, Any] = {"amount": float(amount)}
+    except (TypeError, ValueError):
+        return None
+    for source, destination in (("kapital.valuta", "currency"), ("kapital.type", "type"), ("kapital.antallAksjer", "number_of_shares")):
+        value = raw.get(source)
+        if value in (None, ""):
+            continue
+        payload[destination] = int(value) if destination == "number_of_shares" and str(value).lstrip("-").isdigit() else value
+    return payload
+
+
+def _postal_address(raw: dict[str, Any]) -> str | None:
+    street = _text(_address(raw.get("postadresse.adresse")))
+    place = " ".join(part for part in (_text(raw.get("postadresse.postnummer")), _text(raw.get("postadresse.poststed"))) if part)
+    parts = [part for part in (street, place) if part]
+    if not parts:
+        return None
+    joined = ", ".join(parts)
+    country = _text(raw.get("postadresse.land"))
+    if country and country.casefold() != "norge":
+        joined = "%s, %s" % (joined, country)
+    return joined
+
+
 def build_claims(profile: dict[str, Any]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     evidence_records = profile.get("evidence", {})
     claims: list[dict[str, Any]] = []
@@ -105,28 +154,57 @@ def build_claims(profile: dict[str, Any]) -> tuple[list[dict[str, Any]], list[di
     registry = evidence_records.get("registry")
     if registry and registry.get("status") == "available":
         raw = registry.get("value") or {}
+        org_key = raw.get("organisasjonsnummer")
+        purpose = _text(raw.get("vedtektsfestetFormaal"))
+        activity = _text(raw.get("aktivitet"))
+        if activity and purpose and activity.casefold() == purpose.casefold():
+            activity = None
+        # (claim field, source column in the bulk snapshot, value)
         identity_map = (
-            ("legal_name", raw.get("navn")),
-            ("organisation_number", raw.get("organisasjonsnummer")),
-            ("legal_form", raw.get("organisasjonsform.beskrivelse")),
-            ("legal_form_code", raw.get("organisasjonsform.kode")),
-            ("registered_address", _address(raw.get("forretningsadresse.adresse"))),
-            ("municipality", raw.get("forretningsadresse.kommune")),
-            ("postal_code", raw.get("forretningsadresse.postnummer")),
-            ("industry_code", raw.get("naeringskode1.kode")),
-            ("industry", raw.get("naeringskode1.beskrivelse")),
-            ("registered_employees", int(raw["antallAnsatte"]) if str(raw.get("antallAnsatte") or "").isdigit() else None),
-            ("latest_annual_accounts", raw.get("sisteInnsendteAarsregnskap")),
-            ("registry_website", raw.get("hjemmeside") or None),
-            ("contact_email", raw.get("epostadresse") or None),
-            ("company_status", "bankrupt" if raw.get("konkurs") == "true" else "liquidating" if raw.get("underAvvikling") == "true" else "active"),
-            ("incorporation_date", raw.get("stiftelsesdato") or None),
+            ("legal_name", "navn", raw.get("navn")),
+            ("organisation_number", "organisasjonsnummer", org_key),
+            ("legal_form", "organisasjonsform.beskrivelse", raw.get("organisasjonsform.beskrivelse")),
+            ("legal_form_code", "organisasjonsform.kode", raw.get("organisasjonsform.kode")),
+            ("registered_address", "forretningsadresse.adresse", _address(raw.get("forretningsadresse.adresse"))),
+            ("municipality", "forretningsadresse.kommune", raw.get("forretningsadresse.kommune")),
+            ("postal_code", "forretningsadresse.postnummer", raw.get("forretningsadresse.postnummer")),
+            ("industry_code", "naeringskode1.kode", raw.get("naeringskode1.kode")),
+            ("industry", "naeringskode1.beskrivelse", raw.get("naeringskode1.beskrivelse")),
+            ("registered_employees", "antallAnsatte", int(raw["antallAnsatte"]) if str(raw.get("antallAnsatte") or "").isdigit() else None),
+            ("latest_annual_accounts", "sisteInnsendteAarsregnskap", raw.get("sisteInnsendteAarsregnskap")),
+            ("registry_website", "hjemmeside", raw.get("hjemmeside") or None),
+            ("contact_email", "epostadresse", raw.get("epostadresse") or None),
+            ("company_status", "konkurs, underAvvikling", "bankrupt" if raw.get("konkurs") == "true" else "liquidating" if raw.get("underAvvikling") == "true" else "active"),
+            ("incorporation_date", "stiftelsesdato", raw.get("stiftelsesdato") or None),
+            ("share_capital", "kapital.belop", _share_capital(raw)),
+            ("registered_purpose", "vedtektsfestetFormaal", purpose),
+            ("registered_activity", "aktivitet", activity),
+            ("registered_sector", "institusjonellSektorkode.beskrivelse", _text(raw.get("institusjonellSektorkode.beskrivelse"))),
+            ("articles_adopted_date", "vedtektsdato", _text(raw.get("vedtektsdato"))),
+            ("register_registration_date", "registreringsdatoenhetsregisteret", _text(raw.get("registreringsdatoenhetsregisteret"))),
+            ("language_form", "maalform", _text(raw.get("maalform"))),
+            ("postal_address", "postadresse.*", _postal_address(raw)),
+            ("parent_organisation_number", "overordnetEnhet", _text(raw.get("overordnetEnhet"))),
         )
-        for index, (field, value) in enumerate(identity_map):
+        for index, (field, column, value) in enumerate(identity_map):
             if value in (None, "", []):
                 continue
-            evidence_id = add_evidence("ev-registry-%d" % index, registry, "row[%s].%s" % (raw.get("organisasjonsnummer"), field))
+            evidence_id = add_evidence("ev-registry-%d" % index, registry, "row[%s].%s" % (org_key, column))
             claim(field, value, "available", evidence_id)
+
+        vat = _flag(raw.get("registrertIMvaRegisteret"))
+        if vat is not None:
+            evidence_id = add_evidence("ev-registry-vat", registry, "row[%s].registrertIMvaRegisteret" % org_key)
+            claim("vat_registered", vat, "available", evidence_id)
+
+        seen_phones: set[str] = set()
+        for offset, column in enumerate(("telefon", "mobil")):
+            phone = _text(raw.get(column))
+            if not phone or phone in seen_phones:
+                continue
+            seen_phones.add(phone)
+            evidence_id = add_evidence("ev-registry-phone-%d" % offset, registry, "row[%s].%s" % (org_key, column))
+            claim("contact_phone", phone, "available", evidence_id, note="registered in the national register")
 
     live = evidence_records.get("registry_live")
     if live and live.get("status") == "available":
@@ -250,18 +328,73 @@ def build_claims(profile: dict[str, Any]) -> tuple[list[dict[str, Any]], list[di
         value = website.get("value") or {}
         if website.get("status") == "available":
             assessment = value.get("identity_assessment") or {}
+            score = float(assessment.get("score") or 0.9)
+            reasons = " ".join(str(item) for item in (assessment.get("reasons") or [])).casefold()
+            parked = score <= 0.1 or any(marker in reasons for marker in ("parked", "for sale", "placeholder"))
+            seed_note = str(value.get("seed_source") or "")
+            mail_seeded = "e-mail" in seed_note.casefold()
+            gate_passed = bool(assessment.get("publishable"))
+            # Two sources justify asserting a site: the gate confirmed the exact legal entity, or
+            # the registry itself lists the URL as the company homepage. A URL reached only through
+            # the contact e-mail domain needs at least partial legal-name evidence on the page or in
+            # the host; with no name evidence at all the claim stays unpublished.
+            trusted = (not parked) and (gate_passed or not mail_seeded or score >= 0.65)
             note = str(assessment.get("method") or "")
-            if value.get("seed_source"):
-                note = ("url seeded from %s; %s" % (value["seed_source"], note)).strip("; ")
-            evidence_id = add_evidence("ev-website", website, "final_url")
-            claim("official_website", value.get("final_url"), "available", evidence_id, confidence=float(assessment.get("score") or 0.9), note=note or None)
-            if value.get("description"):
-                claim("company_description", value.get("description"), "available", add_evidence("ev-website-description", website, "meta[name=description]"))
-            elif value.get("main_text_excerpt"):
-                claim("company_description", value.get("main_text_excerpt")[:400], "available", add_evidence("ev-website-text", website, "main_text_excerpt"))
-            for index, page in enumerate(value.get("pages") or []):
-                evidence_id = add_evidence("ev-website-page-%d" % index, website, "pages[%d] %s" % (index, page.get("url")))
-                claim("company_page", {"url": page.get("url"), "title": page.get("title")}, "available", evidence_id)
+            if seed_note:
+                note = ("url seeded from %s; %s" % (seed_note, note)).strip("; ")
+
+            def _host(url: Any) -> str:
+                text = str(url or "")
+                if not text:
+                    return ""
+                if "://" not in text:
+                    text = "https://" + text
+                return (urllib.parse.urlparse(text).hostname or "").casefold().removeprefix("www.")
+
+            site_host = _host(value.get("final_url"))
+            official_sites = [
+                row for row in claims
+                if row.get("field") == "official_website" and row.get("availability") == "available" and row.get("value")
+            ]
+            listed_sites = official_sites + [
+                row for row in claims
+                if row.get("field") == "registry_website" and row.get("availability") == "available" and row.get("value")
+            ]
+            same_host_official = bool(site_host) and any(_host(row.get("value")) == site_host for row in official_sites)
+            same_host_listed = bool(site_host) and any(_host(row.get("value")) == site_host for row in listed_sites)
+            # A registry-supplied URL for the same host needs no second claim; a weak, registry-listed
+            # page only earns a claim when no other website claim exists for this company.
+            redundant = same_host_official or (not gate_passed and bool(official_sites))
+            if parked:
+                claim(
+                    "official_website",
+                    None,
+                    "not_available",
+                    add_evidence("ev-website-quarantine", website, "final_url"),
+                    note="the captured page is parked or a placeholder, so the url is not published as the company website",
+                )
+            elif not trusted and not same_host_listed:
+                claim(
+                    "official_website",
+                    value.get("final_url"),
+                    "ambiguous",
+                    add_evidence("ev-website-quarantine", website, "final_url"),
+                    confidence=score,
+                    note="url reached only through the registry contact e-mail domain and the page carried no legal-name or organisation-number evidence for this entity; reported as ambiguous, not asserted",
+                )
+            elif not trusted:
+                # the registry already publishes this host, so the registry claim stands on its own
+                pass
+            elif not redundant:
+                claim("official_website", value.get("final_url"), "available", add_evidence("ev-website", website, "final_url"), confidence=score, note=note or None)
+            if trusted:
+                if value.get("description"):
+                    claim("company_description", value.get("description"), "available", add_evidence("ev-website-description", website, "meta[name=description]"))
+                elif value.get("main_text_excerpt"):
+                    claim("company_description", value.get("main_text_excerpt")[:400], "available", add_evidence("ev-website-text", website, "main_text_excerpt"))
+                for index, page in enumerate(value.get("pages") or []):
+                    evidence_id = add_evidence("ev-website-page-%d" % index, website, "pages[%d] %s" % (index, page.get("url")))
+                    claim("company_page", {"url": page.get("url"), "title": page.get("title")}, "available", evidence_id)
         else:
             claim("official_website", None, _state(website), None, note=website.get("note"))
 
@@ -317,7 +450,14 @@ def build_claims(profile: dict[str, Any]) -> tuple[list[dict[str, Any]], list[di
                 for phone in contact.get("phones") or []:
                     claim("contact_phone", phone, "available", evidence_id)
             else:
-                claim("contact_email", None, "not_available" if str(contact.get("state")) in ("not_checked", "None") else contact.get("state"), None, note="no contact address was published on the verified company site")
+                state = str(contact.get("state") or "")
+                if state == "blocked":
+                    mapped = "blocked"
+                elif state in {"failed", "source_error", "timeout"}:
+                    mapped = "failed"
+                else:
+                    mapped = "not_available"
+                claim("contact_email", None, mapped, None, note="no contact address was published on the verified company site")
 
             for index, handle in enumerate(value.get("social_handles") or []):
                 claim("social_handle_%s" % handle.get("platform"), handle.get("url") or handle.get("handle"), "available", add_evidence("ev-footprint-social-%d" % index, footprint, handle.get("source")))

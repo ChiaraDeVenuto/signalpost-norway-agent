@@ -7,10 +7,22 @@ Everything below is a known boundary. Each one has a consequence you can check i
 In the 100-company smoke batch, 7 companies had a homepage in the registry field, and 26 had a
 contact address the company filed itself. That second number is the reason the agent turns a
 registry e-mail address into a website candidate and then runs the identity gate on whatever
-comes back. It lifts verified sites to roughly one company in seven. The remaining companies
-have no site we are allowed to trust, so their profiles stop at the registry, the accounts and
-the role register. That is the real ceiling for private `AS` companies, and it is the same
-ceiling for every agent in this challenge.
+comes back. It lifts published sites to 10 companies in 100, with 5 more candidates reported as
+`ambiguous` instead of being asserted. The remaining companies have no site we are allowed to
+trust, so their profiles stop at the registry, the accounts and the role register. That is the
+real ceiling for private `AS` companies, and it is the same ceiling for every agent in this
+challenge.
+
+## A contact e-mail domain is a lead, not proof
+
+Turning the address the company filed into a host recovers sites the registry never listed. It
+also produces hosts that belong to an agency, a web shop or a brand the register does not
+mention, so the agent separates three outcomes. A page that carries the legal name or the
+organisation number is published with the gate score attached. A page with no name evidence at
+all is reported with availability `ambiguous`, the score and the method, and nothing from that
+page enters the profile. A parked or for-sale page produces `not_available` with the reason. In
+the smoke batch this split 15 fetched candidates into 10 published sites and 5 ambiguous ones.
+Coverage loses a little, and every asserted claim keeps its support.
 
 ## Wikidata coverage is thin for private companies
 

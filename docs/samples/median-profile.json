@@ -1,59 +1,59 @@
 {
- "run_id": "smoke5-final",
- "organisation_number": "999111173",
+ "run_id": "smoke-final",
+ "organisation_number": "815699912",
  "state": "complete",
- "started_at": "2026-10-17T11:26:58.867274Z",
- "completed_at": "2026-10-17T11:27:20.934902Z",
+ "started_at": "2026-10-17T16:34:09.131376Z",
+ "completed_at": "2026-10-17T16:34:35.501013Z",
  "modules": {
   "financials": {
    "state": "complete",
    "retry_count": 0,
-   "final_timestamp": "2026-10-17T11:27:18.953286Z"
+   "final_timestamp": "2026-10-17T16:34:34.212251Z"
   },
   "group": {
    "state": "not_found",
    "retry_count": 0,
-   "final_timestamp": "2026-10-17T11:27:19.964369Z"
+   "final_timestamp": "2026-10-17T16:34:35.054586Z"
   },
   "locations": {
    "state": "complete",
    "retry_count": 0,
-   "final_timestamp": "2026-10-17T11:27:20.417523Z"
+   "final_timestamp": "2026-10-17T16:34:35.500750Z"
   },
   "registry": {
    "state": "complete",
    "retry_count": 0,
-   "final_timestamp": "2026-10-17T11:27:18.107579Z"
+   "final_timestamp": "2026-10-17T16:34:33.339691Z"
   },
   "registry_live": {
    "state": "complete",
    "retry_count": 0,
-   "final_timestamp": "2026-10-17T11:27:18.506036Z"
+   "final_timestamp": "2026-10-17T16:34:33.775530Z"
   },
   "roles": {
    "state": "complete",
    "retry_count": 0,
-   "final_timestamp": "2026-10-17T11:27:19.509582Z"
+   "final_timestamp": "2026-10-17T16:34:34.640614Z"
   },
   "website": {
-   "state": "source_error",
+   "state": "not_found",
    "retry_count": 0,
-   "final_timestamp": "2026-10-17T11:27:20.934572Z"
+   "final_timestamp": "2026-10-17T16:34:35.500836Z"
   },
   "wikidata": {
    "state": "not_found",
    "retry_count": 0,
-   "final_timestamp": "2026-10-17T11:26:58.867193Z"
+   "final_timestamp": "2026-10-17T16:34:09.131283Z"
   }
  },
  "profile": {
-  "organisation_number": "999111173",
-  "name": "RØDMYRLIA 39 AS",
+  "organisation_number": "815699912",
+  "name": "RAGD AS",
   "legal_form": "AS",
   "employees": null,
-  "municipality": "NOTODDEN",
-  "industry_label": "Utleie av egen eller leid fast eiendom",
-  "website": "https://bakkeneiendom.no",
+  "municipality": "HURDAL",
+  "industry_label": "Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler",
+  "website": "",
   "latest_submitted_accounts": "2025",
   "evidence": {
    "registry": {
@@ -62,14 +62,14 @@
     "source_type": "official_registry_bulk",
     "source_class": "official_registry_bulk",
     "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-    "retrieved_at": "2026-10-17T11:27:18.107579Z",
+    "retrieved_at": "2026-10-17T16:34:33.339691Z",
     "value": {
-     "organisasjonsnummer": "999111173",
-     "navn": "RØDMYRLIA 39 AS",
+     "organisasjonsnummer": "815699912",
+     "navn": "RAGD AS",
      "organisasjonsform.kode": "AS",
      "organisasjonsform.beskrivelse": "Aksjeselskap",
-     "naeringskode1.kode": "68.200",
-     "naeringskode1.beskrivelse": "Utleie av egen eller leid fast eiendom",
+     "naeringskode1.kode": "47.110",
+     "naeringskode1.beskrivelse": "Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler",
      "naeringskode2.kode": "",
      "naeringskode2.beskrivelse": "",
      "naeringskode3.kode": "",
@@ -81,9 +81,9 @@
      "registreringsdatoAntallAnsatteEnhetsregisteret": "",
      "registreringsdatoantallansatteNAVAaregisteret": "",
      "hjemmeside": "",
-     "epostadresse": "arve.bakken@bakkeneiendom.no",
-     "telefon": "",
-     "mobil": "916 88 115",
+     "epostadresse": "er-bleie@online.no",
+     "telefon": "90 97 38 64",
+     "mobil": "",
      "postadresse.adresse": "",
      "postadresse.poststed": "",
      "postadresse.postnummer": "",
@@ -91,27 +91,27 @@
      "postadresse.kommunenummer": "",
      "postadresse.land": "",
      "postadresse.landkode": "",
-     "forretningsadresse.adresse": "Merdevegen 12B",
-     "forretningsadresse.poststed": "NOTODDEN",
-     "forretningsadresse.postnummer": "3676",
-     "forretningsadresse.kommune": "NOTODDEN",
-     "forretningsadresse.kommunenummer": "4005",
+     "forretningsadresse.adresse": "Rådyrstigen 14",
+     "forretningsadresse.poststed": "HURDAL",
+     "forretningsadresse.postnummer": "2090",
+     "forretningsadresse.kommune": "HURDAL",
+     "forretningsadresse.kommunenummer": "3242",
      "forretningsadresse.land": "Norge",
      "forretningsadresse.landkode": "NO",
      "institusjonellSektorkode.kode": "2100",
      "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
      "sisteInnsendteAarsregnskap": "2025",
-     "registreringsdatoenhetsregisteret": "2012-11-19",
-     "stiftelsesdato": "2012-07-10",
-     "registrertIMvaRegisteret": "true",
-     "registreringsdatoMerverdiavgiftsregisteret": "2012-11-01",
-     "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2012-12-29",
-     "frivilligMvaRegistrertBeskrivelser": "Utleier av bygg eller anlegg",
-     "registreringsdatoFrivilligMerverdiavgiftsregisteret": "2014-02-05",
+     "registreringsdatoenhetsregisteret": "2015-08-05",
+     "stiftelsesdato": "2015-07-05",
+     "registrertIMvaRegisteret": "false",
+     "registreringsdatoMerverdiavgiftsregisteret": "",
+     "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "",
+     "frivilligMvaRegistrertBeskrivelser": "",
+     "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
      "registrertIFrivillighetsregisteret": "false",
      "registreringsdatoFrivillighetsregisteret": "",
      "registrertIForetaksregisteret": "true",
-     "registreringsdatoForetaksregisteret": "2012-11-19",
+     "registreringsdatoForetaksregisteret": "2015-08-05",
      "registrertIStiftelsesregisteret": "false",
      "registrertIPartiregisteret": "false",
      "registreringsdatoPartiregisteret": "",
@@ -127,23 +127,23 @@
      "tvangsavvikletPgaManglendeSlettingDato": "",
      "overordnetEnhet": "",
      "maalform": "Bokmål",
-     "vedtektsdato": "2012-07-10",
-     "vedtektsfestetFormaal": "Eie og forvalte aksjer, verdipapirer, fast eiendom og andre formuesverdier av hvilken som helst art.",
-     "aktivitet": "Eie og forvalte aksjer, verdipapirer, fast eiendom og andre formuesverdier av hvilken som helst art.",
+     "vedtektsdato": "2021-07-15",
+     "vedtektsfestetFormaal": "Butikkhandel med hovedvekt på varer innen næring og nytelsesmidler, herunder produksjon og tilvirkning av nærings og nytelsesmidler, samt forvaltning av virksomhet som utfører drift av restaurant og kafe, og annen virksomhet beslektet med dette, samt deltakelse i andre virksomheter.",
+     "aktivitet": "Butikkhandel med hovedvekt på varer innen næring og nytelsesmidler, herunder produksjon og tilvirkning av nærings og nytelsesmidler, samt forvaltning av virksomhet som utfører drift av restaurant og kafe, og annen virksomhet beslektet med dette, samt deltakelse i andre virksomheter.",
      "paategninger": "false",
      "underUtenlandskInsolvensbehandlingDato": "",
      "underRekonstruksjonsforhandlingDato": "",
-     "fravalgRevisjonDato": "",
+     "fravalgRevisjonDato": "2015-08-05",
      "fravalgRevisjonBeslutningsDato": "",
      "erIKonsern": "false",
-     "kapital.belop": "2113024.00",
-     "kapital.antallAksjer": "2113024",
+     "kapital.belop": "2232600.00",
+     "kapital.antallAksjer": "915",
      "kapital.type": "Aksjekapital",
      "kapital.bundet": "",
      "kapital.valuta": "NOK",
      "kapital.innbetalt": "",
      "kapital.fulltInnbetalt": "",
-     "kapital.innfortDato": "2012-11-19",
+     "kapital.innfortDato": "2021-09-13",
      "registreringsnummerIHjemlandet": "",
      "utenlandskRegisterNavn": "",
      "utenlandskRegisterAdresse.land": "",
@@ -158,7 +158,7 @@
     "as_of": null,
     "note": null,
     "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-    "source_row_key": "999111173",
+    "source_row_key": "815699912",
     "effective_at": null
    },
    "registry_live": {
@@ -166,42 +166,42 @@
     "status": "available",
     "source_type": "official_registry_live",
     "source_class": "official_registry_live",
-    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999111173",
-    "retrieved_at": "2026-10-17T11:27:18.506036Z",
+    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/815699912",
+    "retrieved_at": "2026-10-17T16:34:33.775530Z",
     "value": {
-     "organisation_number": "999111173",
-     "name": "RØDMYRLIA 39 AS",
+     "organisation_number": "815699912",
+     "name": "RAGD AS",
      "legal_form": "AS",
      "employees": null,
      "bankrupt": false,
      "liquidating": false,
      "website": null,
-     "email": "arve.bakken@bakkeneiendom.no",
+     "email": "er-bleie@online.no",
      "industry": {
-      "beskrivelse": "Utleie av egen eller leid fast eiendom",
-      "kode": "68.200"
+      "beskrivelse": "Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler",
+      "kode": "47.110"
      },
      "business_address": {
       "adresse": [
-       "Merdevegen 12B"
+       "Rådyrstigen 14"
       ],
-      "kommune": "NOTODDEN",
-      "kommunenummer": "4005",
+      "kommune": "HURDAL",
+      "kommunenummer": "3242",
       "land": "Norge",
       "landkode": "NO",
-      "postnummer": "3676",
-      "poststed": "NOTODDEN"
+      "postnummer": "2090",
+      "poststed": "HURDAL"
      },
-     "address_line": "Merdevegen 12B",
-     "municipality": "NOTODDEN",
-     "postal_code": "3676",
-     "incorporation_date": "2012-07-10",
+     "address_line": "Rådyrstigen 14",
+     "municipality": "HURDAL",
+     "postal_code": "2090",
+     "incorporation_date": "2015-07-05",
      "postal_address": null,
      "latest_submitted_accounts": "2025"
     },
     "as_of": null,
     "note": null,
-    "content_sha256": "780720accc0d92830e7bd84220ff80133f08b8be1c94e8d8243e04648511e183",
+    "content_sha256": "cc60c49b40f401a5dbb0faa4a86ac9556fe387c245526ab2e6b75c3ba5ce4783",
     "source_row_key": null,
     "effective_at": null
    },
@@ -210,63 +210,63 @@
     "status": "available",
     "source_type": "official_annual_accounts",
     "source_class": "official_annual_accounts",
-    "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/999111173",
-    "retrieved_at": "2026-10-17T11:27:18.953286Z",
+    "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/815699912",
+    "retrieved_at": "2026-10-17T16:34:34.212251Z",
     "value": {
      "records": [
       {
-       "record_id": 5268017,
+       "record_id": 5374505,
        "account_type": "SELSKAP",
        "period": {
         "fraDato": "2023-01-01",
         "tilDato": "2023-12-31"
        },
        "currency": "NOK",
-       "revenue": 6522493.0,
-       "operating_result": 2723995.0,
-       "profit_before_tax": 2399994.0,
-       "annual_result": 1820888.0,
-       "assets": 20485539.0,
-       "equity": 12195936.0,
-       "debt": 8289603.0
+       "revenue": null,
+       "operating_result": -18999.0,
+       "profit_before_tax": -362634.0,
+       "annual_result": -362634.0,
+       "assets": 990457.0,
+       "equity": 746680.0,
+       "debt": 243777.0
       },
       {
-       "record_id": 5922323,
+       "record_id": 6195319,
        "account_type": "SELSKAP",
        "period": {
         "fraDato": "2024-01-01",
         "tilDato": "2024-12-31"
        },
        "currency": "NOK",
-       "revenue": 7308387.0,
-       "operating_result": 4386637.0,
-       "profit_before_tax": 3980223.0,
-       "annual_result": 3104735.0,
-       "assets": 24174779.0,
-       "equity": 12275533.0,
-       "debt": 11899246.0
+       "revenue": null,
+       "operating_result": -28890.0,
+       "profit_before_tax": -356677.0,
+       "annual_result": -356677.0,
+       "assets": 649768.0,
+       "equity": 390003.0,
+       "debt": 259765.0
       },
       {
-       "record_id": 6874538,
+       "record_id": 6915864,
        "account_type": "SELSKAP",
        "period": {
         "fraDato": "2025-01-01",
         "tilDato": "2025-12-31"
        },
        "currency": "NOK",
-       "revenue": 7903493.0,
-       "operating_result": 5003863.0,
-       "profit_before_tax": 4643017.0,
-       "annual_result": 3623621.0,
-       "assets": 28665425.0,
-       "equity": 12318566.0,
-       "debt": 16346858.0
+       "revenue": null,
+       "operating_result": -1396.0,
+       "profit_before_tax": -111426.0,
+       "annual_result": -111426.0,
+       "assets": 2472878.0,
+       "equity": 2472878.0,
+       "debt": null
       }
      ]
     },
     "as_of": null,
     "note": null,
-    "content_sha256": "69ca050bdecaf6440973d5dbb1c727950148f1f0564e2274493202e18cc7eb61",
+    "content_sha256": "26490679fb725af05b860e9868ebab2d3aa0880a86da5eeb1feab200e29d600b",
     "source_row_key": null,
     "effective_at": null
    },
@@ -275,61 +275,47 @@
     "status": "available",
     "source_type": "official_roles",
     "source_class": "official_roles",
-    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999111173/roller",
-    "retrieved_at": "2026-10-17T11:27:19.509582Z",
+    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/815699912/roller",
+    "retrieved_at": "2026-10-17T16:34:34.640614Z",
     "value": {
      "roles": [
       {
-       "name": "Arve Bakken",
+       "name": "Erlend Bleie",
+       "organisation_number": null,
+       "role_code": "DAGL",
+       "role": "Daglig leder",
+       "group_code": "DAGL",
+       "group": "Daglig leder",
+       "last_changed": "2025-10-01",
+       "inactive": false
+      },
+      {
+       "name": "Erlend Bleie",
        "organisation_number": null,
        "role_code": "LEDE",
        "role": "Styrets leder",
        "group_code": "STYR",
        "group": "Styre",
-       "last_changed": "2022-09-06",
+       "last_changed": "2025-10-01",
        "inactive": false
       },
       {
        "name": [
-        "CEDRA NORGE AS"
+        "THOR BROKVAM ENK"
        ],
-       "organisation_number": "935416779",
-       "role_code": "REVI",
-       "role": "Revisor",
-       "group_code": "REVI",
-       "group": "Revisor",
-       "last_changed": "2025-09-17",
-       "inactive": false
-      },
-      {
-       "name": [
-        "AZETS INSIGHT AS"
-       ],
-       "organisation_number": "983338917",
+       "organisation_number": "937298625",
        "role_code": "REGN",
        "role": "Regnskapsfører",
        "group_code": "REGN",
        "group": "Regnskapsfører",
-       "last_changed": "2026-10-09",
-       "inactive": true
-      },
-      {
-       "name": [
-        "ECIT SERVICES AS"
-       ],
-       "organisation_number": "993800139",
-       "role_code": "REGN",
-       "role": "Regnskapsfører",
-       "group_code": "REGN",
-       "group": "Regnskapsfører",
-       "last_changed": "2026-10-09",
+       "last_changed": "2026-08-31",
        "inactive": false
       }
      ]
     },
     "as_of": null,
     "note": null,
-    "content_sha256": "f7d5fea61227beaca29ddc1d82e910429797560eba538d22b1debaa770f7cdc3",
+    "content_sha256": "a25d984ab90b409222e07b38c93fa30babfc9109f7e5b9ad8737d61e311ea616",
     "source_row_key": null,
     "effective_at": null
    },
@@ -338,8 +324,8 @@
     "status": "not_found",
     "source_type": "official_group_structure",
     "source_class": "official_group_structure",
-    "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/999111173",
-    "retrieved_at": "2026-10-17T11:27:19.964369Z",
+    "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/815699912",
+    "retrieved_at": "2026-10-17T16:34:35.054586Z",
     "value": null,
     "as_of": null,
     "note": "HTTP 404",
@@ -352,27 +338,27 @@
     "status": "available",
     "source_type": "official_subunits",
     "source_class": "official_subunits",
-    "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=999111173&size=1000",
-    "retrieved_at": "2026-10-17T11:27:20.417523Z",
+    "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=815699912&size=1000",
+    "retrieved_at": "2026-10-17T16:34:35.500750Z",
     "value": {
      "locations": [
       {
-       "organisation_number": "999165346",
-       "name": "RØDMYRLIA 39 AS",
+       "organisation_number": "935855594",
+       "name": "RAGD AS",
        "address": {
         "adresse": [
-         "Merdevegen 12B"
+         "Rådyrstigen 14"
         ],
-        "kommune": "NOTODDEN",
-        "kommunenummer": "4005",
+        "kommune": "HURDAL",
+        "kommunenummer": "3242",
         "land": "Norge",
         "landkode": "NO",
-        "postnummer": "3676",
-        "poststed": "NOTODDEN"
+        "postnummer": "2090",
+        "poststed": "HURDAL"
        },
        "industry": {
-        "beskrivelse": "Utleie av egen eller leid fast eiendom",
-        "kode": "68.200"
+        "beskrivelse": "Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler",
+        "kode": "47.110"
        },
        "employees": null
       }
@@ -380,20 +366,20 @@
     },
     "as_of": null,
     "note": null,
-    "content_sha256": "464d50caf16d5ab2a12c87c7befd9c4bda2aa6e72d8e9e08192e82ab34af6873",
+    "content_sha256": "edbcec5f24686a911d3e4431c723accf0c96766775dd15a072b486f8ab3b44b0",
     "source_row_key": null,
     "effective_at": null
    },
    "website": {
     "field": "website",
-    "status": "source_error",
+    "status": "not_found",
     "source_type": "registry_linked_company_website",
     "source_class": "registry_linked_company_website",
-    "source_url": "https://bakkeneiendom.no/",
-    "retrieved_at": "2026-10-17T11:27:20.934572Z",
+    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter",
+    "retrieved_at": "2026-10-17T16:34:35.500836Z",
     "value": null,
     "as_of": null,
-    "note": "URLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'bakkeneiendom.no'. (_ssl.c:1000)",
+    "note": "No valid registry website URL",
     "content_sha256": null,
     "source_row_key": null,
     "effective_at": null
@@ -404,33 +390,34 @@
     "source_type": "wikidata_cc0_sparql",
     "source_class": "wikidata_cc0_sparql",
     "source_url": "https://query.wikidata.org/sparql",
-    "retrieved_at": "2026-10-17T11:26:58.867193Z",
+    "retrieved_at": "2026-10-17T16:34:09.131283Z",
     "value": {
      "keyed_on": "P2333 Norwegian organisation number",
      "requested": 100,
-     "matched": 1,
+     "matched": 0,
      "queries": 1,
-     "errors": [],
+     "errors": [
+      "HTTP 429"
+     ],
      "records": {},
      "matched_this_entity": false
     },
     "as_of": null,
     "note": "Exact-entity lookup keyed on P2333 (Norwegian organisation number). No Wikidata item carries this organisation number.",
-    "content_sha256": "732026165b59ba6925fc689d6fdafff09ba956d1876783c08710b667b0e0d984",
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "source_row_key": null,
     "effective_at": null
    }
   },
   "run_metrics": {
-   "requests": 7,
-   "bytes": 10657,
+   "requests": 5,
+   "bytes": 9398,
    "latencies_ms": [
-    398,
-    447,
-    556,
-    454,
-    453,
-    249
+    435,
+    436,
+    428,
+    413,
+    446
    ]
   },
   "bankrupt": false,
@@ -439,7 +426,7 @@
  "claims": [
   {
    "field": "legal_name",
-   "value": "RØDMYRLIA 39 AS",
+   "value": "RAGD AS",
    "availability": "available",
    "evidence_ids": [
     "ev-registry-0"
@@ -447,7 +434,7 @@
   },
   {
    "field": "organisation_number",
-   "value": "999111173",
+   "value": "815699912",
    "availability": "available",
    "evidence_ids": [
     "ev-registry-1"
@@ -471,7 +458,7 @@
   },
   {
    "field": "registered_address",
-   "value": "Merdevegen 12B",
+   "value": "Rådyrstigen 14",
    "availability": "available",
    "evidence_ids": [
     "ev-registry-4"
@@ -479,7 +466,7 @@
   },
   {
    "field": "municipality",
-   "value": "NOTODDEN",
+   "value": "HURDAL",
    "availability": "available",
    "evidence_ids": [
     "ev-registry-5"
@@ -487,7 +474,7 @@
   },
   {
    "field": "postal_code",
-   "value": "3676",
+   "value": "2090",
    "availability": "available",
    "evidence_ids": [
     "ev-registry-6"
@@ -495,7 +482,7 @@
   },
   {
    "field": "industry_code",
-   "value": "68.200",
+   "value": "47.110",
    "availability": "available",
    "evidence_ids": [
     "ev-registry-7"
@@ -503,7 +490,7 @@
   },
   {
    "field": "industry",
-   "value": "Utleie av egen eller leid fast eiendom",
+   "value": "Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler",
    "availability": "available",
    "evidence_ids": [
     "ev-registry-8"
@@ -519,7 +506,7 @@
   },
   {
    "field": "contact_email",
-   "value": "arve.bakken@bakkeneiendom.no",
+   "value": "er-bleie@online.no",
    "availability": "available",
    "evidence_ids": [
     "ev-registry-12"
@@ -535,15 +522,85 @@
   },
   {
    "field": "incorporation_date",
-   "value": "2012-07-10",
+   "value": "2015-07-05",
    "availability": "available",
    "evidence_ids": [
     "ev-registry-14"
    ]
   },
   {
+   "field": "share_capital",
+   "value": {
+    "amount": 2232600.0,
+    "currency": "NOK",
+    "type": "Aksjekapital",
+    "number_of_shares": 915
+   },
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-15"
+   ]
+  },
+  {
+   "field": "registered_purpose",
+   "value": "Butikkhandel med hovedvekt på varer innen næring og nytelsesmidler, herunder produksjon og tilvirkning av nærings og nytelsesmidler, samt forvaltning av virksomhet som utfører drift av restaurant og kafe, og annen virksomhet beslektet med dette, samt deltakelse i andre virksomheter.",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-16"
+   ]
+  },
+  {
+   "field": "registered_sector",
+   "value": "Private aksjeselskaper mv.",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-18"
+   ]
+  },
+  {
+   "field": "articles_adopted_date",
+   "value": "2021-07-15",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-19"
+   ]
+  },
+  {
+   "field": "register_registration_date",
+   "value": "2015-08-05",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-20"
+   ]
+  },
+  {
+   "field": "language_form",
+   "value": "Bokmål",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-21"
+   ]
+  },
+  {
+   "field": "vat_registered",
+   "value": false,
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-vat"
+   ]
+  },
+  {
+   "field": "contact_phone",
+   "value": "90 97 38 64",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-phone-0"
+   ],
+   "note": "registered in the national register"
+  },
+  {
    "field": "legal_name_live",
-   "value": "RØDMYRLIA 39 AS",
+   "value": "RAGD AS",
    "availability": "available",
    "evidence_ids": [
     "ev-live-0"
@@ -551,16 +608,16 @@
   },
   {
    "field": "revenue",
-   "value": 6522493.0,
-   "availability": "available",
+   "value": null,
+   "availability": "not_available",
    "evidence_ids": [
     "ev-financials"
    ],
-   "note": "NOK, period 2023-01-01/2023-12-31"
+   "note": "not present in the filed accounts"
   },
   {
    "field": "operating_result",
-   "value": 2723995.0,
+   "value": -18999.0,
    "availability": "available",
    "evidence_ids": [
     "ev-financials"
@@ -569,7 +626,7 @@
   },
   {
    "field": "profit_before_tax",
-   "value": 2399994.0,
+   "value": -362634.0,
    "availability": "available",
    "evidence_ids": [
     "ev-financials"
@@ -578,7 +635,7 @@
   },
   {
    "field": "annual_result",
-   "value": 1820888.0,
+   "value": -362634.0,
    "availability": "available",
    "evidence_ids": [
     "ev-financials"
@@ -587,7 +644,7 @@
   },
   {
    "field": "assets",
-   "value": 20485539.0,
+   "value": 990457.0,
    "availability": "available",
    "evidence_ids": [
     "ev-financials"
@@ -596,7 +653,7 @@
   },
   {
    "field": "equity",
-   "value": 12195936.0,
+   "value": 746680.0,
    "availability": "available",
    "evidence_ids": [
     "ev-financials"
@@ -605,7 +662,7 @@
   },
   {
    "field": "debt",
-   "value": 8289603.0,
+   "value": 243777.0,
    "availability": "available",
    "evidence_ids": [
     "ev-financials"
@@ -615,10 +672,10 @@
   {
    "field": "leadership_role",
    "value": {
-    "name": "Arve Bakken",
-    "role": "Styrets leder",
-    "group": "Styre",
-    "last_changed": "2022-09-06"
+    "name": "Erlend Bleie",
+    "role": "Daglig leder",
+    "group": "Daglig leder",
+    "last_changed": "2025-10-01"
    },
    "availability": "available",
    "evidence_ids": [
@@ -628,12 +685,10 @@
   {
    "field": "leadership_role",
    "value": {
-    "name": [
-     "CEDRA NORGE AS"
-    ],
-    "role": "Revisor",
-    "group": "Revisor",
-    "last_changed": "2025-09-17"
+    "name": "Erlend Bleie",
+    "role": "Styrets leder",
+    "group": "Styre",
+    "last_changed": "2025-10-01"
    },
    "availability": "available",
    "evidence_ids": [
@@ -644,11 +699,11 @@
    "field": "leadership_role",
    "value": {
     "name": [
-     "ECIT SERVICES AS"
+     "THOR BROKVAM ENK"
     ],
     "role": "Regnskapsfører",
     "group": "Regnskapsfører",
-    "last_changed": "2026-10-09"
+    "last_changed": "2026-08-31"
    },
    "availability": "available",
    "evidence_ids": [
@@ -658,11 +713,11 @@
   {
    "field": "registered_workplace",
    "value": {
-    "organisation_number": "999165346",
-    "name": "RØDMYRLIA 39 AS",
-    "address": "Merdevegen 12B",
-    "municipality": "NOTODDEN",
-    "postal_code": "3676"
+    "organisation_number": "935855594",
+    "name": "RAGD AS",
+    "address": "Rådyrstigen 14",
+    "municipality": "HURDAL",
+    "postal_code": "2090"
    },
    "availability": "available",
    "evidence_ids": [
@@ -672,9 +727,9 @@
   {
    "field": "official_website",
    "value": null,
-   "availability": "failed",
+   "availability": "not_available",
    "evidence_ids": [],
-   "note": "URLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'bakkeneiendom.no'. (_ssl.c:1000)"
+   "note": "No valid registry website URL"
   },
   {
    "field": "wikidata_record",
@@ -689,9 +744,9 @@
    "id": "ev-registry-0",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:18.107579Z",
+   "retrieved_at": "2026-10-17T16:34:33.339691Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[999111173].legal_name",
+   "claim_span": "row[815699912].navn",
    "reporting_period": null,
    "status": "available"
   },
@@ -699,9 +754,9 @@
    "id": "ev-registry-1",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:18.107579Z",
+   "retrieved_at": "2026-10-17T16:34:33.339691Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[999111173].organisation_number",
+   "claim_span": "row[815699912].organisasjonsnummer",
    "reporting_period": null,
    "status": "available"
   },
@@ -709,9 +764,9 @@
    "id": "ev-registry-2",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:18.107579Z",
+   "retrieved_at": "2026-10-17T16:34:33.339691Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[999111173].legal_form",
+   "claim_span": "row[815699912].organisasjonsform.beskrivelse",
    "reporting_period": null,
    "status": "available"
   },
@@ -719,9 +774,9 @@
    "id": "ev-registry-3",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:18.107579Z",
+   "retrieved_at": "2026-10-17T16:34:33.339691Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[999111173].legal_form_code",
+   "claim_span": "row[815699912].organisasjonsform.kode",
    "reporting_period": null,
    "status": "available"
   },
@@ -729,9 +784,9 @@
    "id": "ev-registry-4",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:18.107579Z",
+   "retrieved_at": "2026-10-17T16:34:33.339691Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[999111173].registered_address",
+   "claim_span": "row[815699912].forretningsadresse.adresse",
    "reporting_period": null,
    "status": "available"
   },
@@ -739,9 +794,9 @@
    "id": "ev-registry-5",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:18.107579Z",
+   "retrieved_at": "2026-10-17T16:34:33.339691Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[999111173].municipality",
+   "claim_span": "row[815699912].forretningsadresse.kommune",
    "reporting_period": null,
    "status": "available"
   },
@@ -749,9 +804,9 @@
    "id": "ev-registry-6",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:18.107579Z",
+   "retrieved_at": "2026-10-17T16:34:33.339691Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[999111173].postal_code",
+   "claim_span": "row[815699912].forretningsadresse.postnummer",
    "reporting_period": null,
    "status": "available"
   },
@@ -759,9 +814,9 @@
    "id": "ev-registry-7",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:18.107579Z",
+   "retrieved_at": "2026-10-17T16:34:33.339691Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[999111173].industry_code",
+   "claim_span": "row[815699912].naeringskode1.kode",
    "reporting_period": null,
    "status": "available"
   },
@@ -769,9 +824,9 @@
    "id": "ev-registry-8",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:18.107579Z",
+   "retrieved_at": "2026-10-17T16:34:33.339691Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[999111173].industry",
+   "claim_span": "row[815699912].naeringskode1.beskrivelse",
    "reporting_period": null,
    "status": "available"
   },
@@ -779,9 +834,9 @@
    "id": "ev-registry-10",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:18.107579Z",
+   "retrieved_at": "2026-10-17T16:34:33.339691Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[999111173].latest_annual_accounts",
+   "claim_span": "row[815699912].sisteInnsendteAarsregnskap",
    "reporting_period": null,
    "status": "available"
   },
@@ -789,9 +844,9 @@
    "id": "ev-registry-12",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:18.107579Z",
+   "retrieved_at": "2026-10-17T16:34:33.339691Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[999111173].contact_email",
+   "claim_span": "row[815699912].epostadresse",
    "reporting_period": null,
    "status": "available"
   },
@@ -799,9 +854,9 @@
    "id": "ev-registry-13",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:18.107579Z",
+   "retrieved_at": "2026-10-17T16:34:33.339691Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[999111173].company_status",
+   "claim_span": "row[815699912].konkurs, underAvvikling",
    "reporting_period": null,
    "status": "available"
   },
@@ -809,96 +864,188 @@
    "id": "ev-registry-14",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:18.107579Z",
+   "retrieved_at": "2026-10-17T16:34:33.339691Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[999111173].incorporation_date",
+   "claim_span": "row[815699912].stiftelsesdato",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-15",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T16:34:33.339691Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[815699912].kapital.belop",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-16",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T16:34:33.339691Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[815699912].vedtektsfestetFormaal",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-18",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T16:34:33.339691Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[815699912].institusjonellSektorkode.beskrivelse",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-19",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T16:34:33.339691Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[815699912].vedtektsdato",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-20",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T16:34:33.339691Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[815699912].registreringsdatoenhetsregisteret",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-21",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T16:34:33.339691Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[815699912].maalform",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-vat",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T16:34:33.339691Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[815699912].registrertIMvaRegisteret",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-phone-0",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T16:34:33.339691Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[815699912].telefon",
    "reporting_period": null,
    "status": "available"
   },
   {
    "id": "ev-live-0",
-   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999111173",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/815699912",
    "source_class": "official_registry_live",
-   "retrieved_at": "2026-10-17T11:27:18.506036Z",
-   "content_sha256": "780720accc0d92830e7bd84220ff80133f08b8be1c94e8d8243e04648511e183",
+   "retrieved_at": "2026-10-17T16:34:33.775530Z",
+   "content_sha256": "cc60c49b40f401a5dbb0faa4a86ac9556fe387c245526ab2e6b75c3ba5ce4783",
    "claim_span": "body.name",
    "reporting_period": null,
    "status": "available"
   },
   {
    "id": "ev-financials",
-   "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/999111173",
+   "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/815699912",
    "source_class": "official_annual_accounts",
-   "retrieved_at": "2026-10-17T11:27:18.953286Z",
-   "content_sha256": "69ca050bdecaf6440973d5dbb1c727950148f1f0564e2274493202e18cc7eb61",
+   "retrieved_at": "2026-10-17T16:34:34.212251Z",
+   "content_sha256": "26490679fb725af05b860e9868ebab2d3aa0880a86da5eeb1feab200e29d600b",
    "claim_span": "records[0]",
    "reporting_period": "2023-01-01/2023-12-31",
    "status": "available"
   },
   {
    "id": "ev-roles-0",
-   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999111173/roller",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/815699912/roller",
    "source_class": "official_roles",
-   "retrieved_at": "2026-10-17T11:27:19.509582Z",
-   "content_sha256": "f7d5fea61227beaca29ddc1d82e910429797560eba538d22b1debaa770f7cdc3",
-   "claim_span": "roles[0] (LEDE)",
-   "reporting_period": "2022-09-06",
+   "retrieved_at": "2026-10-17T16:34:34.640614Z",
+   "content_sha256": "a25d984ab90b409222e07b38c93fa30babfc9109f7e5b9ad8737d61e311ea616",
+   "claim_span": "roles[0] (DAGL)",
+   "reporting_period": "2025-10-01",
    "status": "available"
   },
   {
    "id": "ev-roles-1",
-   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999111173/roller",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/815699912/roller",
    "source_class": "official_roles",
-   "retrieved_at": "2026-10-17T11:27:19.509582Z",
-   "content_sha256": "f7d5fea61227beaca29ddc1d82e910429797560eba538d22b1debaa770f7cdc3",
-   "claim_span": "roles[1] (REVI)",
-   "reporting_period": "2025-09-17",
+   "retrieved_at": "2026-10-17T16:34:34.640614Z",
+   "content_sha256": "a25d984ab90b409222e07b38c93fa30babfc9109f7e5b9ad8737d61e311ea616",
+   "claim_span": "roles[1] (LEDE)",
+   "reporting_period": "2025-10-01",
    "status": "available"
   },
   {
    "id": "ev-roles-2",
-   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999111173/roller",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/815699912/roller",
    "source_class": "official_roles",
-   "retrieved_at": "2026-10-17T11:27:19.509582Z",
-   "content_sha256": "f7d5fea61227beaca29ddc1d82e910429797560eba538d22b1debaa770f7cdc3",
+   "retrieved_at": "2026-10-17T16:34:34.640614Z",
+   "content_sha256": "a25d984ab90b409222e07b38c93fa30babfc9109f7e5b9ad8737d61e311ea616",
    "claim_span": "roles[2] (REGN)",
-   "reporting_period": "2026-10-09",
+   "reporting_period": "2026-08-31",
    "status": "available"
   },
   {
    "id": "ev-locations-0",
-   "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=999111173&size=1000",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=815699912&size=1000",
    "source_class": "official_subunits",
-   "retrieved_at": "2026-10-17T11:27:20.417523Z",
-   "content_sha256": "464d50caf16d5ab2a12c87c7befd9c4bda2aa6e72d8e9e08192e82ab34af6873",
+   "retrieved_at": "2026-10-17T16:34:35.500750Z",
+   "content_sha256": "edbcec5f24686a911d3e4431c723accf0c96766775dd15a072b486f8ab3b44b0",
    "claim_span": "locations[0]",
    "reporting_period": null,
    "status": "available"
   }
  ],
  "summary": {
-  "headline": "RØDMYRLIA 39 AS (org. 999111173, Aksjeselskap). It operates in Utleie av egen eller leid fast eiendom, registered in NOTODDEN.",
+  "headline": "RAGD AS (org. 815699912, Aksjeselskap). It operates in Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler, registered in HURDAL.",
   "sentences": [
    {
-    "text": "RØDMYRLIA 39 AS (org. 999111173, Aksjeselskap). It operates in Utleie av egen eller leid fast eiendom, registered in NOTODDEN.",
+    "text": "RAGD AS (org. 815699912, Aksjeselskap). It operates in Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler, registered in HURDAL.",
     "evidence_ids": [
      "ev-registry-0"
     ]
    },
    {
-    "text": "Filed accounts for 2025 show revenue NOK 6,522,493, annual result NOK 1,820,888.",
+    "text": "The registered purpose reads: \"Butikkhandel med hovedvekt på varer innen næring og nytelsesmidler, herunder produksjon og tilvirkning av nærings og nytelsesmidler, samt forvaltning av virksomhet som utfører drift av restaurant og kafe, og annen virksomhet beslektet med dette, samt deltakelse i andre virksomheter.\"",
+    "evidence_ids": [
+     "ev-registry-16"
+    ]
+   },
+   {
+    "text": "Filed accounts for 2025 show annual result NOK -362,634.",
     "evidence_ids": [
      "ev-financials"
     ]
    },
    {
-    "text": "Arve Bakken is styrets leder. The register also lists 2 other active role holders.",
+    "text": "Registered share capital: NOK 2,232,600.",
+    "evidence_ids": [
+     "ev-registry-15"
+    ]
+   },
+   {
+    "text": "Erlend Bleie is daglig leder. The register also lists 1 other active role holders.",
     "evidence_ids": [
      "ev-roles-0"
     ]
    },
    {
-    "text": "1 registered workplace, first listed at Merdevegen 12B, NOTODDEN.",
+    "text": "1 registered workplace, first listed at Rådyrstigen 14, HURDAL.",
     "evidence_ids": [
      "ev-locations-0"
     ]
@@ -907,8 +1054,13 @@
   "unknowns": [
    {
     "field": "official_website",
-    "state": "failed",
-    "reason": "URLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'bakkeneiendom.no'. (_ssl.c:1000)"
+    "state": "not_available",
+    "reason": "No valid registry website URL"
+   },
+   {
+    "field": "revenue",
+    "state": "not_available",
+    "reason": "not present in the filed accounts"
    },
    {
     "field": "job_opening",
@@ -922,29 +1074,28 @@
    }
   ],
   "method": "deterministic_template_v1",
-  "generated_from_claims": 27
+  "generated_from_claims": 35
  },
  "changes": [],
  "errors": [],
  "operations": {
-  "requests": 7,
-  "runtime_ms": 2827,
+  "requests": 5,
+  "runtime_ms": 2161,
   "third_party_cost_usd": 0,
-  "bytes_received": 10657,
+  "bytes_received": 9398,
   "latencies": {
-   "p50_ms": 453,
-   "max_ms": 556
+   "p50_ms": 435,
+   "max_ms": 446
   }
  },
  "availability": {
-  "available": 25,
-  "failed": 1,
-  "not_available": 1
+  "available": 32,
+  "not_available": 3
  },
  "run": {
-  "run_id": "smoke5-final",
-  "started_at": "2026-10-17T11:26:58.867274Z",
-  "completed_at": "2026-10-17T11:27:20.934902Z",
+  "run_id": "smoke-final",
+  "started_at": "2026-10-17T16:34:09.131376Z",
+  "completed_at": "2026-10-17T16:34:35.501013Z",
   "terminal_status": "completed"
  }
 }

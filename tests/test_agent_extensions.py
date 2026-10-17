@@ -161,3 +161,178 @@ def test_claims_without_a_source_never_count_as_available():
     claims, rows = build_claims(_profile(registry=registry))
     assert all(claim["availability"] != "available" for claim in claims)
     assert all(row["source_url"] for row in rows)
+
+
+def _website(seed_source: str | None, score: float, publishable: bool, reasons: list[str], url: str = "https://brand.example.no/") -> dict:
+    return evidence(
+        "website",
+        "available",
+        "company_website",
+        url,
+        value={
+            "final_url": url,
+            "seed_source": seed_source,
+            "description": "A company that does things.",
+            "main_text_excerpt": "A company that does things, at length, with enough words to count as substantive copy.",
+            "pages": [{"url": url + "about", "title": "About"}],
+            "identity_assessment": {"score": score, "publishable": publishable, "reasons": reasons,
+                                     "method": "deterministic_name_org_evidence_v2"},
+        },
+    )
+
+
+def test_mail_seeded_site_without_gate_confirmation_is_withheld():
+    website = _website(
+        "registry contact e-mail domain (same registry row as the organisation number)",
+        0.3, False, ["registry-linked URL lacks strong exact-entity identity evidence"],
+    )
+    claims, _ = build_claims(_profile(website=website))
+    site = next(claim for claim in claims if claim["field"] == "official_website")
+    assert site["availability"] == "ambiguous"
+    assert site["value"] == "https://brand.example.no/"
+    assert site["confidence"] == 0.3
+    assert "ambiguous" in site["note"]
+    assert not [claim for claim in claims if claim["field"] == "company_description"]
+    assert not [claim for claim in claims if claim["field"] == "company_page"]
+
+
+def test_parked_page_is_never_published():
+    website = _website("registry contact e-mail domain (same registry row as the organisation number)",
+                       0.1, False, ["captured page is a parked, for-sale, or generic hosting placeholder"])
+    claims, _ = build_claims(_profile(website=website))
+    site = next(claim for claim in claims if claim["field"] == "official_website")
+    assert site["availability"] == "not_available"
+    assert "parked" in site["note"]
+
+
+def test_registry_listed_homepage_publishes_with_its_low_confidence():
+    website = _website(None, 0.3, False, ["registry-linked URL lacks strong exact-entity identity evidence"])
+    claims, _ = build_claims(_profile(website=website))
+    site = next(claim for claim in claims if claim["field"] == "official_website")
+    assert site["availability"] == "available"
+    assert site["confidence"] == 0.3
+    assert [claim for claim in claims if claim["field"] == "company_description"]
+    summary = build_summary(_profile(website=website), claims)
+    sentence = next(item["text"] for item in summary["sentences"] if "homepage" in item["text"].casefold())
+    assert "registry" in sentence.casefold()
+
+
+def test_a_second_claim_never_repeats_the_same_host():
+    registry = evidence(
+        "registry",
+        "available",
+        "official_registry_bulk",
+        "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+        value={"organisasjonsnummer": "912345678", "navn": "EXAMPLE AS", "hjemmeside": "www.example.no"},
+    )
+    website = _website(None, 1.0, True, ["exact organisation number appears in homepage identity evidence"],
+                       url="https://www.example.no/")
+    claims, _ = build_claims(_profile(registry=registry, website=website))
+    published = [claim for claim in claims if claim["field"] == "official_website" and claim["availability"] == "available"]
+    assert len(published) == 1
+    assert [claim for claim in claims if claim["field"] == "registry_website"][0]["value"] == "www.example.no"
+
+
+def test_live_registry_website_wins_over_a_redundant_crawl():
+    live = evidence("registry_live", "available", "official_registry_live",
+                    "https://data.brreg.no/enhetsregisteret/api/enheter/912345678",
+                    value={"name": "EXAMPLE AS", "website": "www.example.no"})
+    website = _website(None, 0.3, False, ["registry-linked URL lacks strong exact-entity identity evidence"],
+                       url="https://www.example.no/")
+    claims, _ = build_claims(_profile(registry_live=live, website=website))
+    published = [claim for claim in claims if claim["field"] == "official_website" and claim["availability"] == "available"]
+    assert len(published) == 1
+    assert published[0]["value"] == "www.example.no"
+
+
+def test_registry_row_publishes_capital_purpose_sector_and_contact_details():
+    registry = evidence(
+        "registry",
+        "available",
+        "official_registry_bulk",
+        "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+        value={
+            "organisasjonsnummer": "912345678",
+            "navn": "EXAMPLE AS",
+            "kapital.belop": "100000.00",
+            "kapital.valuta": "NOK",
+            "kapital.type": "Aksjekapital",
+            "kapital.antallAksjer": "50",
+            "vedtektsfestetFormaal": "Eie og forvalte faste eiendommer.",
+            "aktivitet": "Utleie av næringsbygg.",
+            "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
+            "vedtektsdato": "2013-09-10",
+            "registreringsdatoenhetsregisteret": "2013-11-13",
+            "maalform": "Bokmål",
+            "postadresse.adresse": "c/o Ole Ronny Sandbekk\nØvre Langelandsveg 5",
+            "postadresse.postnummer": "2213",
+            "postadresse.poststed": "KONGSVINGER",
+            "postadresse.land": "Norge",
+            "registrertIMvaRegisteret": "true",
+            "telefon": "22 00 00 00",
+            "overordnetEnhet": "987654321",
+        },
+    )
+    claims, rows = build_claims(_profile(registry=registry))
+    published = {claim["field"]: claim for claim in claims if claim["availability"] == "available"}
+    assert published["share_capital"]["value"] == {"amount": 100000.0, "currency": "NOK", "type": "Aksjekapital", "number_of_shares": 50}
+    assert published["registered_purpose"]["value"] == "Eie og forvalte faste eiendommer."
+    assert published["registered_activity"]["value"] == "Utleie av næringsbygg."
+    assert published["registered_sector"]["value"] == "Private aksjeselskaper mv."
+    assert published["articles_adopted_date"]["value"] == "2013-09-10"
+    assert published["register_registration_date"]["value"] == "2013-11-13"
+    assert published["language_form"]["value"] == "Bokmål"
+    assert published["postal_address"]["value"] == "c/o Ole Ronny Sandbekk Øvre Langelandsveg 5, 2213 KONGSVINGER"
+    assert published["vat_registered"]["value"] is True
+    assert published["contact_phone"]["value"] == "22 00 00 00"
+    assert published["parent_organisation_number"]["value"] == "987654321"
+    spans = {row["id"]: row["claim_span"] for row in rows}
+    assert spans[published["share_capital"]["evidence_ids"][0]] == "row[912345678].kapital.belop"
+    assert spans[published["legal_name"]["evidence_ids"][0]] == "row[912345678].navn"
+
+
+def test_identical_purpose_and_activity_publish_once():
+    registry = evidence(
+        "registry",
+        "available",
+        "official_registry_bulk",
+        "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+        value={"organisasjonsnummer": "912345678", "navn": "EXAMPLE AS",
+               "vedtektsfestetFormaal": "Utleie av eiendom.", "aktivitet": "Utleie av eiendom."},
+    )
+    claims, _ = build_claims(_profile(registry=registry))
+    assert len([claim for claim in claims if claim["field"] == "registered_purpose"]) == 1
+    assert not [claim for claim in claims if claim["field"] == "registered_activity"]
+
+
+def test_unconfirmed_crawl_of_a_registry_listed_host_adds_no_second_claim():
+    registry = evidence(
+        "registry",
+        "available",
+        "official_registry_bulk",
+        "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+        value={"organisasjonsnummer": "912345678", "navn": "EXAMPLE AS", "hjemmeside": "www.example.no"},
+    )
+    website = _website("registry contact e-mail domain (same registry row as the organisation number)",
+                       0.3, False, ["registry-linked URL lacks strong exact-entity identity evidence"],
+                       url="https://www.example.no/")
+    claims, _ = build_claims(_profile(registry=registry, website=website))
+    assert not [claim for claim in claims if claim["field"] == "official_website"]
+    registry_site = next(claim for claim in claims if claim["field"] == "registry_website")
+    assert registry_site["availability"] == "available"
+    assert registry_site["value"] == "www.example.no"
+    assert not [claim for claim in claims if claim["field"] == "company_description"]
+
+
+def test_a_checked_contact_page_without_addresses_is_not_available():
+    footprint = evidence(
+        "footprint",
+        "available",
+        "company_website",
+        "https://www.example.no/",
+        value={"contact": {"emails": [], "phones": [], "state": "available", "page_url": "https://www.example.no/"}},
+    )
+    claims, _ = build_claims(_profile(footprint=footprint))
+    contact = next(claim for claim in claims if claim["field"] == "contact_email")
+    assert contact["availability"] == "not_available"
+    assert contact["value"] is None

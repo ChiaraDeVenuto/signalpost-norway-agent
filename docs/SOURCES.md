@@ -12,9 +12,15 @@ allowed, what we publish from it, and the limits we impose on ourselves.
 - Why it is allowed: Brønnøysundregistrene publishes the register and its API for open reuse.
   This is the official register of Norwegian businesses, and the organisation number we are
   given comes from it.
-- What we publish from it: legal name, organisation number, legal form, addresses, municipality,
-  industry code, registered employee count, incorporation date, company status, the most recent
-  submitted accounts, role holders, group links, registered workplaces.
+- What we publish from it: legal name, organisation number, legal form, business address,
+  postal address when it differs, municipality, industry code, registered employee count,
+  incorporation date, date of registration in the register, date the articles were adopted,
+  registered purpose and registered activity, institutional sector, language form, share capital
+  with currency and share count, VAT registration flag, parent organisation number, contact
+  e-mail, telephone and mobile numbers, the homepage field, the most recent submitted accounts,
+  role holders, group links, registered workplaces. Every value is carried from the column it
+  sits in, and the evidence span names that column, so a reviewer can put the span and the
+  snapshot side by side.
 - Limits we impose: one bulk read per run (streamed once, not per company), then at most five
   per-company JSON calls. We do not hammer the register and we keep a per-company time budget.
 
@@ -52,9 +58,13 @@ allowed, what we publish from it, and the limits we impose on ourselves.
   - Byte caps: 4 MB for the homepage, 1.2 MB for each extra page, redirect cap 5.
   - At most four internal priority pages and three extra pages (careers, news, contact) per
     company, 8 to 15 second timeouts.
-  - The identity gate must accept the page before any value from it is published. The gate
-    requires a strong name match or an organisation-number match in the page. A weak match
-    produces `blocked`, and `blocked` is a real answer.
+  - Identity before any page value. The gate matches the legal name or the organisation number
+    on the page, and the score it returns travels with the claim. The URL itself is published
+    when the registry lists it as the homepage, and when it was reached through the contact
+    e-mail domain with at least part of the legal name present on the page or in the host. A URL
+    reached through the contact e-mail domain with no name evidence at all is reported as
+    `ambiguous` instead of being asserted, and no description or subpage from that page is
+    published. A parked or for-sale page produces `not_available` with the reason.
 
 ## 4. Wikidata
 

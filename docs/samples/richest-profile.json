@@ -1,64 +1,64 @@
 {
- "run_id": "smoke5-final",
- "organisation_number": "989264087",
+ "run_id": "smoke-final",
+ "organisation_number": "982669251",
  "state": "complete",
- "started_at": "2026-10-17T11:26:58.867274Z",
- "completed_at": "2026-10-17T11:27:36.643099Z",
+ "started_at": "2026-10-17T16:34:09.131376Z",
+ "completed_at": "2026-10-17T16:34:16.682039Z",
  "modules": {
   "financials": {
    "state": "complete",
    "retry_count": 0,
-   "final_timestamp": "2026-10-17T11:27:21.804340Z"
+   "final_timestamp": "2026-10-17T16:34:10.200539Z"
   },
   "footprint": {
    "state": "complete",
    "retry_count": 0,
-   "final_timestamp": "2026-10-17T11:27:36.642915Z"
+   "final_timestamp": "2026-10-17T16:34:16.681838Z"
   },
   "group": {
    "state": "not_found",
    "retry_count": 0,
-   "final_timestamp": "2026-10-17T11:27:22.676418Z"
+   "final_timestamp": "2026-10-17T16:34:11.096292Z"
   },
   "locations": {
    "state": "complete",
    "retry_count": 0,
-   "final_timestamp": "2026-10-17T11:27:23.124236Z"
+   "final_timestamp": "2026-10-17T16:34:11.522290Z"
   },
   "registry": {
    "state": "complete",
    "retry_count": 0,
-   "final_timestamp": "2026-10-17T11:27:20.935089Z"
+   "final_timestamp": "2026-10-17T16:34:09.134571Z"
   },
   "registry_live": {
    "state": "complete",
    "retry_count": 0,
-   "final_timestamp": "2026-10-17T11:27:21.371140Z"
+   "final_timestamp": "2026-10-17T16:34:09.765712Z"
   },
   "roles": {
    "state": "complete",
    "retry_count": 0,
-   "final_timestamp": "2026-10-17T11:27:22.229807Z"
+   "final_timestamp": "2026-10-17T16:34:10.662751Z"
   },
   "website": {
    "state": "complete",
    "retry_count": 0,
-   "final_timestamp": "2026-10-17T11:27:34.238319Z"
+   "final_timestamp": "2026-10-17T16:34:15.652835Z"
   },
   "wikidata": {
    "state": "not_found",
    "retry_count": 0,
-   "final_timestamp": "2026-10-17T11:26:58.867193Z"
+   "final_timestamp": "2026-10-17T16:34:09.131283Z"
   }
  },
  "profile": {
-  "organisation_number": "989264087",
-  "name": "SMESTAD HOLDING AS",
-  "legal_form": "AS",
+  "organisation_number": "982669251",
+  "name": "BONDELIA I BORETTSLAG",
+  "legal_form": "BRL",
   "employees": null,
-  "municipality": "BERGEN",
-  "industry_label": "Uoppgitt",
-  "website": "https://devoldsregnskap.no",
+  "municipality": "GJØVIK",
+  "industry_label": "Aktiviteter i borettslag og boligsameier",
+  "website": "https://gobb.no",
   "latest_submitted_accounts": "2025",
   "evidence": {
    "registry": {
@@ -67,14 +67,14 @@
     "source_type": "official_registry_bulk",
     "source_class": "official_registry_bulk",
     "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-    "retrieved_at": "2026-10-17T11:27:20.935089Z",
+    "retrieved_at": "2026-10-17T16:34:09.134571Z",
     "value": {
-     "organisasjonsnummer": "989264087",
-     "navn": "SMESTAD HOLDING AS",
-     "organisasjonsform.kode": "AS",
-     "organisasjonsform.beskrivelse": "Aksjeselskap",
-     "naeringskode1.kode": "00.000",
-     "naeringskode1.beskrivelse": "Uoppgitt",
+     "organisasjonsnummer": "982669251",
+     "navn": "BONDELIA I BORETTSLAG",
+     "organisasjonsform.kode": "BRL",
+     "organisasjonsform.beskrivelse": "Borettslag",
+     "naeringskode1.kode": "97.001",
+     "naeringskode1.beskrivelse": "Aktiviteter i borettslag og boligsameier",
      "naeringskode2.kode": "",
      "naeringskode2.beskrivelse": "",
      "naeringskode3.kode": "",
@@ -86,28 +86,28 @@
      "registreringsdatoAntallAnsatteEnhetsregisteret": "",
      "registreringsdatoantallansatteNAVAaregisteret": "",
      "hjemmeside": "",
-     "epostadresse": "on@devoldsregnskap.no",
-     "telefon": "",
+     "epostadresse": "gobb@gobb.no",
+     "telefon": "61 18 13 00",
      "mobil": "",
-     "postadresse.adresse": "c/o VKST,Devolds Regnskapskontor AS\nRegnbueplassen 1",
-     "postadresse.poststed": "BERGEN",
-     "postadresse.postnummer": "5015",
-     "postadresse.kommune": "BERGEN",
-     "postadresse.kommunenummer": "4601",
+     "postadresse.adresse": "Postboks 1227",
+     "postadresse.poststed": "GJØVIK",
+     "postadresse.postnummer": "2806",
+     "postadresse.kommune": "GJØVIK",
+     "postadresse.kommunenummer": "3407",
      "postadresse.land": "Norge",
      "postadresse.landkode": "NO",
-     "forretningsadresse.adresse": "Kong Oscars gate 1A",
-     "forretningsadresse.poststed": "BERGEN",
-     "forretningsadresse.postnummer": "5017",
-     "forretningsadresse.kommune": "BERGEN",
-     "forretningsadresse.kommunenummer": "4601",
+     "forretningsadresse.adresse": "Øvre Torvgate 28",
+     "forretningsadresse.poststed": "GJØVIK",
+     "forretningsadresse.postnummer": "2815",
+     "forretningsadresse.kommune": "GJØVIK",
+     "forretningsadresse.kommunenummer": "3407",
      "forretningsadresse.land": "Norge",
      "forretningsadresse.landkode": "NO",
-     "institusjonellSektorkode.kode": "2100",
-     "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
+     "institusjonellSektorkode.kode": "8300",
+     "institusjonellSektorkode.beskrivelse": "Borettslag o.l.",
      "sisteInnsendteAarsregnskap": "2025",
-     "registreringsdatoenhetsregisteret": "2006-03-15",
-     "stiftelsesdato": "2005-12-28",
+     "registreringsdatoenhetsregisteret": "2000-11-16",
+     "stiftelsesdato": "2000-09-07",
      "registrertIMvaRegisteret": "false",
      "registreringsdatoMerverdiavgiftsregisteret": "",
      "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "",
@@ -116,14 +116,14 @@
      "registrertIFrivillighetsregisteret": "false",
      "registreringsdatoFrivillighetsregisteret": "",
      "registrertIForetaksregisteret": "true",
-     "registreringsdatoForetaksregisteret": "2006-03-15",
+     "registreringsdatoForetaksregisteret": "2000-11-16",
      "registrertIStiftelsesregisteret": "false",
      "registrertIPartiregisteret": "false",
      "registreringsdatoPartiregisteret": "",
      "konkurs": "false",
      "konkursdato": "",
-     "underAvvikling": "true",
-     "underAvviklingDato": "2026-10-15",
+     "underAvvikling": "false",
+     "underAvviklingDato": "",
      "underTvangsavviklingEllerTvangsopplosning": "false",
      "tvangsopplostPgaManglendeDagligLederDato": "",
      "tvangsopplostPgaManglendeRevisorDato": "",
@@ -132,23 +132,23 @@
      "tvangsavvikletPgaManglendeSlettingDato": "",
      "overordnetEnhet": "",
      "maalform": "Bokmål",
-     "vedtektsdato": "2014-10-01",
-     "vedtektsfestetFormaal": "Eie og investere i aksjer og andre verdipapirer, samt alt hva hermed står i forbindelse.",
-     "aktivitet": "Eie og investere i aksjer og andre verdipapirer, samt alt hva hermed står i forbindelse.",
+     "vedtektsdato": "2022-05-10",
+     "vedtektsfestetFormaal": "Borettslag.",
+     "aktivitet": "Borettslag.",
      "paategninger": "false",
      "underUtenlandskInsolvensbehandlingDato": "",
      "underRekonstruksjonsforhandlingDato": "",
-     "fravalgRevisjonDato": "2016-12-29",
+     "fravalgRevisjonDato": "",
      "fravalgRevisjonBeslutningsDato": "",
      "erIKonsern": "false",
-     "kapital.belop": "500000.00",
-     "kapital.antallAksjer": "4000",
-     "kapital.type": "Aksjekapital",
+     "kapital.belop": "",
+     "kapital.antallAksjer": "",
+     "kapital.type": "",
      "kapital.bundet": "",
-     "kapital.valuta": "NOK",
+     "kapital.valuta": "",
      "kapital.innbetalt": "",
      "kapital.fulltInnbetalt": "",
-     "kapital.innfortDato": "2014-10-14",
+     "kapital.innfortDato": "",
      "registreringsnummerIHjemlandet": "",
      "utenlandskRegisterNavn": "",
      "utenlandskRegisterAdresse.land": "",
@@ -163,7 +163,7 @@
     "as_of": null,
     "note": null,
     "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-    "source_row_key": "989264087",
+    "source_row_key": "982669251",
     "effective_at": null
    },
    "registry_live": {
@@ -171,53 +171,52 @@
     "status": "available",
     "source_type": "official_registry_live",
     "source_class": "official_registry_live",
-    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989264087",
-    "retrieved_at": "2026-10-17T11:27:21.371140Z",
+    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/982669251",
+    "retrieved_at": "2026-10-17T16:34:09.765712Z",
     "value": {
-     "organisation_number": "989264087",
-     "name": "SMESTAD HOLDING AS",
-     "legal_form": "AS",
+     "organisation_number": "982669251",
+     "name": "BONDELIA I BORETTSLAG",
+     "legal_form": "BRL",
      "employees": null,
      "bankrupt": false,
-     "liquidating": true,
+     "liquidating": false,
      "website": null,
-     "email": "on@devoldsregnskap.no",
+     "email": "gobb@gobb.no",
      "industry": {
-      "beskrivelse": "Uoppgitt",
-      "kode": "00.000"
+      "beskrivelse": "Aktiviteter i borettslag og boligsameier",
+      "kode": "97.001"
      },
      "business_address": {
       "adresse": [
-       "Kong Oscars gate 1A"
+       "Øvre Torvgate 28"
       ],
-      "kommune": "BERGEN",
-      "kommunenummer": "4601",
+      "kommune": "GJØVIK",
+      "kommunenummer": "3407",
       "land": "Norge",
       "landkode": "NO",
-      "postnummer": "5017",
-      "poststed": "BERGEN"
+      "postnummer": "2815",
+      "poststed": "GJØVIK"
      },
-     "address_line": "Kong Oscars gate 1A",
-     "municipality": "BERGEN",
-     "postal_code": "5017",
-     "incorporation_date": "2005-12-28",
+     "address_line": "Øvre Torvgate 28",
+     "municipality": "GJØVIK",
+     "postal_code": "2815",
+     "incorporation_date": "2000-09-07",
      "postal_address": {
       "adresse": [
-       "c/o VKST,Devolds Regnskapskontor AS",
-       "Regnbueplassen 1"
+       "Postboks 1227"
       ],
-      "kommune": "BERGEN",
-      "kommunenummer": "4601",
+      "kommune": "GJØVIK",
+      "kommunenummer": "3407",
       "land": "Norge",
       "landkode": "NO",
-      "postnummer": "5015",
-      "poststed": "BERGEN"
+      "postnummer": "2806",
+      "poststed": "GJØVIK"
      },
      "latest_submitted_accounts": "2025"
     },
     "as_of": null,
     "note": null,
-    "content_sha256": "1dc0558f9083f4f6ef7cd8c394c0f8d369d3a387f2763966d14050db5a9b8ea3",
+    "content_sha256": "0319e4af0a750e7c68dba5591cabf541f7f36020c2bb03aba033729f95b305df",
     "source_row_key": null,
     "effective_at": null
    },
@@ -226,63 +225,63 @@
     "status": "available",
     "source_type": "official_annual_accounts",
     "source_class": "official_annual_accounts",
-    "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/989264087",
-    "retrieved_at": "2026-10-17T11:27:21.804340Z",
+    "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/982669251",
+    "retrieved_at": "2026-10-17T16:34:10.200539Z",
     "value": {
      "records": [
       {
-       "record_id": 5344663,
+       "record_id": 4959217,
        "account_type": "SELSKAP",
        "period": {
         "fraDato": "2023-01-01",
         "tilDato": "2023-12-31"
        },
        "currency": "NOK",
-       "revenue": 0.0,
-       "operating_result": 0.0,
-       "profit_before_tax": 0.0,
-       "annual_result": 0.0,
-       "assets": 0.0,
-       "equity": -277375.0,
-       "debt": 277375.0
+       "revenue": 2044800.0,
+       "operating_result": -2899758.0,
+       "profit_before_tax": -3297775.0,
+       "annual_result": -3297775.0,
+       "assets": 19849185.0,
+       "equity": 6053608.0,
+       "debt": 13795577.0
       },
       {
-       "record_id": 6274721,
+       "record_id": 5830529,
        "account_type": "SELSKAP",
        "period": {
         "fraDato": "2024-01-01",
         "tilDato": "2024-12-31"
        },
        "currency": "NOK",
-       "revenue": 0.0,
-       "operating_result": 0.0,
-       "profit_before_tax": 0.0,
-       "annual_result": 0.0,
-       "assets": 0.0,
-       "equity": -277375.0,
-       "debt": 277375.0
+       "revenue": 2151825.0,
+       "operating_result": 222277.0,
+       "profit_before_tax": -219902.0,
+       "annual_result": -219902.0,
+       "assets": 18588534.0,
+       "equity": 5833707.0,
+       "debt": 12754827.0
       },
       {
-       "record_id": 7136041,
+       "record_id": 6766148,
        "account_type": "SELSKAP",
        "period": {
         "fraDato": "2025-01-01",
         "tilDato": "2025-12-31"
        },
        "currency": "NOK",
-       "revenue": 0.0,
-       "operating_result": 0.0,
-       "profit_before_tax": 0.0,
-       "annual_result": 0.0,
-       "assets": 0.0,
-       "equity": -277375.0,
-       "debt": 277375.0
+       "revenue": 2239260.0,
+       "operating_result": -134440.0,
+       "profit_before_tax": null,
+       "annual_result": -599104.0,
+       "assets": 19627008.0,
+       "equity": 5234603.0,
+       "debt": null
       }
      ]
     },
     "as_of": null,
     "note": null,
-    "content_sha256": "3bed207b6fa87ac1b3bb114e45f9bcc6dac1bd4f8e9bbb22c8fcd2f112d35e3f",
+    "content_sha256": "44f2d9eaa0a08825cb3c8cb3e2b8fdf19e2d552d93d16fd93a54f3d6967f8fdf",
     "source_row_key": null,
     "effective_at": null
    },
@@ -291,37 +290,91 @@
     "status": "available",
     "source_type": "official_roles",
     "source_class": "official_roles",
-    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989264087/roller",
-    "retrieved_at": "2026-10-17T11:27:22.229807Z",
+    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/982669251/roller",
+    "retrieved_at": "2026-10-17T16:34:10.662751Z",
     "value": {
      "roles": [
       {
-       "name": "Øyvind Per Norang",
+       "name": [
+        "GJØVIK OG OMEGN BOLIGBYGGELAG"
+       ],
+       "organisation_number": "952971085",
+       "role_code": "FFØR",
+       "role": "Forretningsfører",
+       "group_code": "FFØR",
+       "group": "Forretningsfører",
+       "last_changed": "2000-11-16",
+       "inactive": false
+      },
+      {
+       "name": "Håkon Lundby",
        "organisation_number": null,
        "role_code": "LEDE",
        "role": "Styrets leder",
        "group_code": "STYR",
        "group": "Styre",
-       "last_changed": "2026-10-15",
+       "last_changed": "2025-12-16",
+       "inactive": false
+      },
+      {
+       "name": "Nanna Elje Lindborg",
+       "organisation_number": null,
+       "role_code": "MEDL",
+       "role": "Styremedlem",
+       "group_code": "STYR",
+       "group": "Styre",
+       "last_changed": "2025-12-16",
+       "inactive": false
+      },
+      {
+       "name": "Bente Danielsen",
+       "organisation_number": null,
+       "role_code": "MEDL",
+       "role": "Styremedlem",
+       "group_code": "STYR",
+       "group": "Styre",
+       "last_changed": "2025-12-16",
+       "inactive": false
+      },
+      {
+       "name": "Mette Løvold",
+       "organisation_number": null,
+       "role_code": "VARA",
+       "role": "Varamedlem",
+       "group_code": "STYR",
+       "group": "Styre",
+       "last_changed": "2025-12-16",
        "inactive": false
       },
       {
        "name": [
-        "DEVOLDS REGNSKAPSKONTOR AS"
+        "CEDRA NORGE AS"
        ],
-       "organisation_number": "945893893",
+       "organisation_number": "935416779",
+       "role_code": "REVI",
+       "role": "Revisor",
+       "group_code": "REVI",
+       "group": "Revisor",
+       "last_changed": "2025-11-17",
+       "inactive": false
+      },
+      {
+       "name": [
+        "GJØVIK OG OMEGN BOLIGBYGGELAG"
+       ],
+       "organisation_number": "952971085",
        "role_code": "REGN",
        "role": "Regnskapsfører",
        "group_code": "REGN",
        "group": "Regnskapsfører",
-       "last_changed": "2015-10-28",
+       "last_changed": "2000-11-16",
        "inactive": false
       }
      ]
     },
     "as_of": null,
     "note": null,
-    "content_sha256": "9d85b0fe6634e08470c112c00792d934b361cff56cc8586adb7ede793bf92794",
+    "content_sha256": "66fa99c888844bd1a15b092fd53dc7ed987c25ec9c99c27eeb560c2af2e964c0",
     "source_row_key": null,
     "effective_at": null
    },
@@ -330,8 +383,8 @@
     "status": "not_found",
     "source_type": "official_group_structure",
     "source_class": "official_group_structure",
-    "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/989264087",
-    "retrieved_at": "2026-10-17T11:27:22.676418Z",
+    "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/982669251",
+    "retrieved_at": "2026-10-17T16:34:11.096292Z",
     "value": null,
     "as_of": null,
     "note": "HTTP 404",
@@ -344,14 +397,35 @@
     "status": "available",
     "source_type": "official_subunits",
     "source_class": "official_subunits",
-    "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=989264087&size=1000",
-    "retrieved_at": "2026-10-17T11:27:23.124236Z",
+    "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=982669251&size=1000",
+    "retrieved_at": "2026-10-17T16:34:11.522290Z",
     "value": {
-     "locations": []
+     "locations": [
+      {
+       "organisation_number": "924154748",
+       "name": "BONDELIA I BORETTSLAG",
+       "address": {
+        "adresse": [
+         "Øvre Torvgate 28"
+        ],
+        "kommune": "GJØVIK",
+        "kommunenummer": "3407",
+        "land": "Norge",
+        "landkode": "NO",
+        "postnummer": "2815",
+        "poststed": "GJØVIK"
+       },
+       "industry": {
+        "beskrivelse": "Aktiviteter i borettslag og boligsameier",
+        "kode": "97.001"
+       },
+       "employees": null
+      }
+     ]
     },
     "as_of": null,
     "note": null,
-    "content_sha256": "d853a9774ed8f9e175d45b1f4d8d5085172ba198f15c4a6e4b28cb76271a8c47",
+    "content_sha256": "f5cad6c4cfb6e8f7b688e1d24ea2e951555d8496a629d2039462b13d7c37a08d",
     "source_row_key": null,
     "effective_at": null
    },
@@ -360,226 +434,622 @@
     "status": "available",
     "source_type": "registry_linked_company_website",
     "source_class": "registry_linked_company_website",
-    "source_url": "https://devoldsregnskap.no/",
-    "retrieved_at": "2026-10-17T11:27:34.238319Z",
+    "source_url": "https://www.gobb.no/",
+    "retrieved_at": "2026-10-17T16:34:15.652835Z",
     "value": {
-     "requested_url": "https://devoldsregnskap.no/",
-     "final_url": "https://devoldsregnskap.no/",
-     "registered_domain": "devoldsregnskap.no",
-     "title": "Devolds – Devolds Regnskapskontor AS",
-     "description": "",
-     "main_text_excerpt": "Skip to main content",
+     "requested_url": "https://gobb.no/",
+     "final_url": "https://www.gobb.no/",
+     "registered_domain": "gobb.no",
+     "title": "GOBB / Gjøvik og Omegn Boligbyggelag. Hjemme best!",
+     "description": "GOBB er Gjøvik og Omegn Boligbyggelag. Vi hjelper deg å bo trygt og godt i våre boliger! Vi har bygget og forvaltet boliger siden 1946.",
+     "main_text_excerpt": "Bondelia Hage\nNå selger vi nye leiligheter i 4-mannsboliger i størrelse fra 55 til 67 kvm. Alle boliger får romslige utearealer, gode solforhold og utsikt. Prosjektet legger vekt på fellesskap, trivsel og kvalitet. Bondelia Hage er et sted der du kan bo lenge, godt og trygt. Her kan du trene, lufte hunden, dyrke dine egne grønnsaker i parsellhagen eller rett og slett bare nyte livet.\nTa kontakt med megler og få svar på alt du lurer på.",
      "internal_links": [
       {
-       "url": "http://devoldsregnskap.no/",
+       "url": "https://www.gobb.no/medlem/",
+       "anchor": "Medlem og beboer"
+      },
+      {
+       "url": "https://www.gobb.no/medlem/medlemskap-i-gobb/",
+       "anchor": "Medlemskap i GOBB"
+      },
+      {
+       "url": "https://www.gobb.no/medlem/alt-om-forkjopsrett/",
+       "anchor": "Alt om forkjøpsrett"
+      },
+      {
+       "url": "https://www.gobb.no/medlem/overforing-av-andel/",
+       "anchor": "Overføring av andel"
+      },
+      {
+       "url": "https://www.gobb.no/nye-boliger/",
+       "anchor": "Nye boliger"
+      },
+      {
+       "url": "https://www.gobb.no/medlem/viktig-informasjon/",
+       "anchor": "Viktig informasjon for deg som medlem!"
+      },
+      {
+       "url": "https://www.gobb.no/for-styret/",
+       "anchor": "For styret"
+      },
+      {
+       "url": "https://www.gobb.no/hvordan-melde-skader-i-boligselskaper/",
+       "anchor": "Melde skade"
+      },
+      {
+       "url": "https://www.gobb.no/tekniske-tjenester/",
+       "anchor": "Tekniske tjenester"
+      },
+      {
+       "url": "https://www.gobb.no/tekniske-tjenester/hms/",
+       "anchor": "Helse, miljø og sikkerhet"
+      },
+      {
+       "url": "https://www.gobb.no/tekniske-tjenester/vedlikeholdsplan-ppv/",
+       "anchor": "Vedlikeholdsplan VLP"
+      },
+      {
+       "url": "https://www.gobb.no/tekniske-tjenester/vannsjekk/",
+       "anchor": "Vannsjekk"
+      },
+      {
+       "url": "https://www.gobb.no/tekniske-tjenester/el-sjekk/",
+       "anchor": "EL-sjekk"
+      },
+      {
+       "url": "https://www.gobb.no/tekniske-tjenester/termografering/",
+       "anchor": "Termografering"
+      },
+      {
+       "url": "https://www.gobb.no/for-utbygger/",
+       "anchor": "For utbygger"
+      },
+      {
+       "url": "https://www.gobb.no/om-gobb/",
+       "anchor": "Om GOBB"
+      },
+      {
+       "url": "https://www.gobb.no/kontakt/",
+       "anchor": "Kontakt"
+      },
+      {
+       "url": "https://www.gobb.no/personvern/",
+       "anchor": "Personvern"
+      },
+      {
+       "url": "https://www.gobb.no/aktuelt/medlemskonferanse-2026/",
        "anchor": ""
       },
       {
-       "url": "https://devoldsregnskap.no/tjenester/",
-       "anchor": "TJENESTER"
+       "url": "https://www.gobb.no/aktuelt/gobbs-miljofond-2/",
+       "anchor": ""
       },
       {
-       "url": "https://devoldsregnskap.no/om-oss/",
-       "anchor": "OM OSS"
+       "url": "https://www.gobb.no/aktuelt/viktig-informasjon-om-innlogging-pa-min-side/",
+       "anchor": ""
       },
       {
-       "url": "https://devoldsregnskap.no/nyttige-linker/",
-       "anchor": "Nyttige linker"
+       "url": "https://www.gobb.no/nye-boliger/bondelia-hage/",
+       "anchor": ""
       },
       {
-       "url": "https://devoldsregnskap.no/kontakt-oss/",
-       "anchor": "KONTAKT OSS"
+       "url": "https://www.gobb.no/aktuelt/felles-forkjopsrett/",
+       "anchor": ""
       },
       {
-       "url": "https://devoldsregnskap.no/ledige-stillinger/",
-       "anchor": "Ledige stillinger"
+       "url": "https://www.gobb.no/nye-boliger/lenatunet/",
+       "anchor": ""
       },
       {
-       "url": "http://devoldsregnskap.no/kontakt-oss/",
-       "anchor": "Kontakt oss"
+       "url": "https://www.gobb.no/nye-boliger/ostby-terrasse/",
+       "anchor": ""
+      },
+      {
+       "url": "https://www.gobb.no/medlem",
+       "anchor": "Medlem og beboer →"
+      },
+      {
+       "url": "https://www.gobb.no/stolpejakten/",
+       "anchor": "Stolpejakten"
+      },
+      {
+       "url": "https://www.gobb.no/for-deg/",
+       "anchor": "Les mer om fordelene"
+      },
+      {
+       "url": "https://www.gobb.no/for-deg/alt-om-forkjopsrett/",
+       "anchor": "Alt om forkjøpsrett"
+      },
+      {
+       "url": "https://www.gobb.no/aktuelt/finalistene-til-gobb-prisen%f0%9f%8e%89/",
+       "anchor": "Her er vinnerne av årets GOBB-Pris"
+      },
+      {
+       "url": "https://www.gobb.no/aktuelt/stor-interesse-for-gobb-stolpene-i-stolpejakten/",
+       "anchor": "126 000 besøk på GOBB-stolpene !"
+      },
+      {
+       "url": "https://www.gobb.no/aktuelt/",
+       "anchor": "Se flere nyheter her →"
       }
      ],
      "social_links": [],
-     "structured_organisations": [],
-     "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
-     "extraction_state": "js_fallback_candidate",
+     "structured_organisations": [
+      {
+       "@type": "Organization",
+       "@id": "https://www.gobb.no/#organization",
+       "name": "Gjøvik og Omegn Boligbyggelag",
+       "url": "https://www.gobb.no/",
+       "logo": {
+        "@type": "ImageObject",
+        "inLanguage": "nb-NO",
+        "@id": "https://www.gobb.no/#/schema/logo/image/",
+        "url": "https://www.gobb.no/wp-content/uploads/2021/03/gobb_logo.png",
+        "contentUrl": "https://www.gobb.no/wp-content/uploads/2021/03/gobb_logo.png",
+        "width": 1000,
+        "height": 425,
+        "caption": "Gjøvik og Omegn Boligbyggelag"
+       },
+       "image": {
+        "@id": "https://www.gobb.no/#/schema/logo/image/"
+       }
+      }
+     ],
+     "content_sha256": "7d52c36c64e810cb44577a8c6d1ac7d2a4fc5a43f08abcbbc16b4112e553f13a",
+     "extraction_state": "static_complete",
      "pages": [
       {
-       "url": "https://devoldsregnskap.no/",
-       "title": "Devolds – Devolds Regnskapskontor AS",
-       "main_text_excerpt": "Skip to main content",
-       "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936"
+       "url": "https://www.gobb.no/",
+       "title": "GOBB / Gjøvik og Omegn Boligbyggelag. Hjemme best!",
+       "main_text_excerpt": "Bondelia Hage\nNå selger vi nye leiligheter i 4-mannsboliger i størrelse fra 55 til 67 kvm. Alle boliger får romslige utearealer, gode solforhold og utsikt. Prosjektet legger vekt på fellesskap, trivsel og kvalitet. Bondelia Hage er et sted der du kan bo lenge, godt og trygt. Her kan du trene, lufte hunden, dyrke dine egne grønnsaker i parsellhagen eller rett og slett bare nyte livet.\nTa kontakt med megler og få svar på alt du lurer på.",
+       "content_sha256": "7d52c36c64e810cb44577a8c6d1ac7d2a4fc5a43f08abcbbc16b4112e553f13a"
       },
       {
-       "url": "https://devoldsregnskap.no/om-oss/",
-       "title": "OM OSS – Devolds",
-       "main_text_excerpt": "Skip to main content",
-       "content_sha256": "4e1a8f335f35a10ddba3d9d560b573a06550ebdfd146ac2bfec890c2a356defd",
+       "url": "https://www.gobb.no/kontakt/",
+       "title": "Kontakt — GOBB | Gjøvik og Omegn Boligbyggelag",
+       "main_text_excerpt": "Kontakt\nEnten du allerede bor i et av våre borettslag eller du har planer om å gjøre det, så skal du vite at vi gjør vårt ytterste for at du skal ha et trygt og godt liv i den boligen du velger; altså hjemme best!\nGOBB tar et samfunnsansvar på mange områder. Vi forsøker å \"bredde\" oss så langt det er mulig slik at flest mulig får ta del i de midler vi bruker på å støtte frivillig arbeid. Det gjør vi gjennom GOBB Prisen og GOBBs Miljøfond. Kriterier og frister for å søke midler fra disse blir lagt ut på vår hjemmeside.",
+       "content_sha256": "bb5938ca6d728586d73cc9d8f0ed3257e4efe8f30663ef3cd9a61aad51e5fbdf",
        "internal_links": [
         {
-         "url": "https://devoldsregnskap.no/",
-         "anchor": "Devolds"
-        },
-        {
-         "url": "http://devoldsregnskap.no/",
+         "url": "https://www.gobb.no/",
          "anchor": ""
         },
         {
-         "url": "https://devoldsregnskap.no/tjenester/",
-         "anchor": "TJENESTER"
+         "url": "https://www.gobb.no/medlem/",
+         "anchor": "Medlem og beboer"
         },
         {
-         "url": "https://devoldsregnskap.no/nyttige-linker/",
-         "anchor": "Nyttige linker"
+         "url": "https://www.gobb.no/medlem/medlemskap-i-gobb/",
+         "anchor": "Medlemskap i GOBB"
         },
         {
-         "url": "https://devoldsregnskap.no/kontakt-oss/",
-         "anchor": "KONTAKT OSS"
+         "url": "https://www.gobb.no/medlem/alt-om-forkjopsrett/",
+         "anchor": "Alt om forkjøpsrett"
         },
         {
-         "url": "https://devoldsregnskap.no/ledige-stillinger/",
-         "anchor": "Ledige stillinger"
+         "url": "https://www.gobb.no/medlem/overforing-av-andel/",
+         "anchor": "Overføring av andel"
         },
         {
-         "url": "http://devoldsregnskap.no/kontakt-oss/",
-         "anchor": "Kontakt oss"
+         "url": "https://www.gobb.no/nye-boliger/",
+         "anchor": "Nye boliger"
+        },
+        {
+         "url": "https://www.gobb.no/medlem/viktig-informasjon/",
+         "anchor": "Viktig informasjon for deg som medlem!"
+        },
+        {
+         "url": "https://www.gobb.no/for-styret/",
+         "anchor": "For styret"
+        },
+        {
+         "url": "https://www.gobb.no/hvordan-melde-skader-i-boligselskaper/",
+         "anchor": "Melde skade"
+        },
+        {
+         "url": "https://www.gobb.no/tekniske-tjenester/",
+         "anchor": "Tekniske tjenester"
+        },
+        {
+         "url": "https://www.gobb.no/tekniske-tjenester/hms/",
+         "anchor": "Helse, miljø og sikkerhet"
+        },
+        {
+         "url": "https://www.gobb.no/tekniske-tjenester/vedlikeholdsplan-ppv/",
+         "anchor": "Vedlikeholdsplan VLP"
+        },
+        {
+         "url": "https://www.gobb.no/tekniske-tjenester/vannsjekk/",
+         "anchor": "Vannsjekk"
+        },
+        {
+         "url": "https://www.gobb.no/tekniske-tjenester/el-sjekk/",
+         "anchor": "EL-sjekk"
+        },
+        {
+         "url": "https://www.gobb.no/tekniske-tjenester/termografering/",
+         "anchor": "Termografering"
+        },
+        {
+         "url": "https://www.gobb.no/for-utbygger/",
+         "anchor": "For utbygger"
+        },
+        {
+         "url": "https://www.gobb.no/om-gobb/",
+         "anchor": "Om GOBB"
+        },
+        {
+         "url": "https://www.gobb.no/personvern/",
+         "anchor": "Personvern"
         }
        ]
       },
       {
-       "url": "https://devoldsregnskap.no/kontakt-oss/",
-       "title": "KONTAKT OSS – Devolds",
-       "main_text_excerpt": "Skip to main content",
-       "content_sha256": "c7a3cf86fc7481e08995af5a4d9395ec00f0c7d013217ff51740716d8fb0e1d2",
+       "url": "https://www.gobb.no/aktuelt/",
+       "title": "Aktuelt — Les siste nytt om GOBB",
+       "main_text_excerpt": "Aktuelt\nHer finner du nyheter og aktuelle saker for Gjøvik og Omegn Boligbyggelag.",
+       "content_sha256": "fd75f990e61461bd083b7de5e364ccf62707aab9435c3deb5ea04e71101cd8af",
        "internal_links": [
         {
-         "url": "https://devoldsregnskap.no/",
-         "anchor": "Devolds"
-        },
-        {
-         "url": "http://devoldsregnskap.no/",
+         "url": "https://www.gobb.no/",
          "anchor": ""
         },
         {
-         "url": "https://devoldsregnskap.no/tjenester/",
-         "anchor": "TJENESTER"
+         "url": "https://www.gobb.no/medlem/",
+         "anchor": "Medlem og beboer"
         },
         {
-         "url": "https://devoldsregnskap.no/om-oss/",
-         "anchor": "OM OSS"
+         "url": "https://www.gobb.no/medlem/medlemskap-i-gobb/",
+         "anchor": "Medlemskap i GOBB"
         },
         {
-         "url": "https://devoldsregnskap.no/nyttige-linker/",
-         "anchor": "Nyttige linker"
+         "url": "https://www.gobb.no/medlem/alt-om-forkjopsrett/",
+         "anchor": "Alt om forkjøpsrett"
         },
         {
-         "url": "https://devoldsregnskap.no/ledige-stillinger/",
-         "anchor": "Ledige stillinger"
+         "url": "https://www.gobb.no/medlem/overforing-av-andel/",
+         "anchor": "Overføring av andel"
+        },
+        {
+         "url": "https://www.gobb.no/nye-boliger/",
+         "anchor": "Nye boliger"
+        },
+        {
+         "url": "https://www.gobb.no/medlem/viktig-informasjon/",
+         "anchor": "Viktig informasjon for deg som medlem!"
+        },
+        {
+         "url": "https://www.gobb.no/for-styret/",
+         "anchor": "For styret"
+        },
+        {
+         "url": "https://www.gobb.no/hvordan-melde-skader-i-boligselskaper/",
+         "anchor": "Melde skade"
+        },
+        {
+         "url": "https://www.gobb.no/tekniske-tjenester/",
+         "anchor": "Tekniske tjenester"
+        },
+        {
+         "url": "https://www.gobb.no/tekniske-tjenester/hms/",
+         "anchor": "Helse, miljø og sikkerhet"
+        },
+        {
+         "url": "https://www.gobb.no/tekniske-tjenester/vedlikeholdsplan-ppv/",
+         "anchor": "Vedlikeholdsplan VLP"
+        },
+        {
+         "url": "https://www.gobb.no/tekniske-tjenester/vannsjekk/",
+         "anchor": "Vannsjekk"
+        },
+        {
+         "url": "https://www.gobb.no/tekniske-tjenester/el-sjekk/",
+         "anchor": "EL-sjekk"
+        },
+        {
+         "url": "https://www.gobb.no/tekniske-tjenester/termografering/",
+         "anchor": "Termografering"
+        },
+        {
+         "url": "https://www.gobb.no/for-utbygger/",
+         "anchor": "For utbygger"
+        },
+        {
+         "url": "https://www.gobb.no/om-gobb/",
+         "anchor": "Om GOBB"
+        },
+        {
+         "url": "https://www.gobb.no/kontakt/",
+         "anchor": "Kontakt"
+        },
+        {
+         "url": "https://www.gobb.no/personvern/",
+         "anchor": "Personvern"
+        },
+        {
+         "url": "https://www.gobb.no/aktuelt/medlemskonferanse-2026/",
+         "anchor": ""
+        },
+        {
+         "url": "https://www.gobb.no/aktuelt/viktig-informasjon-om-innlogging-pa-min-side/",
+         "anchor": ""
+        },
+        {
+         "url": "https://www.gobb.no/aktuelt/felles-forkjopsrett/",
+         "anchor": ""
+        },
+        {
+         "url": "https://www.gobb.no/aktuelt/finalistene-til-gobb-prisen%f0%9f%8e%89/",
+         "anchor": ""
+        },
+        {
+         "url": "https://www.gobb.no/aktuelt/stor-interesse-for-gobb-stolpene-i-stolpejakten/",
+         "anchor": ""
+        },
+        {
+         "url": "https://www.gobb.no/aktuelt/det-sosiale-samlingspunktet-pa-nytorvet/",
+         "anchor": ""
+        },
+        {
+         "url": "https://www.gobb.no/aktuelt/gobb-en-boligutvikler-med-kvalitet-og-fellesskap/",
+         "anchor": ""
+        },
+        {
+         "url": "https://www.gobb.no/aktuelt/nar-livet-endrer-seg-er-det-smart-a-ha-et-medlemskap-i-bakhand/",
+         "anchor": ""
+        },
+        {
+         "url": "https://www.gobb.no/aktuelt/stolpejakt/",
+         "anchor": ""
+        },
+        {
+         "url": "https://www.gobb.no/aktuelt/trygghet-og-kontroll-med-gobbs-tekniske-avdeling/",
+         "anchor": ""
+        },
+        {
+         "url": "https://www.gobb.no/aktuelt/forskjellen-pa-borettslag-og-sameie/",
+         "anchor": ""
+        },
+        {
+         "url": "https://www.gobb.no/aktuelt/page/2/",
+         "anchor": "2"
+        },
+        {
+         "url": "https://www.gobb.no/aktuelt/page/3/",
+         "anchor": "3"
+        },
+        {
+         "url": "https://www.gobb.no/aktuelt/page/6/",
+         "anchor": "6"
         }
        ]
       },
       {
-       "url": "https://devoldsregnskap.no/kontakt-oss/",
-       "title": "KONTAKT OSS – Devolds",
-       "main_text_excerpt": "Skip to main content",
-       "content_sha256": "c7a3cf86fc7481e08995af5a4d9395ec00f0c7d013217ff51740716d8fb0e1d2",
+       "url": "https://www.gobb.no/aktuelt/felles-forkjopsrett/",
+       "title": "Felles forkjøpsrett — GOBB | Gjøvik og Omegn Boligbyggelag",
+       "main_text_excerpt": "Har du fått studieplass i en annen by? Da er det mye å tenke på – flytting, studiestart og kanskje jakten på et sted å bo. Visste du at GOBB-medlemskapet ditt kan gi deg en fordel også utenfor Gjøvik-regionen?\nFor mange studenter er det naturlig å leie bolig, men for noen kan det være aktuelt å kjøpe sin egen leilighet på studiestedet. Dersom økonomien tillater det, kan boligkjøp være en god investering. For mange kan det være mer lønnsomt å eie enn å leie gjennom flere år med studier, fordi du bygger egenkapital i stedet for å betale inn til en utleier. Kjøper du bolig med et ekstra soverom eller to, kan utleie til medstudenter bidra til å dekke deler av boutgiftene og gjøre boligkjøpet mer overkommelig.\nGOBB er ett av 18 boligbyggelag som samarbeider om felles forkjøpsrett. Gjennom ordningen med felles forkjøpsrett kan du bruke din opparbeidede ansiennitet i GOBB til å få forkjøpsrett på boliger hos en rekke andre boligbyggelag. Til sammen forvalter disse boligbyggelagene over 69 000 boliger over hele landet. Det betyr at medlemskapet ditt også kan være verdifullt til boligkjøp andre steder rundt om i Norge.\nSkal du kanskje studere på UiA, Nord Universitet, Oslo Met, Høgskolen i Østfold, UiT, NTNU eller USN? Da kan du bruke medlemskapet ditt i byer som Kristiansand, Levanger, Steinskjær, Lillestrøm, Fredrikstad, Sarpsborg, Hønefoss, Skien, Ålesund og mange mange flere steder. Ordningen innebærer at du kan ta med deg ansienniteten din fra GOBB, og benytte deg av forkjøpsrett på en bolig hos et annet boligbyggelag som er med i samarbeidet. Merk at ansiennitet i ordningen regnes tidligst fra samarbeidet ble inngått, det vil si fra 1.1.2003.\nHer finner du oversikten over hvilke andre boligbyggelag som er med i felles forkjøpsrett. Når du finner en bolig du er interessert i, anbefaler vi at du tar kontakt med det aktuelle boligbyggelaget for informasjon om hvordan forkjøpsretten praktiseres og hvilke regler som gjelder hos dem.\nEr ikke tiden inne for å kjøpe bolig akkurat nå? Da kan det likevel lønne seg å beholde medlemskapet. Mens du studerer bygger du videre på ansienniteten din, noe som kan gi deg en viktig fordel den dagen du er klar for å kjøpe din første bolig. I tillegg gir medlemskapet tilgang til en rekke medlemsfordeler og rabatter som kan bidra til å spare penger – noe som ofte kommer godt med i en studentøkonomi!\nUansett, hvis du skal kjøpe bolig i en ny by, husk å sjekke hvilke boligbyggelag som er med i ordningen med felles forkjøpsrett, og se hvilke muligheter medlemskapet ditt kan gi deg!",
+       "content_sha256": "79fe1f44c5cc07739f572f3bf62158188889d83a3d1ba80b72541b297703e894",
        "internal_links": [
         {
-         "url": "https://devoldsregnskap.no/",
-         "anchor": "Devolds"
-        },
-        {
-         "url": "http://devoldsregnskap.no/",
+         "url": "https://www.gobb.no/",
          "anchor": ""
         },
         {
-         "url": "https://devoldsregnskap.no/tjenester/",
-         "anchor": "TJENESTER"
+         "url": "https://www.gobb.no/medlem/",
+         "anchor": "Medlem og beboer"
         },
         {
-         "url": "https://devoldsregnskap.no/om-oss/",
-         "anchor": "OM OSS"
+         "url": "https://www.gobb.no/medlem/medlemskap-i-gobb/",
+         "anchor": "Medlemskap i GOBB"
         },
         {
-         "url": "https://devoldsregnskap.no/nyttige-linker/",
-         "anchor": "Nyttige linker"
+         "url": "https://www.gobb.no/medlem/alt-om-forkjopsrett/",
+         "anchor": "Alt om forkjøpsrett"
         },
         {
-         "url": "https://devoldsregnskap.no/ledige-stillinger/",
-         "anchor": "Ledige stillinger"
+         "url": "https://www.gobb.no/medlem/overforing-av-andel/",
+         "anchor": "Overføring av andel"
+        },
+        {
+         "url": "https://www.gobb.no/nye-boliger/",
+         "anchor": "Nye boliger"
+        },
+        {
+         "url": "https://www.gobb.no/medlem/viktig-informasjon/",
+         "anchor": "Viktig informasjon for deg som medlem!"
+        },
+        {
+         "url": "https://www.gobb.no/for-styret/",
+         "anchor": "For styret"
+        },
+        {
+         "url": "https://www.gobb.no/hvordan-melde-skader-i-boligselskaper/",
+         "anchor": "Melde skade"
+        },
+        {
+         "url": "https://www.gobb.no/tekniske-tjenester/",
+         "anchor": "Tekniske tjenester"
+        },
+        {
+         "url": "https://www.gobb.no/tekniske-tjenester/hms/",
+         "anchor": "Helse, miljø og sikkerhet"
+        },
+        {
+         "url": "https://www.gobb.no/tekniske-tjenester/vedlikeholdsplan-ppv/",
+         "anchor": "Vedlikeholdsplan VLP"
+        },
+        {
+         "url": "https://www.gobb.no/tekniske-tjenester/vannsjekk/",
+         "anchor": "Vannsjekk"
+        },
+        {
+         "url": "https://www.gobb.no/tekniske-tjenester/el-sjekk/",
+         "anchor": "EL-sjekk"
+        },
+        {
+         "url": "https://www.gobb.no/tekniske-tjenester/termografering/",
+         "anchor": "Termografering"
+        },
+        {
+         "url": "https://www.gobb.no/for-utbygger/",
+         "anchor": "For utbygger"
+        },
+        {
+         "url": "https://www.gobb.no/om-gobb/",
+         "anchor": "Om GOBB"
+        },
+        {
+         "url": "https://www.gobb.no/kontakt/",
+         "anchor": "Kontakt"
+        },
+        {
+         "url": "https://www.gobb.no/personvern/",
+         "anchor": "Personvern"
+        },
+        {
+         "url": "https://www.gobb.no/aktuelt/medlemskonferanse-2026/",
+         "anchor": ""
+        },
+        {
+         "url": "https://www.gobb.no/aktuelt/viktig-informasjon-om-innlogging-pa-min-side/",
+         "anchor": ""
+        },
+        {
+         "url": "https://www.gobb.no/aktuelt/finalistene-til-gobb-prisen%f0%9f%8e%89/",
+         "anchor": ""
+        },
+        {
+         "url": "https://www.gobb.no/aktuelt/",
+         "anchor": "Flere nyheter"
         }
        ]
       },
       {
-       "url": "https://devoldsregnskap.no/ledige-stillinger/",
-       "title": "Ledige stillinger – Devolds",
-       "main_text_excerpt": "Skip to main content",
-       "content_sha256": "acc70e8256db4adaed6740173c633cd008e4f4422ebc98a55fa0118072a8ce3b",
+       "url": "https://www.gobb.no/aktuelt/finalistene-til-gobb-prisen%f0%9f%8e%89/",
+       "title": "Her er vinnerne av årets GOBB-Pris — GOBB | Gjøvik og Omegn Boligbyggelag",
+       "main_text_excerpt": "Torsdag ble årets vinnere av GOBB-Prisen 2026 kåret. Hovedprisen på 50 000 kroner gikk til Vardal Turnforening. I tillegg fikk de to andre finalistene 10 000 kroner hver seg. De gikk til Gjøvik Brettklubb og Gjøvik barne- og Ungdomsteater.\nDet var delegatene på GOBBs generalforsamling som hadde den avgjørende avstemminga. På forhånd hadde folket avgitt sine stemmer på Facebook før altså de avgjørende stemmene ble avgitt under generalforsamlingen.\nHer kan du lese mer om vinnerne:\n⭐ Vardal Turnforening\nVardal Turnforening holder til i Campus Arena Gjøvik og er en aktiv og inkluderende turnforening med tilbud til barn, unge og voksne. Vi har utøvere fra 3-80 år. I løpet av 2026 har klubben rundt 270 aktive utøvere fordelt på ulike aldersgrupper og partier både for jenter og gutter.\nKlubben tilbyr bred aktivitet innen turn, som er en viktig basisidrett og et godt grunnlag for mange andre idretter. I tillegg har vi egne tilbud for barn og unge med tilrettelagte behov, og partier for voksne, slik at flest mulig skal kunne oppleve mestring, aktivitet og idrettsglede hos oss. Vardal Turnforening drives kun av frivillighet og engasjement. Foreldre, trenere, styremedlemmer og andre frivillige legger ned utallige timer hver uke for å skape et trygt, inkluderende og godt aktivitetstilbud for barn, unge og voksne i lokalmiljøet.\nKlubben jobber også aktivt med å rekruttere unge trenere. Mange av trenerne våre har selv vært gymnaster i klubben fra ung alder og får mulighet til å utvikle seg videre som trenere og rollemodeller. Dette gir ungdom verdifull erfaring, ansvar og tilhørighet, samtidig som klubben bygger et sterkt og inkluderende miljø på tvers av alder. Hver uke legges det ned et stort arbeid for at barn og unge skal få et trygt, godt og inkluderende treningstilbud. Mange frivillige bidrar for å sikre gode treninger, arrangementer og aktivitetstilbud med kvalitet og tryggheten til utøverne i fokus.\nForeningen står samtidig overfor flere utfordringer knyttet til utstyr, halleie, kurs, samlinger og konkurranser. Det er et kontinuerlig behov for å vedlikeholde og fornye utstyr for å kunne gi et best mulig tilbud til medlemmene våre når fasilitetene ikke er tilpasset oss slik det er i dag. En stor drøm for Vardal Turnforening er å kunne drive aktivitet i en egen basishall. Dette er noe klubben jobber målrettet med, fordi det vil gi enda bedre muligheter for utvikling, aktivitet og inkludering for utøverne i lokalmiljøet.\nFor oss handler turn om mer enn idrett. Det handler om fellesskap, mestring, utvikling og muligheten til å være en del av noe større. Vi er stolte av å være en klubb som skaper aktivitet, vennskap og gode opplevelser for så mange barn, unge og familier i området, og det betyr mye å bli anerkjent som finalist til GOBB-prisen.\n⭐ Gjøvik Brettklubb\nGjøvik Brettklubb er et idrettslag og frivillighetsorganisasjon som jobber for å fremme brettsport i Gjøvik og Innlandet. Vi har også driftet, finansiert og bygget skatehallen på Gjøvik siden 2015. I tillegg til skateboard og snowboard aktiviteter så har vi også aktiviteter i skatehallen som Scoot, rulleskøyter og bmx.\nVi har også sosial møteplass og ungdomsklubb innlemmet i vår daglige drift som omfatter gaming, bordtennis ,biljard ,hobbyrom og sløydrom. I vår nye skatehall som nå bygges i sentrum ønsker vi også å utvide tilbudet med musikkrom for øving/jamming og opptak/innspillingsmuligheter. Mekanisk verksted/mekkerom for ungdommer, voksne og eldre.\nVi hadde i 2025 litt i overkant av 300 medlemmer og til sammen dobbelt så mange faste brukere og besøkende fra hele Innlandet. Vår hovedgruppe er barn og ungdom i alle aldre, men har også tilbud og muligheter for voksne.\nGjøvik Brettklubb fortjener GOBB-prisen på grunn av det viktige og forebyggende arbeidet som gjøres med å skape en trygg og god aktiv sosial møteplass for barn og ungdom i alle aldre, uavhengig av erfaring og ferdighetsnivå. Gjøvik Brettklubb er også i en økonomisk utfordrende situasjon med bygging og etablering av ny skatehall, og prispengene vil i stor grad være med å sikre drift av skatehallen i 2026.\n⭐ Gjøvik barne- og ungdomsteater\nGjøvik Barne- og Ungdomsteater ble stiftet i 1989 av Solveig Nielsen, og har siden den gang vært et kreativt og inkluderende møtested for barn og unge i Gjøvik og omegn. Gjennom teaterundervisning og forestillinger, får barn og ungdom utvikle fantasi, samarbeidsevner, trygghet og selvtillit i et fellesskap der alle skal føle seg sett og verdsatt.\nI over 35 år har Gjøvik Barne- og Ungdomsteater vært en viktig arena for barn og unge i lokalmiljøet. Vi arbeider for å skape et inkluderende fellesskap der alle får mulighet til å utvikle seg – både kunstnerisk og menneskelig. Hos oss handler teater om mer enn å stå på scenen. Vi ønsker å gi barn og unge et trygt sted å uttrykke seg, bygge vennskap og oppleve mestring. Gjennom kreativitet og samarbeid skaper vi fellesskap som mange tar med seg videre i livet.\nGjennom teaterarbeid bygger barn og unge selvtillit, tryggh",
+       "content_sha256": "d36dbf8b487b26c105c19a3a76a17c5c01c092758949fe8343519317b10f0964",
        "internal_links": [
         {
-         "url": "https://devoldsregnskap.no/",
-         "anchor": "Devolds"
-        },
-        {
-         "url": "http://devoldsregnskap.no/",
+         "url": "https://www.gobb.no/",
          "anchor": ""
         },
         {
-         "url": "https://devoldsregnskap.no/tjenester/",
-         "anchor": "TJENESTER"
+         "url": "https://www.gobb.no/medlem/",
+         "anchor": "Medlem og beboer"
         },
         {
-         "url": "https://devoldsregnskap.no/om-oss/",
-         "anchor": "OM OSS"
+         "url": "https://www.gobb.no/medlem/medlemskap-i-gobb/",
+         "anchor": "Medlemskap i GOBB"
         },
         {
-         "url": "https://devoldsregnskap.no/nyttige-linker/",
-         "anchor": "Nyttige linker"
+         "url": "https://www.gobb.no/medlem/alt-om-forkjopsrett/",
+         "anchor": "Alt om forkjøpsrett"
         },
         {
-         "url": "https://devoldsregnskap.no/kontakt-oss/",
-         "anchor": "KONTAKT OSS"
+         "url": "https://www.gobb.no/medlem/overforing-av-andel/",
+         "anchor": "Overføring av andel"
+        },
+        {
+         "url": "https://www.gobb.no/nye-boliger/",
+         "anchor": "Nye boliger"
+        },
+        {
+         "url": "https://www.gobb.no/medlem/viktig-informasjon/",
+         "anchor": "Viktig informasjon for deg som medlem!"
+        },
+        {
+         "url": "https://www.gobb.no/for-styret/",
+         "anchor": "For styret"
+        },
+        {
+         "url": "https://www.gobb.no/hvordan-melde-skader-i-boligselskaper/",
+         "anchor": "Melde skade"
+        },
+        {
+         "url": "https://www.gobb.no/tekniske-tjenester/",
+         "anchor": "Tekniske tjenester"
+        },
+        {
+         "url": "https://www.gobb.no/tekniske-tjenester/hms/",
+         "anchor": "Helse, miljø og sikkerhet"
+        },
+        {
+         "url": "https://www.gobb.no/tekniske-tjenester/vedlikeholdsplan-ppv/",
+         "anchor": "Vedlikeholdsplan VLP"
+        },
+        {
+         "url": "https://www.gobb.no/tekniske-tjenester/vannsjekk/",
+         "anchor": "Vannsjekk"
+        },
+        {
+         "url": "https://www.gobb.no/tekniske-tjenester/el-sjekk/",
+         "anchor": "EL-sjekk"
+        },
+        {
+         "url": "https://www.gobb.no/tekniske-tjenester/termografering/",
+         "anchor": "Termografering"
+        },
+        {
+         "url": "https://www.gobb.no/for-utbygger/",
+         "anchor": "For utbygger"
+        },
+        {
+         "url": "https://www.gobb.no/om-gobb/",
+         "anchor": "Om GOBB"
+        },
+        {
+         "url": "https://www.gobb.no/kontakt/",
+         "anchor": "Kontakt"
+        },
+        {
+         "url": "https://www.gobb.no/personvern/",
+         "anchor": "Personvern"
+        },
+        {
+         "url": "https://www.gobb.no/aktuelt/medlemskonferanse-2026/",
+         "anchor": ""
+        },
+        {
+         "url": "https://www.gobb.no/aktuelt/viktig-informasjon-om-innlogging-pa-min-side/",
+         "anchor": ""
+        },
+        {
+         "url": "https://www.gobb.no/aktuelt/felles-forkjopsrett/",
+         "anchor": ""
+        },
+        {
+         "url": "https://www.gobb.no/aktuelt/",
+         "anchor": "Flere nyheter"
         }
        ]
       }
      ],
      "crawl_errors": [],
      "identity_assessment": {
-      "status": "related_or_uncertain",
-      "score": 0.3,
+      "status": "review",
+      "score": 0.85,
       "publishable": false,
       "legal_name_tokens": [
-       "smestad",
-       "holding"
+       "bondelia",
+       "borettslag"
       ],
-      "matched_tokens": [],
+      "matched_tokens": [
+       "bondelia",
+       "borettslag"
+      ],
       "reasons": [
-       "registry-linked URL lacks strong exact-entity identity evidence"
+       "most legal-name tokens appear, but exact identity is incomplete"
       ],
       "method": "deterministic_name_org_evidence_v2"
      },
-     "discovered_social_links": [
-      {
-       "platform": "facebook",
-       "url": "https://facebook.com/about/ads"
-      }
-     ],
-     "social_link_assessments": [
-      {
-       "platform": "facebook",
-       "url": "https://facebook.com/about/ads",
-       "identity_score": 0.3,
-       "publishable": false,
-       "matched_tokens": [],
-       "reason": "social handle lacks strong exact-entity name evidence",
-       "method": "deterministic_social_handle_identity_v1"
-      }
-     ],
+     "discovered_social_links": [],
+     "social_link_assessments": [],
      "seed_source": "registry contact e-mail domain (same registry row as the organisation number)"
     },
     "as_of": null,
     "note": "Company-controlled claim layer; not an official registry fact",
-    "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
+    "content_sha256": "7d52c36c64e810cb44577a8c6d1ac7d2a4fc5a43f08abcbbc16b4112e553f13a",
     "source_row_key": null,
     "effective_at": null
    },
@@ -588,70 +1058,61 @@
     "status": "available",
     "source_type": "company_owned_and_wikidata_cc0",
     "source_class": "company_owned_and_wikidata_cc0",
-    "source_url": "https://devoldsregnskap.no/",
-    "retrieved_at": "2026-10-17T11:27:36.642915Z",
+    "source_url": "https://www.gobb.no/",
+    "retrieved_at": "2026-10-17T16:34:16.681838Z",
     "value": {
      "verified_website": null,
      "company_description": null,
      "social_handles": [],
      "wikipedia": {},
      "careers": {
-      "state": "available",
-      "page_url": "https://devoldsregnskap.no/ledige-stillinger/",
-      "openings": [
-       "Totalkontroll over kundenes økonomi",
-       "Bachelor i økonomi og administrasjon",
-       "Når man ønsker å bli kontaktet om et produkt eller tjeneste",
-       "Ved kjøp av produkter eller tjenester på en nettside",
-       "Å gi brukeren tilgang til våre produkter og tjenester",
-       "Å kunne ta kontakt for å tilby produkter eller tjenester",
-       "Google Tag Manager",
-       "Vi bruker Google Tag Manager for å administrere analyse og digitale tjenester"
-      ],
-      "retrieved_at": "2026-10-17T11:27:35.463405Z",
-      "content_sha256": "acc70e8256db4adaed6740173c633cd008e4f4422ebc98a55fa0118072a8ce3b"
-     },
-     "news": {
       "state": "not_checked",
       "page_url": null,
-      "items": []
+      "openings": []
+     },
+     "news": {
+      "state": "not_available",
+      "page_url": "https://www.gobb.no/aktuelt/medlemskonferanse-2026/",
+      "items": [],
+      "retrieved_at": "2026-10-17T16:34:16.198684Z",
+      "content_sha256": "1d22beba6e81b2cd3fb65ed6163505e7342c4465e3d133b05c09f49d9780ec26"
      },
      "contact": {
       "state": "available",
-      "page_url": "https://devoldsregnskap.no/kontakt-oss/",
+      "page_url": "https://www.gobb.no/kontakt/",
       "emails": [
-       "ann.kristin@devoldsregnskap.no",
-       "emma@devoldsregnskap.no",
-       "firmapost@devoldsregnskap.no",
-       "kn@devoldsregnskap.no",
-       "kristi-annette.aadnanes@devoldsregnskap.no"
+       "anna.ween.topp@gobb.no",
+       "arna.johnsgaard@gobb.no",
+       "dag.otto.jostad@gobb.no",
+       "erik.tangen@gobb.no",
+       "eva.perjord@gobb.no"
       ],
       "phones": [
-       "47932143",
-       "47933724",
-       "55323250",
-       "94001254",
-       "94010221"
+       "40033987",
+       "40411485",
+       "41442711",
+       "41546119",
+       "48067848"
       ],
-      "content_sha256": "c7a3cf86fc7481e08995af5a4d9395ec00f0c7d013217ff51740716d8fb0e1d2",
-      "retrieved_at": "2026-10-17T11:27:36.642891Z"
+      "content_sha256": "634d931b42a11d5d02e69b9c5dabdb8618a7ba3b2fcdeea0177324739a672ae6",
+      "retrieved_at": "2026-10-17T16:34:16.681822Z"
      },
      "sources": [
       {
-       "kind": "careers_page",
-       "url": "https://devoldsregnskap.no/ledige-stillinger/",
-       "content_sha256": "acc70e8256db4adaed6740173c633cd008e4f4422ebc98a55fa0118072a8ce3b"
+       "kind": "news_page",
+       "url": "https://www.gobb.no/aktuelt/medlemskonferanse-2026/",
+       "content_sha256": "1d22beba6e81b2cd3fb65ed6163505e7342c4465e3d133b05c09f49d9780ec26"
       },
       {
        "kind": "contact_page",
-       "url": "https://devoldsregnskap.no/kontakt-oss/",
-       "content_sha256": "c7a3cf86fc7481e08995af5a4d9395ec00f0c7d013217ff51740716d8fb0e1d2"
+       "url": "https://www.gobb.no/kontakt/",
+       "content_sha256": "634d931b42a11d5d02e69b9c5dabdb8618a7ba3b2fcdeea0177324739a672ae6"
       }
      ]
     },
     "as_of": null,
     "note": "Company-owned pages plus Wikidata entries keyed on the organisation number. No third-party platform scraping.",
-    "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
+    "content_sha256": "7d52c36c64e810cb44577a8c6d1ac7d2a4fc5a43f08abcbbc16b4112e553f13a",
     "source_row_key": null,
     "effective_at": null
    },
@@ -661,48 +1122,50 @@
     "source_type": "wikidata_cc0_sparql",
     "source_class": "wikidata_cc0_sparql",
     "source_url": "https://query.wikidata.org/sparql",
-    "retrieved_at": "2026-10-17T11:26:58.867193Z",
+    "retrieved_at": "2026-10-17T16:34:09.131283Z",
     "value": {
      "keyed_on": "P2333 Norwegian organisation number",
      "requested": 100,
-     "matched": 1,
+     "matched": 0,
      "queries": 1,
-     "errors": [],
+     "errors": [
+      "HTTP 429"
+     ],
      "records": {},
      "matched_this_entity": false
     },
     "as_of": null,
     "note": "Exact-entity lookup keyed on P2333 (Norwegian organisation number). No Wikidata item carries this organisation number.",
-    "content_sha256": "732026165b59ba6925fc689d6fdafff09ba956d1876783c08710b667b0e0d984",
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "source_row_key": null,
     "effective_at": null
    }
   },
   "run_metrics": {
    "requests": 19,
-   "bytes": 1537231,
+   "bytes": 532611,
    "latencies_ms": [
-    435,
-    432,
+    631,
+    434,
+    462,
+    433,
     425,
-    446,
-    447,
-    1956,
-    1669,
-    2102,
-    830,
-    1582,
-    820,
-    778
+    859,
+    413,
+    375,
+    316,
+    324,
+    334,
+    270
    ]
   },
   "bankrupt": false,
-  "liquidating": true
+  "liquidating": false
  },
  "claims": [
   {
    "field": "legal_name",
-   "value": "SMESTAD HOLDING AS",
+   "value": "BONDELIA I BORETTSLAG",
    "availability": "available",
    "evidence_ids": [
     "ev-registry-0"
@@ -710,7 +1173,7 @@
   },
   {
    "field": "organisation_number",
-   "value": "989264087",
+   "value": "982669251",
    "availability": "available",
    "evidence_ids": [
     "ev-registry-1"
@@ -718,7 +1181,7 @@
   },
   {
    "field": "legal_form",
-   "value": "Aksjeselskap",
+   "value": "Borettslag",
    "availability": "available",
    "evidence_ids": [
     "ev-registry-2"
@@ -726,7 +1189,7 @@
   },
   {
    "field": "legal_form_code",
-   "value": "AS",
+   "value": "BRL",
    "availability": "available",
    "evidence_ids": [
     "ev-registry-3"
@@ -734,7 +1197,7 @@
   },
   {
    "field": "registered_address",
-   "value": "Kong Oscars gate 1A",
+   "value": "Øvre Torvgate 28",
    "availability": "available",
    "evidence_ids": [
     "ev-registry-4"
@@ -742,7 +1205,7 @@
   },
   {
    "field": "municipality",
-   "value": "BERGEN",
+   "value": "GJØVIK",
    "availability": "available",
    "evidence_ids": [
     "ev-registry-5"
@@ -750,7 +1213,7 @@
   },
   {
    "field": "postal_code",
-   "value": "5017",
+   "value": "2815",
    "availability": "available",
    "evidence_ids": [
     "ev-registry-6"
@@ -758,7 +1221,7 @@
   },
   {
    "field": "industry_code",
-   "value": "00.000",
+   "value": "97.001",
    "availability": "available",
    "evidence_ids": [
     "ev-registry-7"
@@ -766,7 +1229,7 @@
   },
   {
    "field": "industry",
-   "value": "Uoppgitt",
+   "value": "Aktiviteter i borettslag og boligsameier",
    "availability": "available",
    "evidence_ids": [
     "ev-registry-8"
@@ -782,7 +1245,7 @@
   },
   {
    "field": "contact_email",
-   "value": "on@devoldsregnskap.no",
+   "value": "gobb@gobb.no",
    "availability": "available",
    "evidence_ids": [
     "ev-registry-12"
@@ -790,7 +1253,7 @@
   },
   {
    "field": "company_status",
-   "value": "liquidating",
+   "value": "active",
    "availability": "available",
    "evidence_ids": [
     "ev-registry-13"
@@ -798,15 +1261,80 @@
   },
   {
    "field": "incorporation_date",
-   "value": "2005-12-28",
+   "value": "2000-09-07",
    "availability": "available",
    "evidence_ids": [
     "ev-registry-14"
    ]
   },
   {
+   "field": "registered_purpose",
+   "value": "Borettslag.",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-16"
+   ]
+  },
+  {
+   "field": "registered_sector",
+   "value": "Borettslag o.l.",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-18"
+   ]
+  },
+  {
+   "field": "articles_adopted_date",
+   "value": "2022-05-10",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-19"
+   ]
+  },
+  {
+   "field": "register_registration_date",
+   "value": "2000-11-16",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-20"
+   ]
+  },
+  {
+   "field": "language_form",
+   "value": "Bokmål",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-21"
+   ]
+  },
+  {
+   "field": "postal_address",
+   "value": "Postboks 1227, 2806 GJØVIK",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-22"
+   ]
+  },
+  {
+   "field": "vat_registered",
+   "value": false,
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-vat"
+   ]
+  },
+  {
+   "field": "contact_phone",
+   "value": "61 18 13 00",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-registry-phone-0"
+   ],
+   "note": "registered in the national register"
+  },
+  {
    "field": "legal_name_live",
-   "value": "SMESTAD HOLDING AS",
+   "value": "BONDELIA I BORETTSLAG",
    "availability": "available",
    "evidence_ids": [
     "ev-live-0"
@@ -814,7 +1342,7 @@
   },
   {
    "field": "revenue",
-   "value": 0.0,
+   "value": 2044800.0,
    "availability": "available",
    "evidence_ids": [
     "ev-financials"
@@ -823,7 +1351,7 @@
   },
   {
    "field": "operating_result",
-   "value": 0.0,
+   "value": -2899758.0,
    "availability": "available",
    "evidence_ids": [
     "ev-financials"
@@ -832,7 +1360,7 @@
   },
   {
    "field": "profit_before_tax",
-   "value": 0.0,
+   "value": -3297775.0,
    "availability": "available",
    "evidence_ids": [
     "ev-financials"
@@ -841,7 +1369,7 @@
   },
   {
    "field": "annual_result",
-   "value": 0.0,
+   "value": -3297775.0,
    "availability": "available",
    "evidence_ids": [
     "ev-financials"
@@ -850,7 +1378,7 @@
   },
   {
    "field": "assets",
-   "value": 0.0,
+   "value": 19849185.0,
    "availability": "available",
    "evidence_ids": [
     "ev-financials"
@@ -859,7 +1387,7 @@
   },
   {
    "field": "equity",
-   "value": -277375.0,
+   "value": 6053608.0,
    "availability": "available",
    "evidence_ids": [
     "ev-financials"
@@ -868,7 +1396,7 @@
   },
   {
    "field": "debt",
-   "value": 277375.0,
+   "value": 13795577.0,
    "availability": "available",
    "evidence_ids": [
     "ev-financials"
@@ -878,10 +1406,12 @@
   {
    "field": "leadership_role",
    "value": {
-    "name": "Øyvind Per Norang",
-    "role": "Styrets leder",
-    "group": "Styre",
-    "last_changed": "2026-10-15"
+    "name": [
+     "GJØVIK OG OMEGN BOLIGBYGGELAG"
+    ],
+    "role": "Forretningsfører",
+    "group": "Forretningsfører",
+    "last_changed": "2000-11-16"
    },
    "availability": "available",
    "evidence_ids": [
@@ -891,12 +1421,10 @@
   {
    "field": "leadership_role",
    "value": {
-    "name": [
-     "DEVOLDS REGNSKAPSKONTOR AS"
-    ],
-    "role": "Regnskapsfører",
-    "group": "Regnskapsfører",
-    "last_changed": "2015-10-28"
+    "name": "Håkon Lundby",
+    "role": "Styrets leder",
+    "group": "Styre",
+    "last_changed": "2025-12-16"
    },
    "availability": "available",
    "evidence_ids": [
@@ -904,35 +1432,111 @@
    ]
   },
   {
+   "field": "leadership_role",
+   "value": {
+    "name": "Nanna Elje Lindborg",
+    "role": "Styremedlem",
+    "group": "Styre",
+    "last_changed": "2025-12-16"
+   },
+   "availability": "available",
+   "evidence_ids": [
+    "ev-roles-2"
+   ]
+  },
+  {
+   "field": "leadership_role",
+   "value": {
+    "name": "Bente Danielsen",
+    "role": "Styremedlem",
+    "group": "Styre",
+    "last_changed": "2025-12-16"
+   },
+   "availability": "available",
+   "evidence_ids": [
+    "ev-roles-3"
+   ]
+  },
+  {
+   "field": "leadership_role",
+   "value": {
+    "name": "Mette Løvold",
+    "role": "Varamedlem",
+    "group": "Styre",
+    "last_changed": "2025-12-16"
+   },
+   "availability": "available",
+   "evidence_ids": [
+    "ev-roles-4"
+   ]
+  },
+  {
+   "field": "leadership_role",
+   "value": {
+    "name": [
+     "CEDRA NORGE AS"
+    ],
+    "role": "Revisor",
+    "group": "Revisor",
+    "last_changed": "2025-11-17"
+   },
+   "availability": "available",
+   "evidence_ids": [
+    "ev-roles-5"
+   ]
+  },
+  {
+   "field": "leadership_role",
+   "value": {
+    "name": [
+     "GJØVIK OG OMEGN BOLIGBYGGELAG"
+    ],
+    "role": "Regnskapsfører",
+    "group": "Regnskapsfører",
+    "last_changed": "2000-11-16"
+   },
+   "availability": "available",
+   "evidence_ids": [
+    "ev-roles-6"
+   ]
+  },
+  {
    "field": "registered_workplace",
-   "value": null,
-   "availability": "not_available",
-   "evidence_ids": [],
-   "note": "the subunit endpoint answered and lists no registered workplace for this entity"
+   "value": {
+    "organisation_number": "924154748",
+    "name": "BONDELIA I BORETTSLAG",
+    "address": "Øvre Torvgate 28",
+    "municipality": "GJØVIK",
+    "postal_code": "2815"
+   },
+   "availability": "available",
+   "evidence_ids": [
+    "ev-locations-0"
+   ]
   },
   {
    "field": "official_website",
-   "value": "https://devoldsregnskap.no/",
+   "value": "https://www.gobb.no/",
    "availability": "available",
    "evidence_ids": [
     "ev-website"
    ],
-   "confidence": 0.3,
+   "confidence": 0.85,
    "note": "url seeded from registry contact e-mail domain (same registry row as the organisation number); deterministic_name_org_evidence_v2"
   },
   {
    "field": "company_description",
-   "value": "Skip to main content",
+   "value": "GOBB er Gjøvik og Omegn Boligbyggelag. Vi hjelper deg å bo trygt og godt i våre boliger! Vi har bygget og forvaltet boliger siden 1946.",
    "availability": "available",
    "evidence_ids": [
-    "ev-website-text"
+    "ev-website-description"
    ]
   },
   {
    "field": "company_page",
    "value": {
-    "url": "https://devoldsregnskap.no/",
-    "title": "Devolds – Devolds Regnskapskontor AS"
+    "url": "https://www.gobb.no/",
+    "title": "GOBB / Gjøvik og Omegn Boligbyggelag. Hjemme best!"
    },
    "availability": "available",
    "evidence_ids": [
@@ -942,8 +1546,8 @@
   {
    "field": "company_page",
    "value": {
-    "url": "https://devoldsregnskap.no/om-oss/",
-    "title": "OM OSS – Devolds"
+    "url": "https://www.gobb.no/kontakt/",
+    "title": "Kontakt — GOBB | Gjøvik og Omegn Boligbyggelag"
    },
    "availability": "available",
    "evidence_ids": [
@@ -953,8 +1557,8 @@
   {
    "field": "company_page",
    "value": {
-    "url": "https://devoldsregnskap.no/kontakt-oss/",
-    "title": "KONTAKT OSS – Devolds"
+    "url": "https://www.gobb.no/aktuelt/",
+    "title": "Aktuelt — Les siste nytt om GOBB"
    },
    "availability": "available",
    "evidence_ids": [
@@ -964,8 +1568,8 @@
   {
    "field": "company_page",
    "value": {
-    "url": "https://devoldsregnskap.no/kontakt-oss/",
-    "title": "KONTAKT OSS – Devolds"
+    "url": "https://www.gobb.no/aktuelt/felles-forkjopsrett/",
+    "title": "Felles forkjøpsrett — GOBB | Gjøvik og Omegn Boligbyggelag"
    },
    "availability": "available",
    "evidence_ids": [
@@ -975,8 +1579,8 @@
   {
    "field": "company_page",
    "value": {
-    "url": "https://devoldsregnskap.no/ledige-stillinger/",
-    "title": "Ledige stillinger – Devolds"
+    "url": "https://www.gobb.no/aktuelt/finalistene-til-gobb-prisen%f0%9f%8e%89/",
+    "title": "Her er vinnerne av årets GOBB-Pris — GOBB | Gjøvik og Omegn Boligbyggelag"
    },
    "availability": "available",
    "evidence_ids": [
@@ -992,102 +1596,22 @@
   },
   {
    "field": "careers_page",
-   "value": "https://devoldsregnskap.no/ledige-stillinger/",
-   "availability": "available",
-   "evidence_ids": [
-    "ev-careers"
-   ]
-  },
-  {
-   "field": "job_opening",
-   "value": "Totalkontroll over kundenes økonomi",
-   "availability": "available",
-   "evidence_ids": [
-    "ev-careers-0"
-   ]
-  },
-  {
-   "field": "job_opening",
-   "value": "Bachelor i økonomi og administrasjon",
-   "availability": "available",
-   "evidence_ids": [
-    "ev-careers-1"
-   ]
-  },
-  {
-   "field": "job_opening",
-   "value": "Når man ønsker å bli kontaktet om et produkt eller tjeneste",
-   "availability": "available",
-   "evidence_ids": [
-    "ev-careers-2"
-   ]
-  },
-  {
-   "field": "job_opening",
-   "value": "Ved kjøp av produkter eller tjenester på en nettside",
-   "availability": "available",
-   "evidence_ids": [
-    "ev-careers-3"
-   ]
-  },
-  {
-   "field": "job_opening",
-   "value": "Å gi brukeren tilgang til våre produkter og tjenester",
-   "availability": "available",
-   "evidence_ids": [
-    "ev-careers-4"
-   ]
-  },
-  {
-   "field": "job_opening",
-   "value": "Å kunne ta kontakt for å tilby produkter eller tjenester",
-   "availability": "available",
-   "evidence_ids": [
-    "ev-careers-5"
-   ]
-  },
-  {
-   "field": "job_opening",
-   "value": "Google Tag Manager",
-   "availability": "available",
-   "evidence_ids": [
-    "ev-careers-6"
-   ]
-  },
-  {
-   "field": "job_opening",
-   "value": "Vi bruker Google Tag Manager for å administrere analyse og digitale tjenester",
-   "availability": "available",
-   "evidence_ids": [
-    "ev-careers-7"
-   ]
-  },
-  {
-   "field": "news_page",
    "value": null,
    "availability": "not_available",
    "evidence_ids": [],
-   "note": "no news link found on the verified company site"
+   "note": "no careers link found on the verified company site"
   },
   {
-   "field": "contact_email",
-   "value": "ann.kristin@devoldsregnskap.no",
-   "availability": "available",
+   "field": "news_page",
+   "value": "https://www.gobb.no/aktuelt/medlemskonferanse-2026/",
+   "availability": "not_available",
    "evidence_ids": [
-    "ev-contact"
+    "ev-news"
    ]
   },
   {
    "field": "contact_email",
-   "value": "emma@devoldsregnskap.no",
-   "availability": "available",
-   "evidence_ids": [
-    "ev-contact"
-   ]
-  },
-  {
-   "field": "contact_email",
-   "value": "firmapost@devoldsregnskap.no",
+   "value": "anna.ween.topp@gobb.no",
    "availability": "available",
    "evidence_ids": [
     "ev-contact"
@@ -1095,7 +1619,7 @@
   },
   {
    "field": "contact_email",
-   "value": "kn@devoldsregnskap.no",
+   "value": "arna.johnsgaard@gobb.no",
    "availability": "available",
    "evidence_ids": [
     "ev-contact"
@@ -1103,7 +1627,23 @@
   },
   {
    "field": "contact_email",
-   "value": "kristi-annette.aadnanes@devoldsregnskap.no",
+   "value": "dag.otto.jostad@gobb.no",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-contact"
+   ]
+  },
+  {
+   "field": "contact_email",
+   "value": "erik.tangen@gobb.no",
+   "availability": "available",
+   "evidence_ids": [
+    "ev-contact"
+   ]
+  },
+  {
+   "field": "contact_email",
+   "value": "eva.perjord@gobb.no",
    "availability": "available",
    "evidence_ids": [
     "ev-contact"
@@ -1111,7 +1651,7 @@
   },
   {
    "field": "contact_phone",
-   "value": "47932143",
+   "value": "40033987",
    "availability": "available",
    "evidence_ids": [
     "ev-contact"
@@ -1119,7 +1659,7 @@
   },
   {
    "field": "contact_phone",
-   "value": "47933724",
+   "value": "40411485",
    "availability": "available",
    "evidence_ids": [
     "ev-contact"
@@ -1127,7 +1667,7 @@
   },
   {
    "field": "contact_phone",
-   "value": "55323250",
+   "value": "41442711",
    "availability": "available",
    "evidence_ids": [
     "ev-contact"
@@ -1135,7 +1675,7 @@
   },
   {
    "field": "contact_phone",
-   "value": "94001254",
+   "value": "41546119",
    "availability": "available",
    "evidence_ids": [
     "ev-contact"
@@ -1143,7 +1683,7 @@
   },
   {
    "field": "contact_phone",
-   "value": "94010221",
+   "value": "48067848",
    "availability": "available",
    "evidence_ids": [
     "ev-contact"
@@ -1155,9 +1695,9 @@
    "id": "ev-registry-0",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "retrieved_at": "2026-10-17T16:34:09.134571Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[989264087].legal_name",
+   "claim_span": "row[982669251].navn",
    "reporting_period": null,
    "status": "available"
   },
@@ -1165,9 +1705,9 @@
    "id": "ev-registry-1",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "retrieved_at": "2026-10-17T16:34:09.134571Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[989264087].organisation_number",
+   "claim_span": "row[982669251].organisasjonsnummer",
    "reporting_period": null,
    "status": "available"
   },
@@ -1175,9 +1715,9 @@
    "id": "ev-registry-2",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "retrieved_at": "2026-10-17T16:34:09.134571Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[989264087].legal_form",
+   "claim_span": "row[982669251].organisasjonsform.beskrivelse",
    "reporting_period": null,
    "status": "available"
   },
@@ -1185,9 +1725,9 @@
    "id": "ev-registry-3",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "retrieved_at": "2026-10-17T16:34:09.134571Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[989264087].legal_form_code",
+   "claim_span": "row[982669251].organisasjonsform.kode",
    "reporting_period": null,
    "status": "available"
   },
@@ -1195,9 +1735,9 @@
    "id": "ev-registry-4",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "retrieved_at": "2026-10-17T16:34:09.134571Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[989264087].registered_address",
+   "claim_span": "row[982669251].forretningsadresse.adresse",
    "reporting_period": null,
    "status": "available"
   },
@@ -1205,9 +1745,9 @@
    "id": "ev-registry-5",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "retrieved_at": "2026-10-17T16:34:09.134571Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[989264087].municipality",
+   "claim_span": "row[982669251].forretningsadresse.kommune",
    "reporting_period": null,
    "status": "available"
   },
@@ -1215,9 +1755,9 @@
    "id": "ev-registry-6",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "retrieved_at": "2026-10-17T16:34:09.134571Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[989264087].postal_code",
+   "claim_span": "row[982669251].forretningsadresse.postnummer",
    "reporting_period": null,
    "status": "available"
   },
@@ -1225,9 +1765,9 @@
    "id": "ev-registry-7",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "retrieved_at": "2026-10-17T16:34:09.134571Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[989264087].industry_code",
+   "claim_span": "row[982669251].naeringskode1.kode",
    "reporting_period": null,
    "status": "available"
   },
@@ -1235,9 +1775,9 @@
    "id": "ev-registry-8",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "retrieved_at": "2026-10-17T16:34:09.134571Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[989264087].industry",
+   "claim_span": "row[982669251].naeringskode1.beskrivelse",
    "reporting_period": null,
    "status": "available"
   },
@@ -1245,9 +1785,9 @@
    "id": "ev-registry-10",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "retrieved_at": "2026-10-17T16:34:09.134571Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[989264087].latest_annual_accounts",
+   "claim_span": "row[982669251].sisteInnsendteAarsregnskap",
    "reporting_period": null,
    "status": "available"
   },
@@ -1255,9 +1795,9 @@
    "id": "ev-registry-12",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "retrieved_at": "2026-10-17T16:34:09.134571Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[989264087].contact_email",
+   "claim_span": "row[982669251].epostadresse",
    "reporting_period": null,
    "status": "available"
   },
@@ -1265,9 +1805,9 @@
    "id": "ev-registry-13",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "retrieved_at": "2026-10-17T16:34:09.134571Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[989264087].company_status",
+   "claim_span": "row[982669251].konkurs, underAvvikling",
    "reporting_period": null,
    "status": "available"
   },
@@ -1275,268 +1815,338 @@
    "id": "ev-registry-14",
    "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
    "source_class": "official_registry_bulk",
-   "retrieved_at": "2026-10-17T11:27:20.935089Z",
+   "retrieved_at": "2026-10-17T16:34:09.134571Z",
    "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
-   "claim_span": "row[989264087].incorporation_date",
+   "claim_span": "row[982669251].stiftelsesdato",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-16",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T16:34:09.134571Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[982669251].vedtektsfestetFormaal",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-18",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T16:34:09.134571Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[982669251].institusjonellSektorkode.beskrivelse",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-19",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T16:34:09.134571Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[982669251].vedtektsdato",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-20",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T16:34:09.134571Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[982669251].registreringsdatoenhetsregisteret",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-21",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T16:34:09.134571Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[982669251].maalform",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-22",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T16:34:09.134571Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[982669251].postadresse.*",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-vat",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T16:34:09.134571Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[982669251].registrertIMvaRegisteret",
+   "reporting_period": null,
+   "status": "available"
+  },
+  {
+   "id": "ev-registry-phone-0",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+   "source_class": "official_registry_bulk",
+   "retrieved_at": "2026-10-17T16:34:09.134571Z",
+   "content_sha256": "3183a281f41cd9859f93a6955b417808dc949c658c036d1c6128fde83bea104e",
+   "claim_span": "row[982669251].telefon",
    "reporting_period": null,
    "status": "available"
   },
   {
    "id": "ev-live-0",
-   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989264087",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/982669251",
    "source_class": "official_registry_live",
-   "retrieved_at": "2026-10-17T11:27:21.371140Z",
-   "content_sha256": "1dc0558f9083f4f6ef7cd8c394c0f8d369d3a387f2763966d14050db5a9b8ea3",
+   "retrieved_at": "2026-10-17T16:34:09.765712Z",
+   "content_sha256": "0319e4af0a750e7c68dba5591cabf541f7f36020c2bb03aba033729f95b305df",
    "claim_span": "body.name",
    "reporting_period": null,
    "status": "available"
   },
   {
    "id": "ev-financials",
-   "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/989264087",
+   "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/982669251",
    "source_class": "official_annual_accounts",
-   "retrieved_at": "2026-10-17T11:27:21.804340Z",
-   "content_sha256": "3bed207b6fa87ac1b3bb114e45f9bcc6dac1bd4f8e9bbb22c8fcd2f112d35e3f",
+   "retrieved_at": "2026-10-17T16:34:10.200539Z",
+   "content_sha256": "44f2d9eaa0a08825cb3c8cb3e2b8fdf19e2d552d93d16fd93a54f3d6967f8fdf",
    "claim_span": "records[0]",
    "reporting_period": "2023-01-01/2023-12-31",
    "status": "available"
   },
   {
    "id": "ev-roles-0",
-   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989264087/roller",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/982669251/roller",
    "source_class": "official_roles",
-   "retrieved_at": "2026-10-17T11:27:22.229807Z",
-   "content_sha256": "9d85b0fe6634e08470c112c00792d934b361cff56cc8586adb7ede793bf92794",
-   "claim_span": "roles[0] (LEDE)",
-   "reporting_period": "2026-10-15",
+   "retrieved_at": "2026-10-17T16:34:10.662751Z",
+   "content_sha256": "66fa99c888844bd1a15b092fd53dc7ed987c25ec9c99c27eeb560c2af2e964c0",
+   "claim_span": "roles[0] (FFØR)",
+   "reporting_period": "2000-11-16",
    "status": "available"
   },
   {
    "id": "ev-roles-1",
-   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989264087/roller",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/982669251/roller",
    "source_class": "official_roles",
-   "retrieved_at": "2026-10-17T11:27:22.229807Z",
-   "content_sha256": "9d85b0fe6634e08470c112c00792d934b361cff56cc8586adb7ede793bf92794",
-   "claim_span": "roles[1] (REGN)",
-   "reporting_period": "2015-10-28",
+   "retrieved_at": "2026-10-17T16:34:10.662751Z",
+   "content_sha256": "66fa99c888844bd1a15b092fd53dc7ed987c25ec9c99c27eeb560c2af2e964c0",
+   "claim_span": "roles[1] (LEDE)",
+   "reporting_period": "2025-12-16",
+   "status": "available"
+  },
+  {
+   "id": "ev-roles-2",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/982669251/roller",
+   "source_class": "official_roles",
+   "retrieved_at": "2026-10-17T16:34:10.662751Z",
+   "content_sha256": "66fa99c888844bd1a15b092fd53dc7ed987c25ec9c99c27eeb560c2af2e964c0",
+   "claim_span": "roles[2] (MEDL)",
+   "reporting_period": "2025-12-16",
+   "status": "available"
+  },
+  {
+   "id": "ev-roles-3",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/982669251/roller",
+   "source_class": "official_roles",
+   "retrieved_at": "2026-10-17T16:34:10.662751Z",
+   "content_sha256": "66fa99c888844bd1a15b092fd53dc7ed987c25ec9c99c27eeb560c2af2e964c0",
+   "claim_span": "roles[3] (MEDL)",
+   "reporting_period": "2025-12-16",
+   "status": "available"
+  },
+  {
+   "id": "ev-roles-4",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/982669251/roller",
+   "source_class": "official_roles",
+   "retrieved_at": "2026-10-17T16:34:10.662751Z",
+   "content_sha256": "66fa99c888844bd1a15b092fd53dc7ed987c25ec9c99c27eeb560c2af2e964c0",
+   "claim_span": "roles[4] (VARA)",
+   "reporting_period": "2025-12-16",
+   "status": "available"
+  },
+  {
+   "id": "ev-roles-5",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/982669251/roller",
+   "source_class": "official_roles",
+   "retrieved_at": "2026-10-17T16:34:10.662751Z",
+   "content_sha256": "66fa99c888844bd1a15b092fd53dc7ed987c25ec9c99c27eeb560c2af2e964c0",
+   "claim_span": "roles[5] (REVI)",
+   "reporting_period": "2025-11-17",
+   "status": "available"
+  },
+  {
+   "id": "ev-roles-6",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/982669251/roller",
+   "source_class": "official_roles",
+   "retrieved_at": "2026-10-17T16:34:10.662751Z",
+   "content_sha256": "66fa99c888844bd1a15b092fd53dc7ed987c25ec9c99c27eeb560c2af2e964c0",
+   "claim_span": "roles[6] (REGN)",
+   "reporting_period": "2000-11-16",
+   "status": "available"
+  },
+  {
+   "id": "ev-locations-0",
+   "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=982669251&size=1000",
+   "source_class": "official_subunits",
+   "retrieved_at": "2026-10-17T16:34:11.522290Z",
+   "content_sha256": "f5cad6c4cfb6e8f7b688e1d24ea2e951555d8496a629d2039462b13d7c37a08d",
+   "claim_span": "locations[0]",
+   "reporting_period": null,
    "status": "available"
   },
   {
    "id": "ev-website",
-   "source_url": "https://devoldsregnskap.no/",
+   "source_url": "https://www.gobb.no/",
    "source_class": "registry_linked_company_website",
-   "retrieved_at": "2026-10-17T11:27:34.238319Z",
-   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
+   "retrieved_at": "2026-10-17T16:34:15.652835Z",
+   "content_sha256": "7d52c36c64e810cb44577a8c6d1ac7d2a4fc5a43f08abcbbc16b4112e553f13a",
    "claim_span": "final_url",
    "reporting_period": null,
    "status": "available"
   },
   {
-   "id": "ev-website-text",
-   "source_url": "https://devoldsregnskap.no/",
+   "id": "ev-website-description",
+   "source_url": "https://www.gobb.no/",
    "source_class": "registry_linked_company_website",
-   "retrieved_at": "2026-10-17T11:27:34.238319Z",
-   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
-   "claim_span": "main_text_excerpt",
+   "retrieved_at": "2026-10-17T16:34:15.652835Z",
+   "content_sha256": "7d52c36c64e810cb44577a8c6d1ac7d2a4fc5a43f08abcbbc16b4112e553f13a",
+   "claim_span": "meta[name=description]",
    "reporting_period": null,
    "status": "available"
   },
   {
    "id": "ev-website-page-0",
-   "source_url": "https://devoldsregnskap.no/",
+   "source_url": "https://www.gobb.no/",
    "source_class": "registry_linked_company_website",
-   "retrieved_at": "2026-10-17T11:27:34.238319Z",
-   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
-   "claim_span": "pages[0] https://devoldsregnskap.no/",
+   "retrieved_at": "2026-10-17T16:34:15.652835Z",
+   "content_sha256": "7d52c36c64e810cb44577a8c6d1ac7d2a4fc5a43f08abcbbc16b4112e553f13a",
+   "claim_span": "pages[0] https://www.gobb.no/",
    "reporting_period": null,
    "status": "available"
   },
   {
    "id": "ev-website-page-1",
-   "source_url": "https://devoldsregnskap.no/",
+   "source_url": "https://www.gobb.no/",
    "source_class": "registry_linked_company_website",
-   "retrieved_at": "2026-10-17T11:27:34.238319Z",
-   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
-   "claim_span": "pages[1] https://devoldsregnskap.no/om-oss/",
+   "retrieved_at": "2026-10-17T16:34:15.652835Z",
+   "content_sha256": "7d52c36c64e810cb44577a8c6d1ac7d2a4fc5a43f08abcbbc16b4112e553f13a",
+   "claim_span": "pages[1] https://www.gobb.no/kontakt/",
    "reporting_period": null,
    "status": "available"
   },
   {
    "id": "ev-website-page-2",
-   "source_url": "https://devoldsregnskap.no/",
+   "source_url": "https://www.gobb.no/",
    "source_class": "registry_linked_company_website",
-   "retrieved_at": "2026-10-17T11:27:34.238319Z",
-   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
-   "claim_span": "pages[2] https://devoldsregnskap.no/kontakt-oss/",
+   "retrieved_at": "2026-10-17T16:34:15.652835Z",
+   "content_sha256": "7d52c36c64e810cb44577a8c6d1ac7d2a4fc5a43f08abcbbc16b4112e553f13a",
+   "claim_span": "pages[2] https://www.gobb.no/aktuelt/",
    "reporting_period": null,
    "status": "available"
   },
   {
    "id": "ev-website-page-3",
-   "source_url": "https://devoldsregnskap.no/",
+   "source_url": "https://www.gobb.no/",
    "source_class": "registry_linked_company_website",
-   "retrieved_at": "2026-10-17T11:27:34.238319Z",
-   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
-   "claim_span": "pages[3] https://devoldsregnskap.no/kontakt-oss/",
+   "retrieved_at": "2026-10-17T16:34:15.652835Z",
+   "content_sha256": "7d52c36c64e810cb44577a8c6d1ac7d2a4fc5a43f08abcbbc16b4112e553f13a",
+   "claim_span": "pages[3] https://www.gobb.no/aktuelt/felles-forkjopsrett/",
    "reporting_period": null,
    "status": "available"
   },
   {
    "id": "ev-website-page-4",
-   "source_url": "https://devoldsregnskap.no/",
+   "source_url": "https://www.gobb.no/",
    "source_class": "registry_linked_company_website",
-   "retrieved_at": "2026-10-17T11:27:34.238319Z",
-   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
-   "claim_span": "pages[4] https://devoldsregnskap.no/ledige-stillinger/",
+   "retrieved_at": "2026-10-17T16:34:15.652835Z",
+   "content_sha256": "7d52c36c64e810cb44577a8c6d1ac7d2a4fc5a43f08abcbbc16b4112e553f13a",
+   "claim_span": "pages[4] https://www.gobb.no/aktuelt/finalistene-til-gobb-prisen%f0%9f%8e%89/",
    "reporting_period": null,
    "status": "available"
   },
   {
-   "id": "ev-careers",
-   "source_url": "https://devoldsregnskap.no/",
+   "id": "ev-news",
+   "source_url": "https://www.gobb.no/",
    "source_class": "company_owned_and_wikidata_cc0",
-   "retrieved_at": "2026-10-17T11:27:36.642915Z",
-   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
-   "claim_span": "careers.page_url https://devoldsregnskap.no/ledige-stillinger/",
-   "reporting_period": null,
-   "status": "available"
-  },
-  {
-   "id": "ev-careers-0",
-   "source_url": "https://devoldsregnskap.no/",
-   "source_class": "company_owned_and_wikidata_cc0",
-   "retrieved_at": "2026-10-17T11:27:36.642915Z",
-   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
-   "claim_span": "https://devoldsregnskap.no/ledige-stillinger/",
-   "reporting_period": null,
-   "status": "available"
-  },
-  {
-   "id": "ev-careers-1",
-   "source_url": "https://devoldsregnskap.no/",
-   "source_class": "company_owned_and_wikidata_cc0",
-   "retrieved_at": "2026-10-17T11:27:36.642915Z",
-   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
-   "claim_span": "https://devoldsregnskap.no/ledige-stillinger/",
-   "reporting_period": null,
-   "status": "available"
-  },
-  {
-   "id": "ev-careers-2",
-   "source_url": "https://devoldsregnskap.no/",
-   "source_class": "company_owned_and_wikidata_cc0",
-   "retrieved_at": "2026-10-17T11:27:36.642915Z",
-   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
-   "claim_span": "https://devoldsregnskap.no/ledige-stillinger/",
-   "reporting_period": null,
-   "status": "available"
-  },
-  {
-   "id": "ev-careers-3",
-   "source_url": "https://devoldsregnskap.no/",
-   "source_class": "company_owned_and_wikidata_cc0",
-   "retrieved_at": "2026-10-17T11:27:36.642915Z",
-   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
-   "claim_span": "https://devoldsregnskap.no/ledige-stillinger/",
-   "reporting_period": null,
-   "status": "available"
-  },
-  {
-   "id": "ev-careers-4",
-   "source_url": "https://devoldsregnskap.no/",
-   "source_class": "company_owned_and_wikidata_cc0",
-   "retrieved_at": "2026-10-17T11:27:36.642915Z",
-   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
-   "claim_span": "https://devoldsregnskap.no/ledige-stillinger/",
-   "reporting_period": null,
-   "status": "available"
-  },
-  {
-   "id": "ev-careers-5",
-   "source_url": "https://devoldsregnskap.no/",
-   "source_class": "company_owned_and_wikidata_cc0",
-   "retrieved_at": "2026-10-17T11:27:36.642915Z",
-   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
-   "claim_span": "https://devoldsregnskap.no/ledige-stillinger/",
-   "reporting_period": null,
-   "status": "available"
-  },
-  {
-   "id": "ev-careers-6",
-   "source_url": "https://devoldsregnskap.no/",
-   "source_class": "company_owned_and_wikidata_cc0",
-   "retrieved_at": "2026-10-17T11:27:36.642915Z",
-   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
-   "claim_span": "https://devoldsregnskap.no/ledige-stillinger/",
-   "reporting_period": null,
-   "status": "available"
-  },
-  {
-   "id": "ev-careers-7",
-   "source_url": "https://devoldsregnskap.no/",
-   "source_class": "company_owned_and_wikidata_cc0",
-   "retrieved_at": "2026-10-17T11:27:36.642915Z",
-   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
-   "claim_span": "https://devoldsregnskap.no/ledige-stillinger/",
+   "retrieved_at": "2026-10-17T16:34:16.681838Z",
+   "content_sha256": "7d52c36c64e810cb44577a8c6d1ac7d2a4fc5a43f08abcbbc16b4112e553f13a",
+   "claim_span": "news.page_url https://www.gobb.no/aktuelt/medlemskonferanse-2026/",
    "reporting_period": null,
    "status": "available"
   },
   {
    "id": "ev-contact",
-   "source_url": "https://devoldsregnskap.no/",
+   "source_url": "https://www.gobb.no/",
    "source_class": "company_owned_and_wikidata_cc0",
-   "retrieved_at": "2026-10-17T11:27:36.642915Z",
-   "content_sha256": "db18367ab4eeaf76f261b02fe0b18282588fee0fc3453e50a286ea5057edd936",
-   "claim_span": "https://devoldsregnskap.no/kontakt-oss/",
+   "retrieved_at": "2026-10-17T16:34:16.681838Z",
+   "content_sha256": "7d52c36c64e810cb44577a8c6d1ac7d2a4fc5a43f08abcbbc16b4112e553f13a",
+   "claim_span": "https://www.gobb.no/kontakt/",
    "reporting_period": null,
    "status": "available"
   }
  ],
  "summary": {
-  "headline": "SMESTAD HOLDING AS (org. 989264087, Aksjeselskap). It operates in Uoppgitt, registered in BERGEN.",
+  "headline": "BONDELIA I BORETTSLAG (org. 982669251, Borettslag). It operates in Aktiviteter i borettslag og boligsameier, registered in GJØVIK.",
   "sentences": [
    {
-    "text": "SMESTAD HOLDING AS (org. 989264087, Aksjeselskap). It operates in Uoppgitt, registered in BERGEN.",
+    "text": "BONDELIA I BORETTSLAG (org. 982669251, Borettslag). It operates in Aktiviteter i borettslag og boligsameier, registered in GJØVIK.",
     "evidence_ids": [
      "ev-registry-0"
     ]
    },
    {
-    "text": "The company describes its work this way: \"Skip to main content\"",
+    "text": "The registered purpose reads: \"Borettslag.\"",
     "evidence_ids": [
-     "ev-website-text"
+     "ev-registry-16"
     ]
    },
    {
-    "text": "Filed accounts for 2025 show revenue NOK 0, annual result NOK 0.",
+    "text": "The company describes its work this way: \"GOBB er Gjøvik og Omegn Boligbyggelag. Vi hjelper deg å bo trygt og godt i våre boliger! Vi har bygget og forvaltet boliger siden 1946.\"",
+    "evidence_ids": [
+     "ev-website-description"
+    ]
+   },
+   {
+    "text": "Filed accounts for 2025 show revenue NOK 2,044,800, annual result NOK -3,297,775.",
     "evidence_ids": [
      "ev-financials"
     ]
    },
    {
-    "text": "Øyvind Per Norang is styrets leder. The register also lists 1 other active role holders.",
+    "text": "['GJØVIK OG OMEGN BOLIGBYGGELAG'] is forretningsfører. The register also lists 5 other active role holders.",
     "evidence_ids": [
      "ev-roles-0"
     ]
    },
    {
-    "text": "Verified company site: https://devoldsregnskap.no/",
+    "text": "1 registered workplace, first listed at Øvre Torvgate 28, GJØVIK.",
+    "evidence_ids": [
+     "ev-locations-0"
+    ]
+   },
+   {
+    "text": "Homepage listed by the registry: https://www.gobb.no/",
     "evidence_ids": [
      "ev-website"
     ]
    },
    {
-    "text": "Openings published on the careers page: Totalkontroll over kundenes økonomi; Bachelor i økonomi og administrasjon; Når man ønsker å bli kontaktet om et produkt eller tjeneste; Ved kjøp av produkter eller tjenester på en nettside.",
-    "evidence_ids": [
-     "ev-careers-0"
-    ]
+    "text": "The careers page was checked and lists no open roles.",
+    "evidence_ids": []
    }
   ],
   "unknowns": [
    {
-    "field": "registered_workplace",
+    "field": "job_opening",
     "state": "not_available",
-    "reason": "the subunit endpoint answered and lists no registered workplace for this entity"
+    "reason": "no claim produced for this field: the source that would carry it did not answer"
    },
    {
     "field": "dated_news_item",
@@ -1545,28 +2155,28 @@
    }
   ],
   "method": "deterministic_template_v1",
-  "generated_from_claims": 52
+  "generated_from_claims": 57
  },
  "changes": [],
  "errors": [],
  "operations": {
   "requests": 19,
-  "runtime_ms": 15708,
+  "runtime_ms": 7547,
   "third_party_cost_usd": 0,
-  "bytes_received": 1537231,
+  "bytes_received": 532611,
   "latencies": {
-   "p50_ms": 820,
-   "max_ms": 2102
+   "p50_ms": 425,
+   "max_ms": 859
   }
  },
  "availability": {
-  "available": 49,
+  "available": 54,
   "not_available": 3
  },
  "run": {
-  "run_id": "smoke5-final",
-  "started_at": "2026-10-17T11:26:58.867274Z",
-  "completed_at": "2026-10-17T11:27:36.643099Z",
+  "run_id": "smoke-final",
+  "started_at": "2026-10-17T16:34:09.131376Z",
+  "completed_at": "2026-10-17T16:34:16.682039Z",
   "terminal_status": "completed"
  }
 }
